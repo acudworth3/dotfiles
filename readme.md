@@ -1,6 +1,12 @@
 # Setup
 
+> First Draft of public dotfiles. Heavily copied and inspired from the following
+
+- https://github.com/omerxx/dotfiles
+- https://github.com/hendrikmi/dotfiles
+
 ## Setup dotfile only
+
 link to `~/.config/`
 
 ```bash
@@ -19,14 +25,15 @@ alias nv-ast="NVIM_APPNAME=nvim-astro nvim"
 alias nv-exp="NVIM_APPNAME=nvim-experiment nvim"
 alias nv="NVIM_APPNAME=nvim nvim"
 ```
+
 ## Include Various Linux Tools
 
 > run `install.sh`
 
 ```bash
-## Evnentuall this will be configured in  ./install.sh
+## Eventually this will be configured in  ./install.sh
 
-sudo apt install bat btop cargo cmatrix fd-find stow tree gh 
+sudo apt install bat btop cargo cmatrix fd-find stow tree gh
 
 npm install -g tldr
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
@@ -46,9 +53,10 @@ cargo install exa
 
 ### Linux Stable Bash Setup
 
-> Need to reorganize bash profile to not expose private info. In the 
+> Need to reorganize bash profile to not expose private info. In the
 > mean time this can be appended to '.bashrc' in '~/.bashrc'
-``` bash
+
+```bash
 # some more ls aliases
 alias ll='exa -l --icons -a --sort=type --color=always'
 alias llg='exa -l --icons -a --git --sort=type'
@@ -78,5 +86,3 @@ export STARSHIP_CONFIG=~/.config/starship/starship.toml
 eval "$(starship init bash)"
 
 ```
-
-
