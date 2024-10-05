@@ -68,5 +68,17 @@
       "  - Pasting As A Link"
     ],
     "description": "fffffffff"
+  },
+  "Markdown Collapsible Section": {
+    "prefix": "collapse",
+    "body": [
+      "<details>",
+      "<summary>${1:Click to expand}</summary>",
+      "",
+      "${2:Content goes here}",
+      "",
+      "</details>"
+    ],
+    "description": "Create a collapsible section in markdown"
   }
 }

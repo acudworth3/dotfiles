@@ -1,44 +1,36 @@
 # Setup
 
-## Setup dotfile only
+> These are dotfiles I use for my personal development environment. Heavily inspired by the following
+> Suggestions are welcome
 
-link to `~/.config/`
+- https://github.com/hendrikmi/dotfiles
+- https://github.com/linkarzu/dotfiles-latest
+- https://github.com/omerxx/dotfiles/tree/master/zshrc
+
+## Setup Dotfiles
+
+> from the top folder of this direct run
 
 ```bash
 cd ..
-stow -t ~/.config dotfiles/
+stow -t ~/.config ./
 ```
 
-- only setup for nvims
+## Install Linux Dependencies
 
-> In bash the following aliases assume the folders here
-
-```bash
-alias nv-lz="NVIM_APPNAME=nvim-lazy nvim"
-alias nv-chd="NVIM_APPNAME=nvim-chad nvim"
-alias nv-ast="NVIM_APPNAME=nvim-astro nvim"
-alias nv-exp="NVIM_APPNAME=nvim-experiment nvim"
-alias nv="NVIM_APPNAME=nvim nvim"
-```
-
-## Include Various Linux Tools
-
-> run `install.sh`
+> UNDER DEVELOPMENT
 
 ```bash
-## Evnentuall this will be configured in  ./install.sh
+## Eventually this will be configured in  ./install.sh
 
 sudo apt install bat btop cargo cmatrix fd-find stow tree gh
 
 npm install -g tldr
+# something broke here
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 
 curl -sS https://starship.rs/install.sh | sh
-
-# restow the files after this step
-# cd ..
-# stow -t ~/.config dotfiles/
 
 # EXA
 sudo apt install cargo
@@ -46,61 +38,23 @@ cargo install exa
 
 ```
 
-Docker: https://docs.docker.com/engine/install/ubuntu/#installation-methods
+## Bash Setup
 
-### Linux Stable Bash Setup
+> UNDER DEVELOPMENT. Contents of ./bash.temp.sh will be added
 
-> Need to reorganize bash profile to not expose private info. In the
-> mean time this can be appended to '.bashrc' in '~/.bashrc'
+## Tool Examples
 
-```bash
-# some more ls aliases
-alias ll='exa -l --icons -a --sort=type --color=always'
-alias llg='exa -l --icons -a --git --sort=type'
-alias lt='exa --tree --level=2 --long --icons -a --sort=type'
+> Things I think are neat
+> /TODO add a collapse here
 
-alias cat='batcat'
-alias bat='batcat'
+### exa
 
-# Set up fzf key bindings and fuzzy completion
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-eval "$(fzf --bash)"
-alias fzf='fzf --preview "batcat --style=numbers --color=always {}"'
-## fzf functions; figure out how to refactor this
-## fcd() { cd "$(find . -type d -not -path '*/.*' | fzf)" && lt; }
-## fv() { nvim "$(find . -type f -not -path "*/.*" | fzf)" }
+### atuin
 
-fcd() {
-  cd "$(find . -type d -not -path '*/.*' | fzf)" && lt
-}
+### tldr
 
-fv() {
-  nvim "$(find . -type f -not -path '*/.*' | fzf)"
-}
+### yazi
 
-## starship
-export STARSHIP_CONFIG=~/.config/starship/starship.toml
-eval "$(starship init bash)"
+### Astro Nvim
 
-
-## yazi setup
-function ycw() {
-    local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
-    yazi "$@" --cwd-file="$tmp"
-    if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-        builtin cd -- "$cwd"
-    fi
-    rm -f -- "$tmp"
-}
-yazi_custom() {
-    local folders=(
-        ""
-        ""
-        ""
-        ""
-        ""
-    )
-    yazi "${folders[@]}"
-}
-
-```
+### Multi Distribution Nvim
