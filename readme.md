@@ -5,9 +5,9 @@
 - https://github.com/omerxx/dotfiles
 - https://github.com/hendrikmi/dotfiles
 
-## Setup dotfile only
+## Setup dotfiles only
 
-link to `~/.config/`
+> link to `~/.config/`
 
 ```bash
 cd ..
