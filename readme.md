@@ -1,13 +1,8 @@
 # Setup
 
-> First Draft of public dotfiles. Heavily copied and inspired from the following
+## Setup dotfile only
 
-- https://github.com/omerxx/dotfiles
-- https://github.com/hendrikmi/dotfiles
-
-## Setup dotfiles only
-
-> link to `~/.config/`
+link to `~/.config/`
 
 ```bash
 cd ..
@@ -31,7 +26,7 @@ alias nv="NVIM_APPNAME=nvim nvim"
 > run `install.sh`
 
 ```bash
-## Eventually this will be configured in  ./install.sh
+## Evnentuall this will be configured in  ./install.sh
 
 sudo apt install bat btop cargo cmatrix fd-find stow tree gh
 
@@ -50,6 +45,8 @@ sudo apt install cargo
 cargo install exa
 
 ```
+
+Docker: https://docs.docker.com/engine/install/ubuntu/#installation-methods
 
 ### Linux Stable Bash Setup
 
@@ -84,5 +81,26 @@ fv() {
 ## starship
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 eval "$(starship init bash)"
+
+
+## yazi setup
+function ycw() {
+    local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+    yazi "$@" --cwd-file="$tmp"
+    if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+        builtin cd -- "$cwd"
+    fi
+    rm -f -- "$tmp"
+}
+yazi_custom() {
+    local folders=(
+        ""
+        ""
+        ""
+        ""
+        ""
+    )
+    yazi "${folders[@]}"
+}
 
 ```

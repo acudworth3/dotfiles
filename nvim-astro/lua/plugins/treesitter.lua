@@ -1,17 +1,31 @@
--- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- Customize Treesitter
 
+-- TODO add shell
 ---@type LazySpec
 return {
   "nvim-treesitter/nvim-treesitter",
   opts = {
     ensure_installed = {
-      "lua",
-      "vim",
+      "bash",
+      "css",
+      "go",
+      "html",
       "javascript",
-      "yaml",
+      "json",
+      "kdl",
+      "lua",
+      "markdown",
+      "markdown_inline",
+      "org",
+      "python",
+      "regex",
+      "rust",
+      "sql",
+      "terraform",
+      "toml",
       "typescript",
+      "vim",
+      "yaml",
     },
   },
 }

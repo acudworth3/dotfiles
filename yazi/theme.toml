@@ -7,7 +7,7 @@
 # : Flavor {{{
 
 [flavor]
-use = ""
+use = "catppuccin-mocha"
 
 # : }}}
 
@@ -58,13 +58,13 @@ separator_close = ""
 separator_style = { fg = "gray", bg = "gray" }
 
 # Mode
-mode_normal = { bg = "blue", bold = true }
+mode_normal = { bg = "lightblue", bold = true }
 mode_select = { bg = "red", bold = true }
 mode_unset  = { bg = "red", bold = true }
 
 # Progress
 progress_label  = { bold = true }
-progress_normal = { fg = "blue", bg = "black" }
+progress_normal = { fg = "lightblue", bg = "black" }
 progress_error  = { fg = "red", bg = "black" }
 
 # Permissions
@@ -80,7 +80,7 @@ permissions_s = { fg = "darkgray" }
 # : Select {{{
 
 [select]
-border   = { fg = "blue" }
+border   = { fg = "lightblue" }
 active   = { fg = "magenta", bold = true }
 inactive = {}
 
@@ -90,7 +90,7 @@ inactive = {}
 # : Input {{{
 
 [input]
-border   = { fg = "blue" }
+border   = { fg = "lightblue" }
 title    = {}
 value    = {}
 selected = { reversed = true }
@@ -101,7 +101,7 @@ selected = { reversed = true }
 # : Completion {{{
 
 [completion]
-border   = { fg = "blue" }
+border   = { fg = "lightblue" }
 active   = { reversed = true }
 inactive = {}
 
@@ -116,7 +116,7 @@ icon_command = ""
 # : Tasks {{{
 
 [tasks]
-border  = { fg = "blue" }
+border  = { fg = "lightblue" }
 title   = {}
 hovered = { fg = "magenta", underline = true }
 
@@ -195,7 +195,7 @@ rules = [
 
 	# Fallback
 	# { name = "*", fg = "white" },
-	{ name = "*/", fg = "blue" }
+	{ name = "*/", fg = "lightblue" }
 ]
 
 [icon]

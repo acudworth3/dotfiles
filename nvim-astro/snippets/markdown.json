@@ -1,0 +1,72 @@
+{
+  "test": {
+    "prefix": "tst",
+    "description": "testing --tst",
+    "body": [
+      "This is a test snippet for md files"
+    ]
+  },
+  "- [ ] Task  -> 🗒️   ": {
+    "prefix": "ttk",
+    "description": "Create a Task TODO",
+    "body": [
+      "- [ ] Task  -> 🗒️ "
+    ]
+  },
+  "- [ ] Learn -> ❔": {
+    "prefix": "ttl",
+    "description": "Create a Learn TODO",
+    "body": [
+      "- [ ] Learn -> ❔"
+    ]
+  },
+  "- [ ] Read  -> 📖": {
+    "prefix": "ttr",
+    "description": "Create a Read TODO",
+    "body": [
+      "- [ ] Read  -> 📖"
+    ]
+  },
+  "- [ ] Parse -> 📚 ": {
+    "prefix": "ttp",
+    "description": "Create a Parse TODO",
+    "body": [
+      "- [ ] Parse -> 📚"
+    ]
+  },
+  "habit": {
+    "prefix": "tth",
+    "description": "Create a Habit TODO",
+    "body": [
+      "- [ ] Habit -> 🏃"
+    ]
+  },
+  "bash-code-block": {
+    "prefix": "blk-bash",
+    "description": "Add a bash code block",
+    "body": [
+      "```bash",
+      "$1",
+      "```"
+    ]
+  },
+  "csharp-code-block": {
+    "prefix": "blk-csharp",
+    "description": "Add a csharp code block",
+    "body": [
+      "```c#",
+      "$1",
+      "```"
+    ]
+  },
+  "test123": {
+    "prefix": "fffffffff",
+    "body": [
+      "- Pasting As An Image\r",
+      "  - Screen Shot\r",
+      "- Links\r",
+      "  - Pasting As A Link"
+    ],
+    "description": "fffffffff"
+  }
+}

@@ -1,23 +1,23 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": 
-    [
+    "actions": [
         {
-            "command": 
-            {
+            "command": "unbound",
+            "keys": "ctrl+v"
+        },
+        {
+            "command": {
                 "action": "copy",
                 "singleLine": false
             },
             "keys": "ctrl+c"
         },
         {
-            "command": "paste",
-            "keys": "ctrl+v"
+            "command": "paste"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
@@ -32,17 +32,14 @@
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{2c4de342-38b7-51cf-b940-2309a097f518}",
-    "newTabMenu": 
-    [
+    "newTabMenu": [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles": 
-    {
+    "profiles": {
         "defaults": {},
-        "list": 
-        [
+        "list": [
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -77,8 +74,7 @@
                 "colorScheme": "Campbell",
                 "cursorShape": "bar",
                 "experimental.retroTerminalEffect": false,
-                "font": 
-                {
+                "font": {
                     "face": "FiraCode Nerd Font Propo"
                 },
                 "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
@@ -90,9 +86,8 @@
                 "tabTitle": "Andrew is Cool"
             },
             {
-                "colorScheme": "TokyoNight",
-                "font": 
-                {
+                "colorScheme": "UltraDark",
+                "font": {
                     "face": "FiraCode Nerd Font Propo"
                 },
                 "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
@@ -106,8 +101,7 @@
             }
         ]
     },
-    "schemes": 
-    [
+    "schemes": [
         {
             "background": "#0C0C0C",
             "black": "#0C0C0C",
@@ -360,6 +354,29 @@
             "selectionBackground": "#FFFFFF",
             "white": "#CCCCCC",
             "yellow": "#A2734C"
+        },
+        {
+            "background": "#000000",
+            "black": "#000000",
+            "blue": "#82AAFF",
+            "brightBlack": "#333333",
+            "brightBlue": "#B4CCFF",
+            "brightCyan": "#B8EAFF",
+            "brightGreen": "#DBF1BA",
+            "brightPurple": "#DDBDF2",
+            "brightRed": "#F6A9AE",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FFDFA6",
+            "cursorColor": "#FEFEFE",
+            "cyan": "#89DDFF",
+            "foreground": "#FFFFFF",
+            "green": "#C3E88D",
+            "name": "UltraDark",
+            "purple": "#C792EA",
+            "red": "#F07178",
+            "selectionBackground": "#222222",
+            "white": "#CCCCCC",
+            "yellow": "#FFCB6B"
         },
         {
             "background": "#000000",
