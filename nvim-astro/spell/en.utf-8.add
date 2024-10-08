@@ -24,3 +24,5 @@ sonarscanner
 stylua
 Databricks
 dotfiles
+postgres
+databricks

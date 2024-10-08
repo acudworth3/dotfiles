@@ -43,10 +43,10 @@ return {
     ["<A-j>"] = { ":m .+1<CR>==", desc = "SMove line Up (ALT + j)" },
     ["<A-k>"] = { ":m .-2<CR>==", desc = "Move line Down (ALT + k)" },
 
-    -- save all buffers
-    ["<C-s>"] = { "<cmd>wall<CR>", desc = "Save All Buffers (Normal Mode)" },
+    -- Save All Buffers
+    ["<Leader>w"] = { ":wall<CR>", desc = "Save All Buffers (Normal Mode)" },
 
-    -- disable arrow keys
+    -- Disable arrow keys
     ["<left>"] = { "<cmd>echo 'Use h to move left!!'<CR>", desc = "Remind to use h for movement" },
     ["<right>"] = { "<cmd>echo 'Use l to move right!!'<CR>", desc = "Remind to use l for movement" },
     ["<up>"] = { "<cmd>echo 'Use k to move up!!'<CR>", desc = "Remind to use k for movement" },

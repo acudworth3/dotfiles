@@ -21,4 +21,5 @@ return {
 
   -- import/override with your plugins folder
   { import = "astrocommunity.recipes.heirline-mode-text-statusline" },
+  { import = "astrocommunity.git.octo-nvim" },
 }
