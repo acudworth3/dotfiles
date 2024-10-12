@@ -37,9 +37,18 @@ return {
 
     -- ["<Leader rr"] = { "<cmd>YankBank<CR>", desc = "Open Yank History" },
     -- Yank Bank
-    -- map to '<leader>y'
-    ["<Leader>y"] = { "<cmd>YankBank<CR>", desc = "Open Yank History" },
-    -- Move text up and down
+    ["<Leader>yy"] = { "<cmd>YankBank<CR>", desc = "Open Yank History" },
+    -- copy file name
+    ["<Leader>yf"] = {
+      function()
+        local file_name = vim.fn.expand "%:t"
+        vim.fn.setreg("+", file_name)
+      end,
+      desc = "Copy current file name",
+    },
+
+    ["<leader>uZ"] = { "<cmd>Hardtime toggle<CR>", desc = "Toggle Hardtime Hints" },
+    -- -- Move text up and down
     ["<A-j>"] = { ":m .+1<CR>==", desc = "SMove line Up (ALT + j)" },
     ["<A-k>"] = { ":m .-2<CR>==", desc = "Move line Down (ALT + k)" },
 
