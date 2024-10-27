@@ -7,6 +7,15 @@
 - https://github.com/linkarzu/dotfiles-latest
 - https://github.com/omerxx/dotfiles/tree/master/zshrc
 
+<details>
+<summary>Demo</summary>
+
+This is a video inside a collapse
+
+![demo-video](./.Images/smaller_window.gif)
+
+</details>
+
 ## Setup Dotfiles
 
 > From the top folder of this repo run the following command.

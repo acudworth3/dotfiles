@@ -35,9 +35,27 @@ return {
     -- second key is the lefthand side of the map
     -- Toggle Checkboxes
 
-    -- ["<Leader rr"] = { "<cmd>YankBank<CR>", desc = "Open Yank History" },
+    -- MENU Titles
+    ["<Leader>y"] = { desc = "Yank" },
+    ["<Leader>j"] = { desc = "File Edit Actions" },
+
+    -- Yanking
     -- Yank Bank
     ["<Leader>yy"] = { "<cmd>YankBank<CR>", desc = "Open Yank History" },
+    ["<Leader>yF"] = { ":%y<CR>", desc = "Copy Current File Contents" },
+    --
+    -- Spell Check
+    ["<Leader>js"] = { "1z=<CR>", desc = "Apply First Spell" },
+
+    -- copy file path
+    ["<Leader>yp"] = {
+      function()
+        local file_name = vim.fn.expand "%:p"
+        vim.fn.setreg("+", file_name)
+      end,
+      desc = "Copy current file path",
+    },
+
     -- copy file name
     ["<Leader>yf"] = {
       function()
@@ -77,6 +95,7 @@ return {
       desc = "Close buffer from tabline",
     },
 
+    ["<Leader>jd"] = { ":%d<CR>", desc = "Delete File Contents" },
     -- tables with just a `desc` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     -- ["<Leader>b"] = { desc = "Buffers" },

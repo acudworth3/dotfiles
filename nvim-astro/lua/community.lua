@@ -1,4 +1,4 @@
--- if true then return {} end -- REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- remove this line to activate this file
 
 -- AstroCommunity: import any community modules here
 -- We import this file in `lazy_setup.lua` before the `plugins/` folder.
@@ -7,7 +7,7 @@
 ---@type LazySpec
 return {
   "AstroNvim/astrocommunity",
-  -- Languate Packs
+  -- Language Packs
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.yaml" },
@@ -20,6 +20,7 @@ return {
   -- { import = "astrocommunity.pack.cs" },
 
   -- import/override with your plugins folder
-  { import = "astrocommunity.recipes.heirline-mode-text-statusline" },
+  -- { import = "astrocommunity.recipes.heirline-mode-text-statusline" },
+  -- { import = "astrocommunity.recipes.heirline-clock-statusline" },
   { import = "astrocommunity.git.octo-nvim" },
 }

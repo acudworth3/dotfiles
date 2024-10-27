@@ -20,6 +20,13 @@ add_newline = true
 palette = "nord"
 command_timeout=1000
 
+# FIXME add indicator for insert vs normal mode
+# [character]
+# format = "$symbol "
+# success_symbol = "[i](bold green)"
+# error_symbol = "[i](bold red)"
+# vicmd_symbol = "[n](bold blue)"
+
 [directory]
 style = 'bold fg:dark_blue'
 format = '[$path ]($style)'

@@ -4,6 +4,7 @@ return {
   opts = {},
   keys = {
     { "<leader>gy", "<cmd>GitLink<cr>",  mode = { "n", "v" }, desc = "Yank Remote URL" },
+    { "<leader>yr", "<cmd>GitLink<cr>",  mode = { "n", "v" }, desc = "Copy Remote URL" },
     { "<leader>go", "<cmd>GitLink!<cr>", mode = { "n", "v" }, desc = "Open Remote URL" },
   },
 }

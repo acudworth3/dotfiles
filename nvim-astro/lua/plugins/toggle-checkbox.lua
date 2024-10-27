@@ -6,4 +6,5 @@ return {
     ":lua require('toggle-checkbox').toggle()<CR>",
     { noremap = true, silent = true, desc = "Toggle Checkbox" }
   ),
+  vim.keymap.set("n", "<leader>jc", "^i- [ ] <Esc>", { noremap = true, silent = true, desc = "Insert Checkbox" }),
 }
