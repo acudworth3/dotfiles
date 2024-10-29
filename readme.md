@@ -15,6 +15,8 @@
 
 ### Neovim Demo
 
+![nvime_demo](./.Images/nvim_demo_gif.gif)
+
 ## Setup Dotfiles
 
 > From the top folder of this repo run the following command.
