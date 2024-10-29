@@ -10,9 +10,9 @@
 <details>
 <summary>Demo</summary>
 
-This is a video inside a collapse
+CLI Tools in Use
 
-![demo-video](./.Images/smaller_window.gif)
+![demo-video](./.Images/demo_cli.gif)
 
 </details>
 
@@ -49,6 +49,7 @@ cargo install exa
 
 ## Neovim
 
+> These dotfiles include 4 distros that are used for testing and experiments.
 > ./nvim-astro is the primary configuration used
 
 [AstroNvim](https://astronvim.com/)
@@ -61,6 +62,13 @@ cargo install exa
 <summary>Setup Instructions</summary>
 
 ### dotfiles/nvim-astro
+
+Add the following to `.bashrc for best results`
+
+```bash
+alias nvim="NVIM_APPNAME=nvim-astro nvim"
+export EDITOR="NVIM_APPNAME=nvim-astro nvim"
+```
 
 #### Install Instructions
 
