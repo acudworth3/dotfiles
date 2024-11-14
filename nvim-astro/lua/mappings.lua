@@ -46,7 +46,7 @@ return {
     --
     -- Spell Check
     ["<Leader>js"] = { "1z=<CR>", desc = "Apply First Spell" },
-
+    ["<C-s>"] = { "<Esc>:wall<CR>", desc = "Save All Buffers (Normal Mode)" },
     -- copy file path
     ["<Leader>yp"] = {
       function()

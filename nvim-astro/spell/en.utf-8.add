@@ -30,3 +30,8 @@ linter
 desc
 astrocommunity
 Omnia
+JDBC
+jdbc
+adb
+azuredatabricks
+DBeaver
