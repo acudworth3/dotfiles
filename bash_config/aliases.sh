@@ -44,3 +44,9 @@ alias dkr-alp-keep='docker run --name=apline_from_abash -it apline'
 alias ll='exa -l --icons -a --sort=type --color=always'
 alias llg='exa -l --icons -a --git --sort=type'
 alias lt='exa --tree --level=2 --long --icons -a --sort=type'
+
+# some more ls aliases
+# alias ll='ls -alF'
+# alias la='ls -A'
+# alias l='ls -CF'
+

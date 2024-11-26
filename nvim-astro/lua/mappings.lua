@@ -10,6 +10,17 @@ return {
   --   ["kjj"] = { "<Esc><CR>", desc = "Exit Insert Mode" },
   --   ["jkk"] = { "<Esc><CR>", desc = "Exit Insert Mode" },
   -- },
+  v = {
+
+    -- Exiting Terminal Mode <Ctrl-\><Ctrl-n>
+    ["d"] = { '"_d', desc = "Delete to blkhole register" },
+    ["D"] = { '"_D', desc = "Delete to blkhole register" },
+    ["c"] = { '"_c', desc = "Change to blkhole register" },
+    ["C"] = { '"_C', desc = "Change to blkhole register" },
+
+    ["<Leader>yy"] = { "<cmd>YankBank<CR>", desc = "Open Yank History" },
+  },
+
   t = {
 
     -- Exiting Terminal Mode <Ctrl-\><Ctrl-n>
@@ -33,12 +44,21 @@ return {
   -- first key is the mode
   n = {
     -- second key is the lefthand side of the map
-    -- Toggle Checkboxes
+    -- remapping change and
+    ["d"] = { '"_d', desc = "Delete to blkhole register" },
+    ["D"] = { '"_D', desc = "Delete to blkhole register" },
+    ["c"] = { '"_c', desc = "Change to blkhole register" },
+    ["C"] = { '"_C', desc = "Change to blkhole register" },
 
     -- MENU Titles
     ["<Leader>y"] = { desc = "Yank" },
     ["<Leader>j"] = { desc = "File Edit Actions" },
+    ["<Leader>s"] = { desc = "Substitute" },
 
+    -- Substitute <Leader>s :%s/\<<C-r><C-w>\>/
+    ["<Leader>sw"] = { ":%s/<C-r><C-w>/<C-r><C-w>/g<left><left>", desc = "Replace Word Under Cursor" },
+    -- ["<Leader>sl"] = { ":%s/<C-r><C-l>/<C-r><C-l>", desc = "Replace Line Under Cursor" },
+    --
     -- Yanking
     -- Yank Bank
     ["<Leader>yy"] = { "<cmd>YankBank<CR>", desc = "Open Yank History" },
