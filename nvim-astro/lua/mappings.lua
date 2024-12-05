@@ -11,14 +11,16 @@ return {
   --   ["jkk"] = { "<Esc><CR>", desc = "Exit Insert Mode" },
   -- },
   v = {
+    ["D"] = { '"_D', desc = "Delete to blkhole register" },
+    ["d"] = { '"_d', desc = "Delete to blkhole register" },
+    ["C"] = { '"_C', desc = "Change to blkhole register" },
+    ["c"] = { '"_c', desc = "Change to blkhole register" },
 
     -- Exiting Terminal Mode <Ctrl-\><Ctrl-n>
-    ["d"] = { '"_d', desc = "Delete to blkhole register" },
-    ["D"] = { '"_D', desc = "Delete to blkhole register" },
-    ["c"] = { '"_c', desc = "Change to blkhole register" },
-    ["C"] = { '"_C', desc = "Change to blkhole register" },
-
     ["<Leader>yy"] = { "<cmd>YankBank<CR>", desc = "Open Yank History" },
+    -- Not really working
+    ["<A-j>"] = { ":m '>+1<CR>gv=gv", desc = "Move Selection Down (ALT+j)" },
+    ["<A-k>"] = { ":m '<-2<CR>gv=gv", desc = "Move Selection Up (ALT+k)" },
   },
 
   t = {
@@ -54,9 +56,14 @@ return {
     ["<Leader>y"] = { desc = "Yank" },
     ["<Leader>j"] = { desc = "File Edit Actions" },
     ["<Leader>s"] = { desc = "Substitute" },
+    ["<Leader>D"] = { desc = "Ducks" },
 
     -- Substitute <Leader>s :%s/\<<C-r><C-w>\>/
-    ["<Leader>sw"] = { ":%s/<C-r><C-w>/<C-r><C-w>/g<left><left>", desc = "Replace Word Under Cursor" },
+    -- & references matched word
+    -- <C-r><C-w> pulls word under curosr
+    ["<Leader>sr"] = { ":%s/<C-r><C-w>//g<left><left>", desc = "Replace Word Under Cursor" },
+    ["<Leader>sa"] = { ":%s/<C-r><C-w>/& /g<left><left>", desc = "Append to Word Under Cursor" },
+    ["<Leader>sw"] = { "/<C-r><C-w>", desc = "Search Word Under Cursor" },
     -- ["<Leader>sl"] = { ":%s/<C-r><C-l>/<C-r><C-l>", desc = "Replace Line Under Cursor" },
     --
     -- Yanking
@@ -87,7 +94,7 @@ return {
 
     ["<leader>uZ"] = { "<cmd>Hardtime toggle<CR>", desc = "Toggle Hardtime Hints" },
     -- -- Move text up and down
-    ["<A-j>"] = { ":m .+1<CR>==", desc = "SMove line Up (ALT + j)" },
+    ["<A-j>"] = { ":m .+1<CR>==", desc = "Move line Up (ALT + j)" },
     ["<A-k>"] = { ":m .-2<CR>==", desc = "Move line Down (ALT + k)" },
 
     -- Save All Buffers

@@ -7,6 +7,9 @@
 ---@type LazySpec
 return {
   "AstroNvim/astrocommunity",
+  -- colorscheme
+  { import = "astrocommunity.colorscheme.tokyonight-nvim" },
+  { import = "astrocommunity.colorscheme.tokyodark-nvim" },
   -- Language Packs
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.bash" },

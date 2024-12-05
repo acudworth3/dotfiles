@@ -1,4 +1,5 @@
 return {
+  -- maybe replace with https://github.com/nfrid/markdown-togglecheck/tree/main for . operations
   "opdavies/toggle-checkbox.nvim",
   vim.keymap.set(
     "n",
