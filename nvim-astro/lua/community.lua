@@ -16,6 +16,7 @@ return {
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.cs-omnisharp" },
   { import = "astrocommunity.editing-support.copilotchat-nvim" },
   -- Consider direct managment
   -- { import = "astrocommunity.pack.markdown" },
@@ -27,4 +28,5 @@ return {
   -- { import = "astrocommunity.recipes.heirline-mode-text-statusline" },
   -- { import = "astrocommunity.recipes.heirline-clock-statusline" },
   { import = "astrocommunity.git.octo-nvim" },
+  { import = "astrocommunity.recipes.vscode-icons" },
 }

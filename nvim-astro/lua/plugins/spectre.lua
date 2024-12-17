@@ -1,4 +1,9 @@
-return {}
+return {
+  "nvim-pack/nvim-spectre",
+  vim.keymap.set("n", "<leader>ss", '<cmd>lua require("spectre").toggle()<CR>', {
+    desc = "Toggle Spectre",
+  }),
+}
 -- return {
 --   "nvim-pack/nvim-spectre",
 --   cmd = "Spectre",

@@ -10,6 +10,7 @@ return {
   --   ["kjj"] = { "<Esc><CR>", desc = "Exit Insert Mode" },
   --   ["jkk"] = { "<Esc><CR>", desc = "Exit Insert Mode" },
   -- },
+  -- visual mode
   v = {
     ["D"] = { '"_D', desc = "Delete to blkhole register" },
     ["d"] = { '"_d', desc = "Delete to blkhole register" },
@@ -21,6 +22,11 @@ return {
     -- Not really working
     ["<A-j>"] = { ":m '>+1<CR>gv=gv", desc = "Move Selection Down (ALT+j)" },
     ["<A-k>"] = { ":m '<-2<CR>gv=gv", desc = "Move Selection Up (ALT+k)" },
+    -- better indenting
+    -- vim.keymap.set('v', '<', '<gv', opts)
+    -- vim.keymap.set('v', '>', '>gv', opts)
+    [">"] = { ">gv", desc = "Keep indenting" },
+    ["<"] = { "<gv", desc = "Keep indenting" },
   },
 
   t = {
@@ -46,11 +52,25 @@ return {
   -- first key is the mode
   n = {
     -- second key is the lefthand side of the map
+    -- strike through
+    ["<Leader>j~"] = { "i~<Esc>A~<Esc><CR>", desc = "Strikethrough End of Line" },
+
+    ["<Leader>fA"] = {
+      function() require("telescope.builtin").find_files { cwd = vim.fs.joinpath(vim.fn.stdpath "data", "lazy") } end,
+      desc = "Find All Config Files",
+    },
+
+    -- indents
+
+    ["<Tab>"] = { ">>", desc = "Indent" },
+    ["<S-Tab>"] = { "<<", desc = "Indent" },
+
     -- remapping change and
     ["d"] = { '"_d', desc = "Delete to blkhole register" },
     ["D"] = { '"_D', desc = "Delete to blkhole register" },
     ["c"] = { '"_c', desc = "Change to blkhole register" },
     ["C"] = { '"_C', desc = "Change to blkhole register" },
+    ["Y"] = { "y$", desc = "Yank to end of line" },
 
     -- MENU Titles
     ["<Leader>y"] = { desc = "Yank" },
@@ -66,6 +86,13 @@ return {
     ["<Leader>sw"] = { "/<C-r><C-w>", desc = "Search Word Under Cursor" },
     -- ["<Leader>sl"] = { ":%s/<C-r><C-l>/<C-r><C-l>", desc = "Replace Line Under Cursor" },
     --
+    -- Telescope
+    ["<Leader>fs"] = { "<cmd>Telescope lsp_document_symbols<CR>", desc = "Find LSP Symbols" },
+    ["<Leader>fm"] = { "<cmd>Telescope marks<CR>", desc = "Find Marks" },
+    ["<Leader>fj"] = { "<cmd>Telescope jumplist<CR>", desc = "Find Jumplist" },
+    ["<Leader>fq"] = { "<cmd>Telescope quickfix<CR>", desc = "Find Quickfix" },
+    ["<Leader>fu"] = { "<cmd>Telescope grep_string<CR>", desc = "Find Word (current) Across Files" },
+
     -- Yanking
     -- Yank Bank
     ["<Leader>yy"] = { "<cmd>YankBank<CR>", desc = "Open Yank History" },
@@ -76,6 +103,7 @@ return {
     ["<C-s>"] = { "<Esc>:wall<CR>", desc = "Save All Buffers (Normal Mode)" },
     -- copy file path
     ["<Leader>yp"] = {
+
       function()
         local file_name = vim.fn.expand "%:p"
         vim.fn.setreg("+", file_name)

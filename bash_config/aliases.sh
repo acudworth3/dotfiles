@@ -3,11 +3,8 @@ alias ..='cd ..'
 
 #Nvim Aliases
 
-alias nv-lz="NVIM_APPNAME=nvim-lazy nvim"
-alias nv-chd="NVIM_APPNAME=nvim-chad nvim"
 alias nv-ast="NVIM_APPNAME=nvim-astro nvim"
-alias nv-exp="NVIM_APPNAME=nvim-experiment nvim"
-alias nv="NVIM_APPNAME=nvim nvim"
+# alias nv="NVIM_APPNAME=nvim nvim"
 
 alias nvim="NVIM_APPNAME=nvim-astro nvim"
 
@@ -49,4 +46,3 @@ alias lt='exa --tree --level=2 --long --icons -a --sort=type'
 # alias ll='ls -alF'
 # alias la='ls -A'
 # alias l='ls -CF'
-

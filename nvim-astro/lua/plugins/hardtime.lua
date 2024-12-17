@@ -5,11 +5,14 @@ return {
   dependencies = { "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim" },
   opts = {
     -- Disable in normal mode only
+    -- Disable in normal mode only
+    -- Disable in normal mode only
     disabled_keys = {
       ["<Up>"] = { "n" },
       ["<Down>"] = { "n" },
       ["<Left>"] = { "n" },
       ["<Right>"] = { "n" },
+      -- ["<Esc>"] = { "i" }, conflicts with exiting telescope; makes more sense to remap <Esc> to Caps Lock
     },
     -- Notify after max count for these keys resets after max time
     max_count = 5,
@@ -30,6 +33,7 @@ return {
     },
     -- force_exit_insert_mode = false,
     -- max_insert_idle_ms = 5000,
+    -- disabled_filetypes = { "qf", "netrw", "NvimTree", "lazy", "mason", "oil" },
   },
   -- keys = {
   --   { "<leader>uZ", "<cmd>Hardtime toggle<CR>", mode = { "n" }, desc = "Toggle Hardtime Hints" },
