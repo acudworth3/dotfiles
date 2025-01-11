@@ -60,10 +60,26 @@ return {
       desc = "Find All Config Files",
     },
 
+    -- quickfix
+
+    ["<A-,>"] = { ":cprev<CR>", desc = "Prev Quickfix Record" },
+    ["<A-.>"] = { ":cnext<CR>", desc = "Next Quickfix Record" },
+    -- Not sure why this doesn't work
+    -- ["<A-,>"] = { "[q", desc = "Prev Quickfix Record" },
+    -- ["<A-.>"] = { "]q", desc = "Next Quickfix Record" },
+    ["<A-q>"] = {
+      function()
+        local qf_winid = vim.fn.getqflist({ winid = 0 }).winid
+        local action = qf_winid > 0 and "cclose" or "copen"
+        vim.cmd("botright " .. action)
+      end,
+      desc = "Next Quickfix Record",
+    },
     -- indents
 
-    ["<Tab>"] = { ">>", desc = "Indent" },
-    ["<S-Tab>"] = { "<<", desc = "Indent" },
+    -- This breaks <C-i> for some reason???
+    -- ["<Tab>"] = { ">>", desc = "Indent" },
+    -- ["<S-Tab>"] = { "<<", desc = "Indent" },
 
     -- remapping change and
     ["d"] = { '"_d', desc = "Delete to blkhole register" },
