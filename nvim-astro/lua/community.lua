@@ -22,7 +22,7 @@ return {
   -- { import = "astrocommunity.pack.markdown" },
   -- configure WSL for these languages first
   { import = "astrocommunity.pack.python" },
-  -- { import = "astrocommunity.pack.cs" },
+  -- { import = "astrocommunity.pack.cs" and hav},
 
   -- import/override with your plugins folder
   -- { import = "astrocommunity.recipes.heirline-mode-text-statusline" },
