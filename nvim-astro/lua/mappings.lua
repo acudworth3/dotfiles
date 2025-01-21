@@ -99,6 +99,7 @@ return {
     -- <C-r><C-w> pulls word under curosr
     ["<Leader>sr"] = { ":%s/<C-r><C-w>//g<left><left>", desc = "Replace Word Under Cursor" },
     ["<Leader>sa"] = { ":%s/<C-r><C-w>/& /g<left><left>", desc = "Append to Word Under Cursor" },
+    ["<Leader>sq"] = { ":cdo %s/<C-r><C-w>/& /g<left><left>", desc = "Amend Word Across qf_list" },
     ["<Leader>sw"] = { "/<C-r><C-w>", desc = "Search Word Under Cursor" },
     -- ["<Leader>sl"] = { ":%s/<C-r><C-l>/<C-r><C-l>", desc = "Replace Line Under Cursor" },
     --
@@ -156,6 +157,10 @@ return {
 
     -- create simple terminal
     ["<Leader>tb"] = { ":terminal<CR>i", desc = "Terminal as Buffer" },
+    --
+    -- Set neotree working dir
+    -- TODO replace with Yazi Eventually
+    ["<Leader>b~"] = { ":Neotree reveal<CR>", desc = "Set Neotree cd" },
 
     --{ function() require("astrocore.buffer").nav(-vim.v.count1) end, desc = "Previous buffer" },
     -- mappings seen under group name "Buffer"
