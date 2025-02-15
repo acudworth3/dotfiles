@@ -16,13 +16,13 @@ return {
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.typescript" },
-  -- { import = "astrocommunity.pack.cs-omnisharp" },
   { import = "astrocommunity.editing-support.copilotchat-nvim" },
+  { import = "astrocommunity.pack.cs-omnisharp" },
   -- Consider direct managment
   -- { import = "astrocommunity.pack.markdown" },
   -- configure WSL for these languages first
   { import = "astrocommunity.pack.python" },
-  { import = "astrocommunity.pack.cs" },
+  -- { import = "astrocommunity.pack.cs" },
 
   -- import/override with your plugins folder
   -- { import = "astrocommunity.recipes.heirline-mode-text-statusline" },

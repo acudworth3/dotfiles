@@ -6,6 +6,17 @@ return ---@type LazySpec
     -- 👇 in this section, choose your own keymappings!
 
     {
+      "<leader>o",
+      "<cmd>Yazi<cr>",
+      desc = "Open yazi at current file",
+    },
+    {
+      -- Open in the current working directory
+      "<leader>e",
+      "<cmd>Yazi cwd<cr>",
+      desc = "Open yazi in cwd",
+    },
+    {
       -- Open in the current working directory
       "<leader>ty",
       "<cmd>Yazi cwd<cr>",

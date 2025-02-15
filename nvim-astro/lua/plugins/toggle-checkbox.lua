@@ -13,10 +13,9 @@ return {
     "^i- [ ] <Esc>",
     { noremap = true, silent = true, desc = "Insert Checkbox" }
   ),
-  vim.keymap.set(
-    { "n", "v" },
-    "<leader>jo",
-    ":%s/\\V- [x]/- [ ]<CR>",
-    { noremap = true, silent = true, desc = "Reset Checkboxes" }
-  ),
+  vim.keymap.set({ "n", "v" }, "<leader>jo", function()
+    local pos = vim.api.nvim_win_get_cursor(0) -- Save cursor position
+    vim.cmd "%s/- \\[x\\]/- [ ]/g" -- Perform substitution
+    vim.api.nvim_win_set_cursor(0, pos) -- Restore cursor position
+  end, { noremap = true, silent = true, desc = "Reset Checkboxes" }),
 }

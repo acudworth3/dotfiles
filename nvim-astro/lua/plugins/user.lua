@@ -34,12 +34,6 @@ return {
       vim.keymap.set("n", "<leader>Og", "", { noremap = true, silent = true, desc = "Gists" }),
       vim.keymap.set("n", "<leader>Ogl", ":GistsList<CR>", { noremap = true, silent = true, desc = "GistsList" }),
       vim.keymap.set("n", "<leader>Ogc", ":GistCreate<CR>", { noremap = true, silent = true, desc = "GistCreate" }),
-      vim.keymap.set(
-        "n",
-        "<leader>Ogf",
-        ":GistCreateFromFile<CR>",
-        { noremap = true, silent = true, desc = "GistCreateFromFile" }
-      ),
     },
     -- `GistsList` opens the selected gif in a terminal buffer,
     -- nvim-unception uses neovim remote rpc functionality to open the gist in an actual buffer
