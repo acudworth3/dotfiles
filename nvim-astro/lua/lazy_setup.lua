@@ -28,6 +28,7 @@ require("lazy").setup({
         "zipPlugin",
         "neo-tree",
         "alpha-nvim",
+        "colorizer",
       },
     },
   },

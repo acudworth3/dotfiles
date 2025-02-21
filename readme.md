@@ -19,14 +19,15 @@
 
 ## Install Linux Dependencies
 
-> UNDER DEVELOPMENT
+> The `install.sh` script will run the following to covering most tools in these dotfiles
+
+1. Call `./install.sh` after making it executable `chmod +x install.sh`
 
 ```bash
 ## Eventually this will be configured in  ./install.sh
 
 sudo apt install bat btop cargo cmatrix fd-find stow tree gh pv
 
-npm install -g tldr
 # something broke here
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
@@ -41,10 +42,30 @@ sudo snap install jqp
 
 ```
 
+2. [ Install ](https://yazi-rs.github.io/docs/installation/) Yazi and dependencies if you wish to use it as the file explorer
+
+> For Ubuntu it will be something like this
+
+```bash
+apt install ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick
+
+# optional
+cd ~/repos
+
+git clone https://github.com/sxyazi/yazi.git
+cd yazi/
+mv target/release/yazi target/release/ya /usr/local/bin/
+sudo mv target/release/yazi target/release/ya /usr/local/bin/
+yazi -V
+
+```
+
 ## Setup Dotfiles
 
 > From the top folder of this repo run the following command. This creates symlinks from the dotfiles repo location
 > to your home directory. Files can be edited and managed with git.
+
+- Once you've done this, you can edit the dot files in your clone of this repo, source bash (run `sbb`) and immediately have the changed available
 
 ```bash
 # sudo install stow if not present
@@ -71,35 +92,25 @@ fi
 
 ## Neovim
 
-> These dotfiles include 4 distros that are used for testing and experiments.
-> ./nvim-astro is the primary configuration used
-
-[AstroNvim](https://astronvim.com/)
-
 <a href="https://dotfyle.com/acudworth3/dotfiles-nvim-astro"><img src="https://dotfyle.com/acudworth3/dotfiles-nvim-astro/badges/plugins?style=flat" /></a>
 <a href="https://dotfyle.com/acudworth3/dotfiles-nvim-astro"><img src="https://dotfyle.com/acudworth3/dotfiles-nvim-astro/badges/leaderkey?style=flat" /></a>
 <a href="https://dotfyle.com/acudworth3/dotfiles-nvim-astro"><img src="https://dotfyle.com/acudworth3/dotfiles-nvim-astro/badges/plugin-manager?style=flat" /></a>
 
 <details>
-<summary>Setup Instructions</summary>
 
-### dotfiles/nvim-astro
+<summary>Plugin Overview</summary>
 
-Add the following to `.bashrc for best results`
+> [!IMPORTANT]
+> You do nto need to do this if you cloned the dotfiles and and ran the stow commands. This would be to install _only_ neovim from this repo
 
-```bash
-alias nvim="NVIM_APPNAME=nvim-astro nvim"
-export EDITOR="NVIM_APPNAME=nvim-astro nvim"
-```
-
-#### Install Instructions
+### Install Instructions
 
 > Install requires Neovim 0.9+. Always review the code before installing a configuration.
 
 Clone the repository and install the plugins:
 
 ```sh
-git clone git@github.com:acudworth3/dotfiles/nvim-astro ~/.config/acudworth3/dotfiles/nvim-astro
+git clone git@github.com:acudworth3/dotfiles ~/.config/acudworth3/dotfiles
 ```
 
 Open Neovim with this config:
@@ -108,73 +119,122 @@ Open Neovim with this config:
 NVIM_APPNAME=acudworth3/dotfiles/nvim-astro nvim
 ```
 
-#### Plugins
+### Plugins
 
-##### editing-support
+#### completion
+
+- [hrsh7th/nvim-cmp](https://dotfyle.com/plugins/hrsh7th/nvim-cmp)
+
+#### editing-support
 
 - [windwp/nvim-autopairs](https://dotfyle.com/plugins/windwp/nvim-autopairs)
+- [johmsalas/text-case.nvim](https://dotfyle.com/plugins/johmsalas/text-case.nvim)
 - [ptdewey/yankbank-nvim](https://dotfyle.com/plugins/ptdewey/yankbank-nvim)
 
-##### git
+#### file-explorer
+
+- [mikavilpas/yazi.nvim](https://dotfyle.com/plugins/mikavilpas/yazi.nvim)
+- [nvim-neo-tree/neo-tree.nvim](https://dotfyle.com/plugins/nvim-neo-tree/neo-tree.nvim)
+
+#### fun
+
+- [tamton-aquib/duck.nvim](https://dotfyle.com/plugins/tamton-aquib/duck.nvim)
+
+#### fuzzy-finder
+
+- [nvim-telescope/telescope.nvim](https://dotfyle.com/plugins/nvim-telescope/telescope.nvim)
+
+#### git
 
 - [linrongbin16/gitlinker.nvim](https://dotfyle.com/plugins/linrongbin16/gitlinker.nvim)
 
-##### keybinding
+#### keybinding
 
+- [mrjones2014/legendary.nvim](https://dotfyle.com/plugins/mrjones2014/legendary.nvim)
 - [max397574/better-escape.nvim](https://dotfyle.com/plugins/max397574/better-escape.nvim)
 
-##### lsp
+#### lsp
 
 - [ray-x/lsp_signature.nvim](https://dotfyle.com/plugins/ray-x/lsp_signature.nvim)
 - [nvimtools/none-ls.nvim](https://dotfyle.com/plugins/nvimtools/none-ls.nvim)
 
-##### media
+#### markdown-and-latex
 
-- [andweeb/presence.nvim](https://dotfyle.com/plugins/andweeb/presence.nvim)
+- [iamcco/markdown-preview.nvim](https://dotfyle.com/plugins/iamcco/markdown-preview.nvim)
+- [nfrid/markdown-togglecheck](https://dotfyle.com/plugins/nfrid/markdown-togglecheck)
 
-##### motion
+#### motion
 
+- [folke/flash.nvim](https://dotfyle.com/plugins/folke/flash.nvim)
 - [gen740/SmoothCursor.nvim](https://dotfyle.com/plugins/gen740/SmoothCursor.nvim)
 
-##### nvim-dev
+#### nvim-dev
 
+- [nvim-lua/plenary.nvim](https://dotfyle.com/plugins/nvim-lua/plenary.nvim)
 - [kkharji/sqlite.lua](https://dotfyle.com/plugins/kkharji/sqlite.lua)
+- [MunifTanjim/nui.nvim](https://dotfyle.com/plugins/MunifTanjim/nui.nvim)
 
-##### plugin-manager
+#### plugin-manager
 
 - [folke/lazy.nvim](https://dotfyle.com/plugins/folke/lazy.nvim)
 
-##### preconfigured
+#### preconfigured
 
 - [AstroNvim/AstroNvim](https://dotfyle.com/plugins/AstroNvim/AstroNvim)
 
-##### snippet
+#### programming-languages-support
+
+- [MoaidHathot/dotnet.nvim](https://dotfyle.com/plugins/MoaidHathot/dotnet.nvim)
+- [GustavEikaas/easy-dotnet.nvim](https://dotfyle.com/plugins/GustavEikaas/easy-dotnet.nvim)
+
+#### scrolling
+
+- [rlychrisg/keepcursor.nvim](https://dotfyle.com/plugins/rlychrisg/keepcursor.nvim)
+
+#### search
+
+- [nvim-pack/nvim-spectre](https://dotfyle.com/plugins/nvim-pack/nvim-spectre)
+
+#### snippet
 
 - [L3MON4D3/LuaSnip](https://dotfyle.com/plugins/L3MON4D3/LuaSnip)
 
-##### startup
+#### split-and-window
+
+- [folke/edgy.nvim](https://dotfyle.com/plugins/folke/edgy.nvim)
+
+#### startup
 
 - [goolord/alpha-nvim](https://dotfyle.com/plugins/goolord/alpha-nvim)
 
-##### syntax
+#### statusline
+
+- [rebelot/heirline.nvim](https://dotfyle.com/plugins/rebelot/heirline.nvim)
+
+#### syntax
 
 - [nvim-treesitter/nvim-treesitter](https://dotfyle.com/plugins/nvim-treesitter/nvim-treesitter)
 - [kylechui/nvim-surround](https://dotfyle.com/plugins/kylechui/nvim-surround)
 
-##### terminal-integration
+#### terminal-integration
 
 - [samjwill/nvim-unception](https://dotfyle.com/plugins/samjwill/nvim-unception)
+- [akinsho/toggleterm.nvim](https://dotfyle.com/plugins/akinsho/toggleterm.nvim)
 
-#### Language Servers
+#### workflow
+
+- [m4xshen/hardtime.nvim](https://dotfyle.com/plugins/m4xshen/hardtime.nvim)
+
+### Language Servers
 
 - bashls
 - dockerls
+- efm
 - eslint
 - html
 - jsonls
 - lua_ls
 - marksman
-- pyright
 - yamlls
 
 This readme was generated by [Dotfyle](https://dotfyle.com)
@@ -184,10 +244,6 @@ This readme was generated by [Dotfyle](https://dotfyle.com)
 ## Tool Examples
 
 > Examples of tools that help with my workflow
-
-### exa
-
-> ⌛⌛ Work in Progress
 
 ### atuin
 
@@ -206,7 +262,16 @@ This readme was generated by [Dotfyle](https://dotfyle.com)
 
 ### jqp
 
-> ⌛⌛ Work in Progress
+> An excellent tui for the jq utility that can save the filtered output to a file
+
+`cat EXAMPLE.json | jqp`
+
+<details>
+<summary>jqp sample</summary>
+
+![jqp](./.Images/jqp.gif)
+
+</details>
 
 ### batcat
 
@@ -242,6 +307,15 @@ alias bat='batcat'
 
 </details>
 
+### exa
+
+<details>
+<summary>Exa Demo</summary>
+
+![exa](./.Images/exa.gif)
+
+</details>
+
 ### Git tooling
 
 #### Lazygit
@@ -261,5 +335,9 @@ alias bat='batcat'
 ![gitmenu](./.Images/octo.png)
 
 ### Lazydocker
+
+> ⌛⌛ Work in Progress
+
+### Postings
 
 > ⌛⌛ Work in Progress

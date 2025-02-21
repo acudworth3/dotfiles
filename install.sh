@@ -6,7 +6,14 @@ npm install -g tldr
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 
+# Starship
 curl -sS https://starship.rs/install.sh | sh
+
+# Postings
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# install Posting (will also quickly install Python 3.12 if needed)
+uv tool install --python 3.12 posting
 
 # EXA
 sudo apt install cargo

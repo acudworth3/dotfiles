@@ -8,14 +8,6 @@ function ycw() {
   fi
   rm -f -- "$tmp"
 }
-yazi_custom() {
-  local folders=(
-    "/home/acudworth3/repos"
-    "/home/acudworth3/repos/supply-app-mod-app-api"
-    "/home/acudworth3/repos/supply-app-mod-app-core"
-    "/mnt/c/Users/Y891986/Documents/workspace_1_offline/knowledge-graph"
-    "/mnt/c/Users/Y891986/Documents/workspace_1_offline/knowledge-graph/dotfiles"
-  )
   yazi "${folders[@]}"
 }
 

@@ -35,6 +35,8 @@ return {
     -- vim.keymap.set('v', '>', '>gv', opts)
     [">"] = { ">gv", desc = "Keep indenting" },
     ["<"] = { "<gv", desc = "Keep indenting" },
+    -- Note that gv reslects previous visual selection
+    ["<C-x>"] = { "ygvd", desc = "Cut Selection" },
   },
 
   t = {
@@ -48,7 +50,8 @@ return {
     -- second key is the left-hand side of the map
 
     -- kind of a hack
-    -- ["<A-e>"] = { '<C-r>=system("")<Left><Left>', desc = "Expression Register(ALT+e)" },
+    ["<C-e>"] = { '<C-r>=system("")<Left><Left>', desc = "Expression Register(CTRL+e)" },
+    -- ["<A-e>"] = { '<C-r>=system("")<Left><Left>', desc = "Expression Register(CTRL+e)", opts = { noremap = true } },
     -- save all buffers
     ["<C-s>"] = { "<Esc>:wall<CR>", desc = "Save All Buffers (Insert Mode)" },
 
@@ -65,6 +68,7 @@ return {
     -- second key is the lefthand side of the map
     -- strike through
     ["<Leader>j~"] = { "i~<Esc>A~<Esc><CR>", desc = "Strikethrough End of Line" },
+    ["<Leader>jm"] = { ":g/\v[x]/m$<CR>", desc = "Move Tasks to EOF" },
 
     ["<Leader>fA"] = {
       function() require("telescope.builtin").find_files { cwd = vim.fs.joinpath(vim.fn.stdpath "data", "lazy") } end,
@@ -74,6 +78,7 @@ return {
     -- ALT KEYS
     -- expression register
     ["<A-e>"] = { 'i<C-r>=system("")<Left><Left>', desc = "Expression Register(ALT+e)" },
+    ["<C-e>"] = { 'i<C-r>=system("")<Left><Left>', desc = "Expression Register(CTRL+e)" },
     -- -- Move text up and down
     ["<A-j>"] = { ":m .+1<CR>==", desc = "Move line Up (ALT + j)" },
     ["<A-k>"] = { ":m .-2<CR>==", desc = "Move line Down (ALT + k)" },
@@ -118,6 +123,8 @@ return {
     ["<Leader>Q"] = false,
     ["<Leader>C"] = false,
     ["<Leader>x"] = false,
+    ["<Leader>xl"] = false,
+    ["<Leader>xq"] = false,
     ["<Leader>fT"] = false,
 
     -- Substitute <Leader>s :%s/\<<C-r><C-w>\>/
@@ -126,7 +133,7 @@ return {
     ["<Leader>sr"] = { ":%s/<C-r><C-w>//g<left><left>", desc = "Replace Word Under Cursor" },
     ["<Leader>sa"] = { ":%s/<C-r><C-w>/& /g<left><left>", desc = "Append to Word Under Cursor" },
     ["<Leader>sq"] = { ":cdo %s/<C-r><C-w>/& /g<left><left>", desc = "Amend Word Across qf_list" },
-    ["<Leader>sc"] = { "/<C-r><C-w>", desc = "Search Word Under Cursor" },
+    ["<Leader>sc"] = { "/<C-r><C-w>", desc = "Search Word Under Cursor (OR *)" },
     -- ["<Leader>sl"] = { ":%s/<C-r><C-l>/<C-r><C-l>", desc = "Replace Line Under Cursor" },
     --
     -- Telescope
@@ -155,6 +162,21 @@ return {
         vim.fn.setreg("+", file_name)
       end,
       desc = "Copy current file path",
+    },
+
+    -- copy file path
+    -- TODO bring functions into their own file
+    ["<Leader>tcd"] = {
+      function()
+        local file_path = vim.fn.expand "%:p:h"            -- Get the directory of the current file
+        if file_path ~= "" then
+          vim.cmd("tcd " .. vim.fn.fnameescape(file_path)) -- Set tab working directory
+          print("Tab working directory set to: " .. file_path)
+        else
+          print "No file path available"
+        end
+      end,
+      desc = "Set Tab Dir",
     },
 
     -- copy file name
