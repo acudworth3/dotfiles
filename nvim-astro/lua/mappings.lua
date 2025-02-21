@@ -154,6 +154,15 @@ return {
     -- Spell Check
     ["<Leader>js"] = { "1z=<CR>", desc = "Apply First Spell" },
     ["<C-s>"] = { "<Esc>:wall<CR>", desc = "Save All Buffers (Normal Mode)" },
+    -- copy file dir
+    ["<Leader>yd"] = {
+
+      function()
+        local file_dir = vim.fn.expand "%:p:h" -- Get the directory of the current file
+        vim.fn.setreg("+", file_dir)
+      end,
+      desc = "Copy current file dir",
+    },
     -- copy file path
     ["<Leader>yp"] = {
 
@@ -164,8 +173,17 @@ return {
       desc = "Copy current file path",
     },
 
-    -- copy file path
+    -- copy file name
+    ["<Leader>yf"] = {
+      function()
+        local file_name = vim.fn.expand "%:t"
+        vim.fn.setreg("+", file_name)
+      end,
+      desc = "Copy current file name",
+    },
+
     -- TODO bring functions into their own file
+    -- set tab dir to current file
     ["<Leader>tcd"] = {
       function()
         local file_path = vim.fn.expand "%:p:h"            -- Get the directory of the current file
@@ -177,15 +195,6 @@ return {
         end
       end,
       desc = "Set Tab Dir",
-    },
-
-    -- copy file name
-    ["<Leader>yf"] = {
-      function()
-        local file_name = vim.fn.expand "%:t"
-        vim.fn.setreg("+", file_name)
-      end,
-      desc = "Copy current file name",
     },
 
     ["<leader>uZ"] = { "<cmd>Hardtime toggle<CR>", desc = "Toggle Hardtime Hints" },
