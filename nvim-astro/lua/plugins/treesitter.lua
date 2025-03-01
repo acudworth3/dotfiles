@@ -1,6 +1,5 @@
--- Customize Treesitter
+-- Customize Treesitter https://github.com/nvim-treesitter/nvim-treesitter?tab=readme-ov-file#supported-languages
 
--- TODO add shell
 ---@type LazySpec
 return {
   "nvim-treesitter/nvim-treesitter",
@@ -8,18 +7,18 @@ return {
     ensure_installed = {
       "bash",
       "css",
-      "go",
+      -- "go",
       "html",
       "javascript",
       "json",
-      "kdl",
+      -- "kdl",
       "lua",
       "markdown",
       "markdown_inline",
-      "org",
+      -- "org",
       "python",
       "regex",
-      "rust",
+      -- "rust",
       "sql",
       "terraform",
       "toml",

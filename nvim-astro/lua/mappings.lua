@@ -49,6 +49,9 @@ return {
     -- use Alt instead test
     -- second key is the left-hand side of the map
 
+    -- maybe print a message
+    -- ["<Esc>"] = false,
+
     -- kind of a hack
     ["<C-e>"] = { '<C-r>=system("")<Left><Left>', desc = "Expression Register(CTRL+e)" },
     -- ["<A-e>"] = { '<C-r>=system("")<Left><Left>', desc = "Expression Register(CTRL+e)", opts = { noremap = true } },
@@ -68,6 +71,21 @@ return {
     -- second key is the lefthand side of the map
     -- strike through
     ["<Leader>j~"] = { "i~<Esc>A~<Esc><CR>", desc = "Strikethrough End of Line" },
+
+    -- WORK IN PROGRESS
+    -- local pos = vim.api.nvim_win_get_cursor(0) -- Save cursor position
+    -- vim.cmd "%s/- \\[x\\]/- [ ]/g" -- Perform substitution
+    -- vim.api.nvim_win_set_cursor(0, pos) -- Restore cursor position
+
+    -- ["<Leader>jm"] = {
+    --   function()
+    --     local pos = vim.api.nvim_win_get_cursor(0) -- Save cursor position
+    --     vim.cmd "g/\v[x]/m$"                   -- Perform action
+    --     vim.api.nvim_win_set_cursor(0, pos)        -- Restore cursor position
+    --   end,
+    --   desc = "Move Tasks to EOF",
+    -- },
+
     ["<Leader>jm"] = { ":g/\v[x]/m$<CR>", desc = "Move Tasks to EOF" },
 
     ["<Leader>fA"] = {
@@ -89,6 +107,7 @@ return {
     ["<A-,>"] = { ":cprev<CR>", desc = "Prev Quickfix Record" },
     ["<A-.>"] = { ":cnext<CR>", desc = "Next Quickfix Record" },
     ["<A-q>"] = {
+      -- TODO refactor
       function()
         local qf_winid = vim.fn.getqflist({ winid = 0 }).winid
         local action = qf_winid > 0 and "cclose" or "copen"
@@ -129,8 +148,9 @@ return {
 
     -- Substitute <Leader>s :%s/\<<C-r><C-w>\>/
     -- & references matched word
-    -- <C-r><C-w> pulls word under curosr
-    ["<Leader>sr"] = { ":%s/<C-r><C-w>//g<left><left>", desc = "Replace Word Under Cursor" },
+    -- <C-r><C-w> pulls word under cursor
+    -- ["<Leader>sr"] = { ":GrugFar<CR>", desc = "Find + Replace Across Files" },
+    ["<Leader>sf"] = { ":%s/<C-r><C-w>//g<left><left>", desc = "Replace Word Under Cursor" },
     ["<Leader>sa"] = { ":%s/<C-r><C-w>/& /g<left><left>", desc = "Append to Word Under Cursor" },
     ["<Leader>sq"] = { ":cdo %s/<C-r><C-w>/& /g<left><left>", desc = "Amend Word Across qf_list" },
     ["<Leader>sc"] = { "/<C-r><C-w>", desc = "Search Word Under Cursor (OR *)" },
@@ -157,6 +177,7 @@ return {
     -- copy file dir
     ["<Leader>yd"] = {
 
+      -- TODO refactor
       function()
         local file_dir = vim.fn.expand "%:p:h" -- Get the directory of the current file
         vim.fn.setreg("+", file_dir)
@@ -166,6 +187,7 @@ return {
     -- copy file path
     ["<Leader>yp"] = {
 
+      -- TODO refactor
       function()
         local file_name = vim.fn.expand "%:p"
         vim.fn.setreg("+", file_name)
@@ -175,6 +197,7 @@ return {
 
     -- copy file name
     ["<Leader>yf"] = {
+      -- TODO refactor
       function()
         local file_name = vim.fn.expand "%:t"
         vim.fn.setreg("+", file_name)
@@ -183,6 +206,7 @@ return {
     },
 
     -- TODO bring functions into their own file
+    -- TODO refactor
     -- set tab dir to current file
     ["<Leader>tcd"] = {
       function()

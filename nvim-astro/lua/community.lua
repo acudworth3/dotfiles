@@ -18,15 +18,14 @@ return {
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.editing-support.copilotchat-nvim" },
   { import = "astrocommunity.pack.cs-omnisharp" },
+  -- { import = "astrocommunity.pack.html-css" },
   -- Consider direct managment
   -- { import = "astrocommunity.pack.markdown" },
   -- configure WSL for these languages first
-  { import = "astrocommunity.pack.python" },
+  -- { import = "astrocommunity.pack.python" },
   -- { import = "astrocommunity.pack.cs" },
 
   -- import/override with your plugins folder
-  -- { import = "astrocommunity.recipes.heirline-mode-text-statusline" },
-  -- { import = "astrocommunity.recipes.heirline-clock-statusline" },
   { import = "astrocommunity.git.octo-nvim" },
   { import = "astrocommunity.recipes.vscode-icons" },
 }

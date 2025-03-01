@@ -1,0 +1,42 @@
+return {}
+--
+-- -- -- to run arbitrary lua; map this or run `source %` manually
+--
+-- Populating Grug Far from qf list
+-- select in telscope and CTRL+q
+-- local function remove_duplicates(tbl)
+--   local seen = {}   -- Track unique values
+--   local result = {} -- Store unique items
+--
+--   for _, value in ipairs(tbl) do
+--     if not seen[value] then
+--       seen[value] = true
+--       table.insert(result, value)
+--     end
+--   end
+--
+--   return result
+-- end
+--
+-- local function get_quickfix_filenpaths()
+--   local filenames = {}
+--   for _, item in ipairs(vim.fn.getqflist()) do
+--     local name = vim.fn.bufname(item.bufnr)
+--     if name ~= "" then table.insert(filenames, name) end
+--   end
+--   local unique_filenames = remove_duplicates(filenames)
+--   return unique_filenames
+-- end
+--
+-- local qf_filenames = table.concat(get_quickfix_filenpaths(), " ")
+-- print(vim.inspect(qf_filenames))
+-- require("grug-far").open { prefills = { paths = qf_filenames } }
+-- -- require("grug-far").open { prefills = { paths = vim.fn.expand "%" } }
+--
+-- vim.keymap.set("n", "<space><space>x", "<cmd>source %<CR>")
+-- -- to run the current line; map this or un `.lua` manually
+-- vim.keymap.set("n", "<space><space>l", ":.lua<CR>")
+-- -- to run visually selected lua; map this or run `.lua` manually on selection
+-- vim.keymap.set("v", "<space>x", ":lua<CR>")
+-- --
+-- -- print "advent of neovim"

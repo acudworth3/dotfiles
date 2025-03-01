@@ -27,6 +27,8 @@ require("lazy").setup({
         "tohtml",
         "zipPlugin",
         "neo-tree",
+        "neo-tree",
+        "nvim-window-picker",
         "alpha-nvim",
         "colorizer",
       },
