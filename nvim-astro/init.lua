@@ -18,12 +18,6 @@ if not pcall(require, "lazy") then
   vim.cmd.quit()
 end
 
--- load user defined lua function https://github.com/Piotr1215/youtube/blob/main/nvim-scripting/slides.md
--- for _, file in ipairs(vim.fn.readdir(vim.fn.stdpath "config" .. "/lua/user_functions", [[v:val =~ '\.lua$']])) do
---   require("user_functions." .. file:gsub("%.lua$", ""))
--- end
-
--- require "user_functions.generic_functions"
 require "lazy_setup"
 require "polish"
 require "options"

@@ -24,7 +24,7 @@
 1. Call `./install.sh` after making it executable `chmod +x install.sh`
 
 ```bash
-## Eventually this will be configured in  ./install.sh
+## Latest setup is configured in  ./install.sh
 
 sudo apt install bat btop cargo cmatrix fd-find stow tree gh pv
 
@@ -39,24 +39,6 @@ sudo apt install cargo
 cargo install exa
 cargo install tokei
 sudo snap install jqp
-
-```
-
-2. [ Install ](https://yazi-rs.github.io/docs/installation/) Yazi and dependencies if you wish to use it as the file explorer
-
-> For Ubuntu it will be something like this
-
-```bash
-apt install ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick
-
-# optional
-cd ~/repos
-
-git clone https://github.com/sxyazi/yazi.git
-cd yazi/
-mv target/release/yazi target/release/ya /usr/local/bin/
-sudo mv target/release/yazi target/release/ya /usr/local/bin/
-yazi -V
 
 ```
 
@@ -335,9 +317,5 @@ alias bat='batcat'
 ![gitmenu](./.Images/octo.png)
 
 ### Lazydocker
-
-> ⌛⌛ Work in Progress
-
-### Postings
 
 > ⌛⌛ Work in Progress

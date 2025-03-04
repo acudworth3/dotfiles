@@ -25,6 +25,10 @@ return {
   -- { import = "astrocommunity.pack.python" },
   -- { import = "astrocommunity.pack.cs" },
 
+  -- Lua Development
+
+  { import = "astrocommunity.neovim-lua-development.lua-console-nvim" },
+
   -- import/override with your plugins folder
   { import = "astrocommunity.git.octo-nvim" },
   { import = "astrocommunity.recipes.vscode-icons" },

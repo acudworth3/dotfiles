@@ -1,42 +1,98 @@
 return {}
+
+-- local test = require "user_functions.generic_functions"
+-- test.sample1()
 --
--- -- -- to run arbitrary lua; map this or run `source %` manually
+-- -- fn_object = test.sample1
+-- -- local info = debug.getinfo(test.sample1, "n")
+-- -- print(info.name) -- Outputs the function name
 --
--- Populating Grug Far from qf list
--- select in telscope and CTRL+q
--- local function remove_duplicates(tbl)
---   local seen = {}   -- Track unique values
---   local result = {} -- Store unique items
+-- -- user Commands - 1 most basic
+-- --
+-- local function create_commands_from_module(module)
+--   for name, func in pairs(module) do
+--     if type(func) == "function" then
+--       -- Get function argument count and names
+--       local info = debug.getinfo(func, "u")
+--       local num_params = info and info.nparams or 0
 --
---   for _, value in ipairs(tbl) do
---     if not seen[value] then
---       seen[value] = true
---       table.insert(result, value)
+--       -- Fetch argument names
+--       local args = {}
+--       for i = 1, num_params do
+--         local arg_name = debug.getlocal(func, i) or ("arg" .. i)
+--         table.insert(args, arg_name)
+--       end
+--
+--       -- Function for completion
+--       local function completion_fn(_, _, _)
+--         return args -- Returns the list of expected arguments
+--       end
+--
+--       -- Create the user command
+--       vim.api.nvim_create_user_command(
+--         name, -- Command name same as function name
+--         func
+--       -- {
+--       --   nargs = #args,            -- Accepts any number of args
+--       --   complete = completion_fn, -- Auto-completion for args
+--       -- }
+--       )
 --     end
 --   end
---
---   return result
 -- end
 --
--- local function get_quickfix_filenpaths()
---   local filenames = {}
---   for _, item in ipairs(vim.fn.getqflist()) do
---     local name = vim.fn.bufname(item.bufnr)
---     if name ~= "" then table.insert(filenames, name) end
---   end
---   local unique_filenames = remove_duplicates(filenames)
---   return unique_filenames
--- end
+-- create_commands_from_module(test)
 --
--- local qf_filenames = table.concat(get_quickfix_filenpaths(), " ")
--- print(vim.inspect(qf_filenames))
--- require("grug-far").open { prefills = { paths = qf_filenames } }
--- -- require("grug-far").open { prefills = { paths = vim.fn.expand "%" } }
+-- vim.api.nvim_create_user_command("Test2", 'echo "It saves!"', {})
+-- -- vim.cmd.Test()
 --
--- vim.keymap.set("n", "<space><space>x", "<cmd>source %<CR>")
--- -- to run the current line; map this or un `.lua` manually
--- vim.keymap.set("n", "<space><space>l", ":.lua<CR>")
--- -- to run visually selected lua; map this or run `.lua` manually on selection
--- vim.keymap.set("v", "<space>x", ":lua<CR>")
+-- -- user Commands - 2 as function + Arg Compeltions
+-- -- :Upper CTRL+D on returns "foo bar baz"
+-- vim.api.nvim_create_user_command("Upper", function(opts) print(string.upper(opts.fargs[1])) end, {
+--   nargs = 1,
+--   complete = function(ArgLead, CmdLine, CursorPos)
+--     -- return completion candidates as a list-like table
+--     return { "foo", "bar", "baz" }
+--   end,
+-- })
+-- -- -- -- to run arbitrary lua; map this or run `source %` manually
+-- -- print "Hello from generic_functions.lua"
 -- --
--- -- print "advent of neovim"
+-- -- Populating Grug Far from qf list
+-- -- select in telscope and CTRL+q
+-- -- local function remove_duplicates(tbl)
+-- --   local seen = {}   -- Track unique values
+-- --   local result = {} -- Store unique items
+-- --
+-- --   for _, value in ipairs(tbl) do
+-- --     if not seen[value] then
+-- --       seen[value] = true
+-- --       table.insert(result, value)
+-- --     end
+-- --   end
+-- --
+-- --   return result
+-- -- end
+-- --
+-- -- local function get_quickfix_filenpaths()
+-- --   local filenames = {}
+-- --   for _, item in ipairs(vim.fn.getqflist()) do
+-- --     local name = vim.fn.bufname(item.bufnr)
+-- --     if name ~= "" then table.insert(filenames, name) end
+-- --   end
+-- --   local unique_filenames = remove_duplicates(filenames)
+-- --   return unique_filenames
+-- -- end
+-- --
+-- -- local qf_filenames = table.concat(get_quickfix_filenpaths(), " ")
+-- -- print(vim.inspect(qf_filenames))
+-- -- require("grug-far").open { prefills = { paths = qf_filenames } }
+-- -- -- require("grug-far").open { prefills = { paths = vim.fn.expand "%" } }
+-- --
+-- vim.keymap.set("n", "<space>n", "<cmd>w<CR><cmd>source %<CR>")
+-- -- -- to run the current line; map this or un `.lua` manually
+-- -- vim.keymap.set("n", "<space><space>l", ":.lua<CR>")
+-- -- -- to run visually selected lua; map this or run `.lua` manually on selection
+-- -- vim.keymap.set("v", "<space>x", ":lua<CR>")
+-- -- --
+-- -- -- print "advent of neovim"

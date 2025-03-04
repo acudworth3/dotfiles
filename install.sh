@@ -1,7 +1,7 @@
 ## Programs to install
 sudo apt install bat btop cargo cmatrix fd-find stow tree gh pv
 
-npm install -g tldr
+npm install -g tldr lorem-ipsum-cli
 # something broke here
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
@@ -14,6 +14,10 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 # install Posting (will also quickly install Python 3.12 if needed)
 uv tool install --python 3.12 posting
+
+# yazi
+sudo apt install snapd
+sudo snap install yazi --classic
 
 # EXA
 sudo apt install cargo
