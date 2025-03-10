@@ -1,6 +1,6 @@
 # Setup
 
-> These are dotfiles I use for my personal development environment. Heavily inspired by the following
+> These are dotfiles I use for my personal development environment. Heavily inspired by the following.
 > Suggestions are welcome
 
 - https://github.com/hendrikmi/dotfiles
