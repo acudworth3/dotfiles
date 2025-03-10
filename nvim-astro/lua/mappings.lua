@@ -139,12 +139,13 @@ return {
     ["<Leader>s"] = { desc = "Substitute" },
     ["<Leader>D"] = { desc = "Ducks" },
     ["<Leader>q"] = { desc = "quickfix" },
+    ["<Leader>h"] = false,
     ["<Leader>Q"] = false,
     ["<Leader>C"] = false,
     ["<Leader>x"] = false,
     ["<Leader>xl"] = false,
     ["<Leader>xq"] = false,
-    ["<Leader>fT"] = false,
+    -- ["<Leader>fT"] = false,
 
     -- Substitute <Leader>s :%s/\<<C-r><C-w>\>/
     -- & references matched word

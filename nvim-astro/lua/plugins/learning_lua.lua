@@ -1,5 +1,10 @@
 return {}
 
+-- local function move_left(n)
+--   local keys = string.rep("<Left>", n)
+--   vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes(keys, true, false, true), "n", false)
+-- end
+
 -- local test = require "user_functions.generic_functions"
 -- test.sample1()
 --

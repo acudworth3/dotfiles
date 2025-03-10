@@ -27,7 +27,7 @@ return {
 
   -- Lua Development
 
-  { import = "astrocommunity.neovim-lua-development.lua-console-nvim" },
+  -- { import = "astrocommunity.neovim-lua-development.lua-console-nvim" },
 
   -- import/override with your plugins folder
   { import = "astrocommunity.git.octo-nvim" },

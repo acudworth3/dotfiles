@@ -9,6 +9,15 @@ local M = {}
 -- print("Argument count:", #args)
 -- print("Arguments:", table.concat(args, ", "))
 
+function M.move_left_feed_keys(n)
+  if type(n) ~= "number" or n <= 0 then
+    print "move_left recieved non integer input"
+    return 0 -- Ensure n is a valid positive number
+  end
+  local keys = string.rep("<Left>", n)
+  vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes(keys, true, false, true), "n", true)
+end
+
 function M.get_function_args(func)
   local args = {}
   local info = debug.getinfo(func, "u") -- Get function info (number of params)
