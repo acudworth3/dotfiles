@@ -59,8 +59,6 @@ vim.api.nvim_create_user_command(
 
 -- GprependTODO
 -- Goal: prepend a TODO to all results in the quick fix list
--- TODO: Make the TODO a comment - might need to be a separate function
--- TODO: reuse for a quick fix / cdo user user function
 function M.prepend_to_matches(todo_text)
   -- handle inputs
   if todo_text == "" then todo_text = "ADD DETAILS" end

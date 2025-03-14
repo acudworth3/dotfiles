@@ -12,6 +12,11 @@ return {
     config = function() require("lsp_signature").setup() end,
   },
 
+  {
+    "lewis6991/gitsigns.nvim",
+    config = function() require("gitsigns").setup { current_line_blame = true } end,
+  },
+
   -- == Examples of Overriding Plugins ==
   -- You can disable default plugins as follows:
   { "max397574/better-escape.nvim", enabled = false },

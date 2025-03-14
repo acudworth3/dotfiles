@@ -103,18 +103,20 @@ return {
     -- ["<A-S-j>"] = { "<C+x>", desc = "Increment 0" },
 
     -- Quickfix
-    ["<Leader>qc"] = { "<cmd>cex [ ]<CR>", desc = "Clear Quickfix" },
     ["<A-,>"] = { ":cprev<CR>", desc = "Prev Quickfix Record" },
     ["<A-.>"] = { ":cnext<CR>", desc = "Next Quickfix Record" },
-    ["<A-q>"] = {
-      -- TODO refactor
-      function()
-        local qf_winid = vim.fn.getqflist({ winid = 0 }).winid
-        local action = qf_winid > 0 and "cclose" or "copen"
-        vim.cmd("botright " .. action)
-      end,
-      desc = "Open Quickfix",
-    },
+    ["<A-q>"] = { "<cmd>CQShowInPanel<CR>", desc = "Open Quickfix" },
+
+    ["<Leader>qc"] = { "<cmd>cex [ ]<CR>", desc = "Clear Quick Fix" },
+    ["<Leader>qd"] = { "<cmd>CQdeleteLine<CR>", desc = "Delete Lines Quick Fix" },
+    ["<Leader>qn"] = { "<cmd>CQSendFileNamesToF<CR>", desc = "Collect File Names Quick Fix" },
+    ["<Leader>qm"] = { "<cmd>CQMoveQuickFixToCurrentBuffer<CR>", desc = "Move Contents  Quick Fix" },
+    ["<Leader>qs"] = { "<cmd>CQsubstitute<CR>", desc = "Substitute Quick Fix" },
+    ["<Leader>qt"] = { "<cmd>CQappendQfTODO<CR>", desc = "Prepend To list Quick Fix" },
+    ["<Leader>qy"] = { "<cmd>CQCopyQuickFixToCurrentBuffer<CR>", desc = "Copy Contents Quick Fix" },
+    ["<Leader>qf"] = { "<cmd>Telescope quickfix<CR>", desc = "Search Quick Fix" },
+    ["<Leader>qo"] = { "<cmd>CQShowInPanel<CR>", desc = "Open Quick Fix" },
+
     -- indents
 
     -- This breaks <C-i> for some reason???
@@ -138,7 +140,7 @@ return {
     ["<Leader>j"] = { desc = "File Edit Actions" },
     ["<Leader>s"] = { desc = "Substitute" },
     ["<Leader>D"] = { desc = "Ducks" },
-    ["<Leader>q"] = { desc = "quickfix" },
+    ["<Leader>q"] = { "<Nop>", desc = "quickfix" },
     ["<Leader>h"] = false,
     ["<Leader>Q"] = false,
     ["<Leader>C"] = false,
@@ -178,7 +180,7 @@ return {
     -- copy file dir
     ["<Leader>yd"] = {
 
-      -- TODO refactor
+      -- TODO: refactor
       function()
         local file_dir = vim.fn.expand "%:p:h" -- Get the directory of the current file
         vim.fn.setreg("+", file_dir)
@@ -188,7 +190,7 @@ return {
     -- copy file path
     ["<Leader>yp"] = {
 
-      -- TODO refactor
+      -- TODO: refactor
       function()
         local file_name = vim.fn.expand "%:p"
         vim.fn.setreg("+", file_name)
@@ -198,7 +200,7 @@ return {
 
     -- copy file name
     ["<Leader>yf"] = {
-      -- TODO refactor
+      -- TODO: refactor
       function()
         local file_name = vim.fn.expand "%:t"
         vim.fn.setreg("+", file_name)
@@ -207,7 +209,7 @@ return {
     },
 
     -- TODO bring functions into their own file
-    -- TODO refactor
+    -- TODO: refactor
     -- set tab dir to current file
     ["<Leader>tcd"] = {
       function()
