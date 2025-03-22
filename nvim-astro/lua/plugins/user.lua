@@ -19,7 +19,6 @@ return {
 
   -- == Examples of Overriding Plugins ==
   -- You can disable default plugins as follows:
-  { "max397574/better-escape.nvim", enabled = false },
 
   -- You can also easily customize additional setup of plugins that is outside of the plugin's setup call
 
@@ -28,7 +27,27 @@ return {
   },
   {
     "mg979/vim-visual-multi",
-    enabled = true,
+    event = "VeryLazy",
+    config = function()
+      -- Customize highlight groups for Visual Multi
+      vim.g.VM_theme = "ocean"
+      -- vim.cmd [[
+      -- " highlight VM_Extend ctermfg=white ctermbg=blue guifg=#ffffff guibg=#005f87
+      -- " highlight VM_Cursor ctermfg=black ctermbg=yellow guifg=#000000 guibg=#ffaf00
+      -- " highlight VM_Mono ctermfg=red ctermbg=black guifg=#ff0000 guibg=#1c1c1c ]]
+    end,
+  },
+  -- Logging
+
+  {
+    "Goose97/timber.nvim",
+    version = "*", -- Use for stability; omit to use `main` branch for the latest features
+    event = "VeryLazy",
+    config = function()
+      require("timber").setup {
+        -- Configuration here, or leave empty to use defaults
+      }
+    end,
   },
   -- gists
   {

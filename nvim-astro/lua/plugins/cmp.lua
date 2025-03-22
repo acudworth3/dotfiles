@@ -12,9 +12,9 @@ return { -- override nvim-cmp plugin
     -- modify the sources part of the options table
     opts.sources = cmp.config.sources {
       { name = "nvim_lsp",    priority = 1000 },
-      { name = "luasnip",     priority = 750 },
       { name = "buffer",      priority = 500 },
       { name = "path",        priority = 250 },
+      { name = "luasnip",     priority = 150 },
       -- { name = "emoji",       priority = 700 }, -- add new source
       { name = "easy-dotnet", priority = 700 },
     }

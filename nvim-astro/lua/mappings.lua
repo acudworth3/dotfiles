@@ -9,15 +9,6 @@ return {
   -- setting a mapping to false will disable it
   -- ["<C-S>"] = false,
 
-  -- first key is the mode
-  -- r = {
-  --
-  --   -- Exiting Replace Mode
-  --   ["jj"] = { "<Esc><CR>", desc = "Exit Insert Mode" },
-  --   ["kk"] = { "<Esc><CR>", desc = "Exit Insert Mode" },
-  --   ["kjj"] = { "<Esc><CR>", desc = "Exit Insert Mode" },
-  --   ["jkk"] = { "<Esc><CR>", desc = "Exit Insert Mode" },
-  -- },
   -- visual mode
   v = {
     ["D"] = { '"_D', desc = "Delete to blkhole register" },
@@ -25,16 +16,18 @@ return {
     ["C"] = { '"_C', desc = "Change to blkhole register" },
     ["c"] = { '"_c', desc = "Change to blkhole register" },
 
-    -- Exiting Terminal Mode <Ctrl-\><Ctrl-n>
     ["<Leader>yy"] = { "<cmd>YankBank<CR>", desc = "Open Yank History" },
+
     -- Only works for 2 lines
     ["<A-j>"] = { ":m '>+1<CR>gv=gv", desc = "Move Selection Down (ALT+j)" },
     ["<A-k>"] = { ":m '<-2<CR>gv=gv", desc = "Move Selection Up (ALT+k)" },
+
     -- better indenting
     -- vim.keymap.set('v', '<', '<gv', opts)
     -- vim.keymap.set('v', '>', '>gv', opts)
     [">"] = { ">gv", desc = "Keep indenting" },
     ["<"] = { "<gv", desc = "Keep indenting" },
+
     -- Note that gv reslects previous visual selection
     ["<C-x>"] = { "ygvd", desc = "Cut Selection" },
   },
@@ -55,6 +48,7 @@ return {
     -- kind of a hack
     ["<C-e>"] = { '<C-r>=system("")<Left><Left>', desc = "Expression Register(CTRL+e)" },
     -- ["<A-e>"] = { '<C-r>=system("")<Left><Left>', desc = "Expression Register(CTRL+e)", opts = { noremap = true } },
+
     -- save all buffers
     ["<C-s>"] = { "<Esc>:wall<CR>", desc = "Save All Buffers (Insert Mode)" },
 
@@ -68,9 +62,13 @@ return {
 
   -- first key is the mode
   n = {
-    -- second key is the lefthand side of the map
+    -- second key is the left hand side of the map
+
+    -- j menu (edit)
     -- strike through
     ["<Leader>j~"] = { "i~<Esc>A~<Esc><CR>", desc = "Strikethrough End of Line" },
+    ["<Leader>jm"] = { ":g/\v[x]/m$<CR>", desc = "Move Tasks to EOF" },
+    ["<Leader>jd"] = { ":%d<CR>", desc = "Delete File Contents" },
 
     -- WORK IN PROGRESS
     -- local pos = vim.api.nvim_win_get_cursor(0) -- Save cursor position
@@ -86,18 +84,18 @@ return {
     --   desc = "Move Tasks to EOF",
     -- },
 
-    ["<Leader>jm"] = { ":g/\v[x]/m$<CR>", desc = "Move Tasks to EOF" },
-
-    ["<Leader>fA"] = {
-      function() require("telescope.builtin").find_files { cwd = vim.fs.joinpath(vim.fn.stdpath "data", "lazy") } end,
-      desc = "Find All Config Files",
+    -- ALT KEYS
+    -- TODO: remap into a CLI menu
+    ["<A-l>"] = {
+      function() require("user_functions.generic_functions").lorem_n() end,
+      desc = "Call: Lorem",
     },
 
-    -- ALT KEYS
     -- expression register
     ["<A-e>"] = { 'i<C-r>=system("")<Left><Left>', desc = "Expression Register(ALT+e)" },
     ["<C-e>"] = { 'i<C-r>=system("")<Left><Left>', desc = "Expression Register(CTRL+e)" },
-    -- -- Move text up and down
+
+    -- Move text up and down
     ["<A-j>"] = { ":m .+1<CR>==", desc = "Move line Up (ALT + j)" },
     ["<A-k>"] = { ":m .-2<CR>==", desc = "Move line Down (ALT + k)" },
     -- ["<A-S-j>"] = { "<C+x>", desc = "Increment 0" },
@@ -119,12 +117,9 @@ return {
 
     -- indents
 
-    -- This breaks <C-i> for some reason???
-    -- ["<Tab>"] = { ">>", desc = "Indent" },
-    -- ["<S-Tab>"] = { "<<", desc = "Indent" },
-
     -- CTRL key
     ["<C-a>"] = { "ggVG", desc = "Select All" },
+    ["<C-c>"] = { "<C-a>", desc = "Select All" },
 
     -- remapping change and
 
@@ -147,40 +142,49 @@ return {
     ["<Leader>x"] = false,
     ["<Leader>xl"] = false,
     ["<Leader>xq"] = false,
+    ["\\"] = false,
     -- ["<Leader>fT"] = false,
 
-    -- Substitute <Leader>s :%s/\<<C-r><C-w>\>/
+    -- Substitute
     -- & references matched word
     -- <C-r><C-w> pulls word under cursor
-    -- ["<Leader>sr"] = { ":GrugFar<CR>", desc = "Find + Replace Across Files" },
     ["<Leader>sf"] = { ":%s/<C-r><C-w>//g<left><left>", desc = "Replace Word Under Cursor" },
     ["<Leader>sa"] = { ":%s/<C-r><C-w>/& /g<left><left>", desc = "Append to Word Under Cursor" },
     ["<Leader>sq"] = { ":cdo %s/<C-r><C-w>/& /g<left><left>", desc = "Amend Word Across qf_list" },
     ["<Leader>sc"] = { "/<C-r><C-w>", desc = "Search Word Under Cursor (OR *)" },
+    -- ["<Leader>sr"] = { ":GrugFar<CR>", desc = "Find + Replace Across Files" },
     -- ["<Leader>sl"] = { ":%s/<C-r><C-l>/<C-r><C-l>", desc = "Replace Line Under Cursor" },
-    --
+
     -- Telescope
+    -- f menu (find + Telescope)
+    ["<Leader>fA"] = {
+      function() require("telescope.builtin").find_files { cwd = vim.fs.joinpath(vim.fn.stdpath "data", "lazy") } end,
+      desc = "Find All Config Files",
+    },
 
     ["<Leader>F"] = { "<cmd>Telescope<CR>", desc = "Telescope All" },
-    ["<Leader>fs"] = { "<cmd>Telescope lsp_document_symbols<CR>", desc = "Find LSP Symbols" },
-    ["<Leader>fm"] = { "<cmd>Telescope marks<CR>", desc = "Find Marks" },
+
     ["<Leader>f'"] = false,
+    ["<Leader>fi"] = { "<cmd>Octo issue search<CR>", desc = "Octo issues search" },
     ["<Leader>fj"] = { "<cmd>Telescope jumplist<CR>", desc = "Find Jumplist" },
+    ["<Leader>fm"] = { "<cmd>Telescope marks<CR>", desc = "Find Marks" },
+    ["<Leader>fp"] = { "<cmd>Octo pr search<CR>", desc = "Octo pr search" },
     ["<Leader>fq"] = { "<cmd>Telescope quickfix<CR>", desc = "Find Quickfix" },
+    ["<Leader>fs"] = { "<cmd>Telescope lsp_document_symbols<CR>", desc = "Find LSP Symbols" },
     -- ["<Leader>fu"] = { "<cmd>Telescope grep_string<CR>", desc = "Find Word (current) Across Files" },
 
-    --
-    -- Yank Bank
-    ["<Leader>yy"] = { "<cmd>YankBank<CR>", desc = "Open Yank History" },
-    ["<Leader>yF"] = { ":%y<CR>", desc = "Copy Current File Contents" },
     --
     -- Spell Check
     ["<Leader>js"] = { "1z=<CR>", desc = "Apply First Spell" },
     ["<C-s>"] = { "<Esc>:wall<CR>", desc = "Save All Buffers (Normal Mode)" },
+
+    -- Yank commands
+    -- Yank Bank
+    ["<Leader>yy"] = { "<cmd>YankBank<CR>", desc = "Open Yank History" },
+    ["<Leader>yF"] = { ":%y<CR>", desc = "Copy Current File Contents" },
+
     -- copy file dir
     ["<Leader>yd"] = {
-
-      -- TODO: refactor
       function()
         local file_dir = vim.fn.expand "%:p:h" -- Get the directory of the current file
         vim.fn.setreg("+", file_dir)
@@ -190,7 +194,6 @@ return {
     -- copy file path
     ["<Leader>yp"] = {
 
-      -- TODO: refactor
       function()
         local file_name = vim.fn.expand "%:p"
         vim.fn.setreg("+", file_name)
@@ -200,7 +203,6 @@ return {
 
     -- copy file name
     ["<Leader>yf"] = {
-      -- TODO: refactor
       function()
         local file_name = vim.fn.expand "%:t"
         vim.fn.setreg("+", file_name)
@@ -208,33 +210,17 @@ return {
       desc = "Copy current file name",
     },
 
-    -- TODO bring functions into their own file
-    -- TODO: refactor
-    -- set tab dir to current file
-    ["<Leader>tcd"] = {
-      function()
-        local file_path = vim.fn.expand "%:p:h"            -- Get the directory of the current file
-        if file_path ~= "" then
-          vim.cmd("tcd " .. vim.fn.fnameescape(file_path)) -- Set tab working directory
-          print("Tab working directory set to: " .. file_path)
-        else
-          print "No file path available"
-        end
-      end,
-      desc = "Set Tab Dir",
-    },
-
+    -- TODO: move into the plugin
     ["<leader>uZ"] = { "<cmd>Hardtime toggle<CR>", desc = "Toggle Hardtime Hints" },
 
+    -- Buffer Commands
     -- Save All Buffers
     ["<Leader>w"] = { ":wall<CR>", desc = "Save All Buffers (Normal Mode)" },
 
-    -- Disable arrow keys
-    -- ["<left>"] = { "<cmd>echo 'Use h to move left!!'<CR>", desc = "Remind to use h for movement" },
-    -- ["<right>"] = { "<cmd>echo 'Use l to move right!!'<CR>", desc = "Remind to use l for movement" },
-    -- ["<up>"] = { "<cmd>echo 'Use k to move up!!'<CR>", desc = "Remind to use k for movement" },
-    -- ["<down>"] = { "<cmd>echo 'Use j to move down!!'<CR>", desc = "Remind to use j for movement" },
-
+    ["<Leader>tcd"] = {
+      function() require("user_functions.generic_functions").set_tab_cdir_to_buffer_dir() end,
+      desc = "Set Tab Dir",
+    },
     -- navigate buffer tabs
     ["]b"] = { function() require("astrocore.buffer").nav(vim.v.count1) end, desc = "Next buffer" },
     ["[b"] = { function() require("astrocore.buffer").nav(-vim.v.count1) end, desc = "Previous buffer" },
@@ -248,7 +234,5 @@ return {
       end,
       desc = "Close buffer from tabline",
     },
-
-    ["<Leader>jd"] = { ":%d<CR>", desc = "Delete File Contents" },
   },
 }

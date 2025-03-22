@@ -27,4 +27,24 @@ function M.var_args(...)
   print("This function takes multiple arguments:", table.concat(args, ", "))
 end
 
+function M.set_tab_cdir_to_buffer_dir()
+  local file_path = vim.fn.expand "%:p:h"            -- Get the directory of the current file
+  if file_path ~= "" then
+    vim.cmd("tcd " .. vim.fn.fnameescape(file_path)) -- Set tab working directory
+    print("Tab working directory set to: " .. file_path)
+  else
+    print "No file path available"
+  end
+end
+
+-- TODO implment lorem
+function M.lorem_n()
+  -- Complex Operations
+  vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes(":r !lorem -s -c 15", true, false, true), "n", true)
+end
+
+function M.register_command_generice()
+  vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes('i<C-r>=system("")<Left><Left>', true, false, true), "n", true)
+end
+
 return M

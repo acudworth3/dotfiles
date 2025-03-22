@@ -52,11 +52,6 @@ vim.api.nvim_create_user_command(
   { nargs = 0, desc = "(:g) Delete Non Matching Lines" } -- No arguments required
 )
 
--- local comment = require "Comment"
--- Get the comment string for the current filetype
--- local comment_str = comment.get_comment_string()
--- print(comment_str)
-
 -- GprependTODO
 -- Goal: prepend a TODO to all results in the quick fix list
 function M.prepend_to_matches(todo_text)
