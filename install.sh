@@ -19,9 +19,11 @@ uv tool install --python 3.12 posting
 sudo apt install snapd
 sudo snap install yazi --classic
 
-# EXA
+# Cargo
+sudo snap install jqp
 sudo apt install cargo
 cargo install exa
+cargo install systemctl-tui --locked
+cargo install trippy --locked
 cargo install tokei
-sudo snap install jqp
 ## Bash Settings to apply

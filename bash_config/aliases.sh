@@ -42,6 +42,10 @@ alias ll='exa -l --icons -a --sort=type --color=always'
 alias llg='exa -l --icons -a --git --sort=type'
 alias lt='exa --tree --level=2 --long --icons -a --sort=type'
 
+## Cargo Commands
+alias trip='~/.cargo/bin/trip'
+alias st='~/.cargo/bin/systemctl-tui'
+
 # some more ls aliases
 # alias ll='ls -alF'
 # alias la='ls -A'
