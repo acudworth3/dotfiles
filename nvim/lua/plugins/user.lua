@@ -36,6 +36,13 @@ return {
       -- " highlight VM_Cursor ctermfg=black ctermbg=yellow guifg=#000000 guibg=#ffaf00
       -- " highlight VM_Mono ctermfg=red ctermbg=black guifg=#ff0000 guibg=#1c1c1c ]]
     end,
+    -- FIXME: this is overwriting in place
+    vim.keymap.set(
+      "n",
+      "\\p",
+      'i<CR><C-r>"<Esc>',
+      { noremap = true, silent = true, desc = "Paste vim-visual-multi Yank" }
+    ),
   },
   -- Logging
 

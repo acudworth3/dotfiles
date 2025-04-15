@@ -3,10 +3,11 @@ alias ..='cd ..'
 
 #Nvim Aliases
 
-alias nv-ast="NVIM_APPNAME=nvim-astro nvim"
+# alias nv-ast="NVIM_APPNAME=nvim-astro nvim"
 # alias nv="NVIM_APPNAME=nvim nvim"
+alias EDITOR="nvim"
 
-alias nvim="NVIM_APPNAME=nvim-astro nvim"
+# alias nvim="NVIM_APPNAME=nvim-astro nvim"
 
 # CLI Short Cuts
 alias sbb='source ~/.bashrc'

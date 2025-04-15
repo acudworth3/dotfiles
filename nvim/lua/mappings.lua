@@ -148,6 +148,7 @@ return {
     -- Substitute
     -- & references matched word
     -- <C-r><C-w> pulls word under cursor
+    -- TODO: Replace with user functions
     ["<Leader>sf"] = { ":%s/<C-r><C-w>//g<left><left>", desc = "Replace Word Under Cursor" },
     ["<Leader>sa"] = { ":%s/<C-r><C-w>/& /g<left><left>", desc = "Append to Word Under Cursor" },
     ["<Leader>sq"] = { ":cdo %s/<C-r><C-w>/& /g<left><left>", desc = "Amend Word Across qf_list" },
