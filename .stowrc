@@ -1,5 +1,6 @@
 --target=~/.config
 --ignore=.stowrc
+--ignore=atuin/config.toml
 --ignore=DS_Store
 --ignore=readme.md
 --ignore=windows_terminal.json
