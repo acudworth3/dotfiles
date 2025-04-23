@@ -1,13 +1,10 @@
-manual test 1
 # AstroNvim Template
 
-**NOTE:** This is for AstroNvim v5+
+**NOTE:** This is for AstroNvim v4+
 
 A template for getting started with [AstroNvim](https://github.com/AstroNvim/AstroNvim)
 
 ## 🛠️ Installation
-
-- [ ] Task -> 🗒️
 
 #### Make a backup of your current nvim and shared folder
 

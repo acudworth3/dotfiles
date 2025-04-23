@@ -16,8 +16,8 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 uv tool install --python 3.12 posting
 
 # yazi
-sudo apt install snapd
-sudo snap install yazi --classic
+apt install ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick
+cargo install --locked --git https://github.com/sxyazi/yazi.git yazi-fm yazi-cli
 
 # Cargo
 sudo snap install jqp

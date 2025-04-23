@@ -158,21 +158,23 @@ return {
 
     -- Telescope
     -- f menu (find + Telescope)
+    -- TODO replace with snacks?
     ["<Leader>fA"] = {
+
       function() require("telescope.builtin").find_files { cwd = vim.fs.joinpath(vim.fn.stdpath "data", "lazy") } end,
       desc = "Find All Config Files",
     },
-
+    --
     ["<Leader>F"] = { "<cmd>Telescope<CR>", desc = "Telescope All" },
-
+    --
     ["<Leader>f'"] = false,
     ["<Leader>fi"] = { "<cmd>Octo issue search<CR>", desc = "Octo issues search" },
+    ["<Leader>fp"] = { "<cmd>Octo pr search<CR>", desc = "Octo pr search" },
     ["<Leader>fj"] = { "<cmd>Telescope jumplist<CR>", desc = "Find Jumplist" },
     ["<Leader>fm"] = { "<cmd>Telescope marks<CR>", desc = "Find Marks" },
-    ["<Leader>fp"] = { "<cmd>Octo pr search<CR>", desc = "Octo pr search" },
     ["<Leader>fq"] = { "<cmd>Telescope quickfix<CR>", desc = "Find Quickfix" },
     ["<Leader>fs"] = { "<cmd>Telescope lsp_document_symbols<CR>", desc = "Find LSP Symbols" },
-    -- ["<Leader>fu"] = { "<cmd>Telescope grep_string<CR>", desc = "Find Word (current) Across Files" },
+    ["<Leader>fu"] = { "<cmd>Telescope grep_string<CR>", desc = "Find Word (current) Across Files" },
 
     --
     -- Spell Check
@@ -223,8 +225,8 @@ return {
       desc = "Set Tab Dir",
     },
     -- navigate buffer tabs
-    ["]b"] = { function() require("astrocore.buffer").nav(vim.v.count1) end, desc = "Next buffer" },
-    ["[b"] = { function() require("astrocore.buffer").nav(-vim.v.count1) end, desc = "Previous buffer" },
+    -- ["]b"] = { function() require("astrocore.buffer").nav(vim.v.count1) end, desc = "Next buffer" },
+    -- ["[b"] = { function() require("astrocore.buffer").nav(-vim.v.count1) end, desc = "Previous buffer" },
 
     -- create simple terminal
     ["<Leader>tb"] = { ":terminal<CR>i", desc = "Terminal as Buffer" },

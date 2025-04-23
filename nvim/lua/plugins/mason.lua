@@ -1,48 +1,38 @@
--- Customize Mason plugins
-
 ---@type LazySpec
 return {
-  -- use mason-lspconfig to configure LSP installations
+  -- use mason-tool-installer for automatically installing Mason packages
   {
-    "williamboman/mason-lspconfig.nvim",
-    -- overrides `require("mason-lspconfig").setup(...)`
+    "WhoIsSethDaniel/mason-tool-installer.nvim",
+    -- overrides `require("mason-tool-installer").setup(...)`
     opts = {
+      -- Make sure to use the names found in `:Mason`
       ensure_installed = {
-        "lua_ls",
-        "bashls",
-        "dockerls",
-        "eslint",
-        "jsonls",
-        "marksman",
-        "yamlls",
-        -- add more arguments for adding more language servers
-      },
-    },
-  },
-  -- use mason-null-ls to configure Formatters/Linter installation for null-ls sources
-  {
-    "jay-babu/mason-null-ls.nvim",
-    -- overrides `require("mason-null-ls").setup(...)`
-    opts = {
-      ensure_installed = {
+        -- install language servers
+
+        "bash-language-server",
+        "dockerfile-language-server",
+        "lua-language-server",
+        "yaml-language-server",
+
+        -- install formatters
         "stylua",
-        "shfmt",
+
+        -- install debuggers
+        "debugpy",
+
+        -- install any other package
+        "tree-sitter-cli",
+
+        "eslint-lsp",
+        "hadolint",
+        "json-lsp",
         "prettierd",
         "selene",
         "shellcheck",
-        "hadolint",
-        "markdownlint-cli2",
-        -- add more arguments for adding more null-ls sources
-      },
-    },
-  },
-  {
-    "jay-babu/mason-nvim-dap.nvim",
-    -- overrides `require("mason-nvim-dap").setup(...)`
-    opts = {
-      ensure_installed = {
-        -- "python",
-        -- add more arguments for adding more debuggers
+        "shfmt",
+        "stylua",
+        -- "markdownlint-cli2",
+        -- "marksman",
       },
     },
   },

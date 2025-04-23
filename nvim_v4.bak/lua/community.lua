@@ -17,10 +17,10 @@ return {
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.editing-support.copilotchat-nvim" },
-  -- { import = "astrocommunity.pack.cs-omnisharp" },
-  -- { import = "astrocommunity.pack.markdown" },
+  { import = "astrocommunity.pack.cs-omnisharp" },
   -- { import = "astrocommunity.pack.html-css" },
   -- Consider direct managment
+  -- { import = "astrocommunity.pack.markdown" },
   -- configure WSL for these languages first
   -- { import = "astrocommunity.pack.python" },
   -- { import = "astrocommunity.pack.cs" },
