@@ -25,6 +25,10 @@ return {
           ["<A-j>"] = { ":m '>+1<CR>gv=gv", desc = "Move Selection Down (ALT+j)" },
           ["<A-k>"] = { ":m '<-2<CR>gv=gv", desc = "Move Selection Up (ALT+k)" },
 
+          -- Duplicate Selection
+          ["<A-J>"] = { "y`>p", desc = "Duplicate Selection (ALT+SHIFT+j)" },
+          ["<A-K>"] = { "y`>p", desc = "Duplicate Selection (ALT+SHIFT+j)" },
+
           -- better indenting
           -- vim.keymap.set('v', '<', '<gv', opts)
           -- vim.keymap.set('v', '>', '>gv', opts)
@@ -98,6 +102,10 @@ return {
           ["<A-e>"] = { 'i<C-r>=system("")<Left><Left>', desc = "Expression Register(ALT+e)" },
           ["<C-e>"] = { 'i<C-r>=system("")<Left><Left>', desc = "Expression Register(CTRL+e)" },
 
+          -- Duplicate lines
+          ["<A-K>"] = { "yyp", desc = "Duplicate Selection (ALT+SHIFT+k)" },
+          ["<A-J>"] = { "yyp", desc = "Duplicate Selection (ALT+SHIFT+j)" },
+          --
           -- Move text up and down
           ["<A-j>"] = { ":m .+1<CR>==", desc = "Move line Up (ALT + j)" },
           ["<A-k>"] = { ":m .-2<CR>==", desc = "Move line Down (ALT + k)" },

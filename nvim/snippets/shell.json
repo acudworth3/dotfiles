@@ -1,0 +1,16 @@
+{
+  "sebhang": {
+    "prefix": "sh",
+    "description": "Add Shebang #!/bin/bash",
+    "body": [
+      "#!/bin/bash"
+    ]
+  },
+  "test": {
+    "prefix": "tst",
+    "description": "testing --tst",
+    "body": [
+      "This is a test snippet for sh files"
+    ]
+  }
+}
