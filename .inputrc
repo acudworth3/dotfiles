@@ -1,0 +1,21 @@
+## sets the readline config
+# https://github.com/starship/starship/issues/4537
+#
+# add to ~ and make a symlink
+# TODO see ifyou can source this in the bash flies
+set editing-mode vi
+
+set show-mode-in-prompt
+
+# 37 is set foreground color to color 7
+# 47 is set background color to color 7
+# 40 is set background color to color 0
+# set vim insert mode string
+set vi-ins-mode-string i
+
+# 92 is set foreground color to color 10
+# 102 is set background color to color 10
+# 40 is set background color to color 0
+# set vim command (normal) model string
+set vi-cmd-mode-string n
+

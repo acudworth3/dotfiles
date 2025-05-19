@@ -10,6 +10,9 @@ return {
   -- colorscheme
   { import = "astrocommunity.colorscheme.tokyonight-nvim" },
   { import = "astrocommunity.colorscheme.tokyodark-nvim" },
+  { import = "astrocommunity.colorscheme.eldritch-nvim" },
+  { import = "astrocommunity.colorscheme.github-nvim-theme" },
+  { import = "astrocommunity.colorscheme.oxocarbon-nvim" },
   -- Language Packs
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.bash" },

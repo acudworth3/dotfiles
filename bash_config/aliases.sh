@@ -2,10 +2,9 @@
 alias ..='cd ..'
 
 #Nvim Aliases
-
 # alias nv-ast="NVIM_APPNAME=nvim-astro nvim"
 # alias nv="NVIM_APPNAME=nvim nvim"
-alias EDITOR="nvim"
+# alias EDITOR="nvim"
 
 # alias nvim="NVIM_APPNAME=nvim-astro nvim"
 
@@ -51,3 +50,4 @@ alias st='~/.cargo/bin/systemctl-tui'
 # alias ll='ls -alF'
 # alias la='ls -A'
 # alias l='ls -CF'
+#
