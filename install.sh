@@ -2,9 +2,11 @@
 sudo apt install bat btop cargo cmatrix fd-find stow tree gh pv
 
 npm install -g tldr lorem-ipsum-cli
+
 # something broke here
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install
+# TODO: pass the -y flag
+# git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+# ~/.fzf/install
 
 # Starship
 curl -sS https://starship.rs/install.sh | sh
