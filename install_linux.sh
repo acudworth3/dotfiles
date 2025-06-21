@@ -3,6 +3,8 @@ sudo apt install bat btop cargo cmatrix fd-find stow tree gh pv
 
 npm install -g tldr lorem-ipsum-cli
 
+## TODO: add atuin, lazygit, neovim
+
 # something broke here
 # TODO: pass the -y flag
 # git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
