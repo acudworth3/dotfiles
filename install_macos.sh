@@ -16,6 +16,7 @@ nvm install node
 ## Programs to install - TUIs
 
 brew install neovim lazygit
+brew install --cask wezterm
 brew install noahgorstein/tap/jqp
 
 ### yazi
