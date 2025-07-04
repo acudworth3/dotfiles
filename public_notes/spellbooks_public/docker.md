@@ -58,7 +58,6 @@
 - `docker build --output=bin --target=binaries .`
 
   - export things to your local machine
-  - C:\Users\Y891986\Documents\GitHub\docker-lab\buildme\chapters\6.Dockerfile
 
 - `docker image prune -a --filter "until=24h"`
 
