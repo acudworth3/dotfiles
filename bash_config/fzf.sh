@@ -40,8 +40,10 @@ fz_cd() {
 #   nvim "$(find . -type f -not -path '*/.*' | fzf --multi)"
 # }
 
-# FZF_CTRL_R_COMMAND=eval "$(fzf --bash)" NOTE: If you reset shell atuin will be disabled
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+# NOTE: If you reset shell atuin will be disabled
+# NOTE: this inteferese with zsh comppatability. I"m not sure if I canre though
+#
+# FZF_CTRL_R_COMMAND=eval "$(fzf --bash)"
 
 code_search() (
   RELOAD='reload:rg --column --color=always --smart-case {q} || :'

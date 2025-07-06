@@ -10,9 +10,12 @@
 
 - [ ] Task -> 🗒️ switch wsl to `zsh` eventually
 
+
+
 ## Terminal Emulator
 
 > Need something I can use across MAC + WSL
+> Ideally it supports kitty graphics protocal as well
 
 ### Wezterm
 

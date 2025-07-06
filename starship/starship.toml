@@ -20,23 +20,17 @@ add_newline = true
 palette = "nord"
 command_timeout=1000
 
-# ~/.config/starship.toml
 
-# [character]
-# format = "[](fg:black bg:white)[](fg:white) "
 
 [character]
+format = "$symbol "
 error_symbol = "[ x ❯](bold red)"
-success_symbol = "[ ❯](bold green)"  
-# See https://github.com/starship/starship/issues/4537
-# Vim mode configured in ~/.inputrc
+success_symbol = "[i ❯](bold yellow)"  
+vicmd_symbol = "[n ❯](bold blue)"
 
-# FIXME add indicator for insert vs normal mode
-# [character]
-# format = "$symbol "
-# success_symbol = "[i](bold green)"
-# error_symbol = "[i](bold red)"
-# vicmd_symbol = "[n](bold blue)"
+# See https://github.com/starship/starship/issues/4537
+# Vim mode configured in ~/.inputrc for bash
+
 
 [directory]
 style = 'bold fg:dark_blue'

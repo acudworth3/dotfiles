@@ -9,13 +9,18 @@ alias ..='cd ..'
 # alias nvim="NVIM_APPNAME=nvim-astro nvim"
 
 # CLI Short Cuts
-alias sbb='source ~/.bashrc'
+# alias sbb='source ~/.bashrc'
+alias sbb='source ~/.zshrc'
+
 alias ff='find . -type f -name'
-alias cat="bat"
+alias cat="batcat"
 alias hh='cd ~'
 alias vv='nv-ast ~/.bashrc'
+alias cowflood='ls /usr/share/cowsay/cows | xargs -I {} cowsay -f {} its a cow flood'
+alias randcow='cowsay -f $(ls /usr/share/cowsay/cows | shuf -n1)'
 
 # misc
+# alias zython='python3'
 alias python='python3'
 alias lzg='lazygit'
 alias lzpr='gh dash'
