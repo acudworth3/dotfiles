@@ -4,6 +4,15 @@
 > for `rush` or `npm` jobs still need to send the output somewhere
 > `nohub` ignores hangup signals so it keeps running even if the terminal closes
 
+## fg an dbg
+
+- `CTRL+z` puts current program into background (shows as suspended )
+- [ ] also command followed by `&` accomplishes the same
+- `fg` brings it to the background
+
+- list jobs `jobs`
+- `fg` jobs id with `%` must be `fg %2` not `fg 2`
+
 ## Output Management
 
 - to a log

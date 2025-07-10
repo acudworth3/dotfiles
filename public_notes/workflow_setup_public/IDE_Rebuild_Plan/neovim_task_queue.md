@@ -7,10 +7,11 @@
 ## Misc
 
 - [ ] Task -> 🗒️ do json editing fundamentals
+- [ ] Task -> 🗒️ do some fundamentals combining `ctrl+z`, zoxide nav, `rg` search
 
 - [ ] Task -> 🗒️ ftplugin approach in nvim POC
 - [x] Task -> 🗒️ map EDITOR be neovim
-- [ ] Task -> 🗒️ map the system pager to be neovim
+- [x] Task -> 🗒️ map the system pager to be neovim
 - [ ] Task -> 🗒️ set editor in git config
 - [ ] Task -> 🗒️ figure out how to copy from command history
 - [ ] Task -> 🗒️ yazi previews images but nvim yazi does not

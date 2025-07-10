@@ -6,10 +6,12 @@
 
 ## small
 
+- [ ] Habit -> 🏃 favor `CTRL+z` and `fg` over new tabs
 - [ ] Habit -> 🏃 use `ga` + letter for case conversion
 - [ ] Habit -> 🏃 `!!` instead of `:r !COMMAND` PAUSED BECUASE OF BLINK use `ALT+e` instead
 - [ ] Habit -> 🏃 use `r` instead of `insert` + `ESC` Sequences
 - [ ] Habit -> 🏃 use `CTLR+h` instead of `backspace` insert mode --> (Also works in standard bash shell)
+- [ ] Habit -> 🏃 use `o` to move to front and back of visual selection
 
 - [ ] Habit -> 🏃 develop default folding actions
   - [ ] Task -> 🗒️ Sane Defaults by file type
@@ -27,11 +29,11 @@
 - [ ] Task -> 🗒️ use `mm` regularly (inside a file) and `learder + M + mark` to return
 
 - [ ] Habit -> 🏃 multi-cursor based find and replace
-- [ ] Habit -> 🏃 use vi keys on CLI
-  - [ ] Task -> 🗒️ add `set -o vi` in shell setup
-  - [ ] Task -> 🗒️ set editor to vim
-  - [ ] Task -> 🗒️ set pager to vim
-  - [ ] Task -> 🗒️ setup starship to display vim mode
+- [x] Habit -> 🏃 use vi keys on CLI
+  - [x] Task -> 🗒️ add `set -o vi` in shell setup
+  - [x] Task -> 🗒️ set editor to vim
+  - [x] Task -> 🗒️ set pager to vim
+  - [x] Task -> 🗒️ setup starship to display vim mode
 
 ## Hard
 

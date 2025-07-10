@@ -1,3 +1,0 @@
-# Regex Basics
-
-w
