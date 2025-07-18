@@ -21,4 +21,7 @@ bindkey -v
 eval "$(atuin init zsh --disable-up-arrow)"
 
 # must run auto complete commands first
+# To reset autocomplete + enable fzf
+# https://github.com/ajeetdsouza/zoxide
+# rm ~/.zcompdump*; compinit
 eval "$(zoxide init zsh)"
