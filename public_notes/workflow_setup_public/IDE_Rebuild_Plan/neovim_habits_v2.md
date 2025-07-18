@@ -2,7 +2,11 @@
 
 > not strictly tasks to complete
 
-## Parse
+- [ ] Task -> 🗒️ consider renaming this to include all cli activity
+
+## CLI
+
+- [ ] Task -> 🗒️ replace use of grep with rg
 
 ## small
 

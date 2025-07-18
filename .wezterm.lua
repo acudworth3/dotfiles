@@ -1,3 +1,5 @@
+-- IMPORTANT: ~wsl~ and macOS configs are different. WSL lives in C:\Users\acudw\.wezterm
+-- THIS IS THE LINUX .WEZTERM
 -- test undercurl  printf "\x1b[58:2::255:0:0m\x1b[4:1msingle\x1b[4:2mdouble\x1b[4:3mcurly\x1b[4:4mdotted\x1b[4:5mdashed\x1b[0m\n"
 -- Pull in the wezterm API
 local wezterm = require("wezterm")
@@ -51,9 +53,10 @@ config.default_cwd = "~/repos/"
 -- 	},
 -- }
 --
--- -- Launcher
+-- -- Launcher tempfile=$(mktemp) && curl -o $tempfile https://raw.githubusercontent.com/wezterm/wezterm/main/termwiz/data/wezterm.terminfo && tic -x -o ~/.terminfo $tempfile && rm $tempfile
+
 -- config.default_domain = "WSL:Ubuntu"
-config.default_prog = { "bash" }
+config.default_prog = { "zsh" }
 config.window_close_confirmation = "NeverPrompt"
 -- and finally, return the configuration to wezterm
 return config

@@ -9,6 +9,8 @@
 - `ls ** <TAB>`
 - `--multi` allows selection
 
+> `COMMAND $(fzf --multi)` example `code $(fzf --multi)`
+
 ## Fun with picker
 
 > enable multi select via flags
