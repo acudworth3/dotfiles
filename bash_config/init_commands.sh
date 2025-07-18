@@ -19,3 +19,6 @@ bindkey -v
 # Atuin
 . "$HOME/.atuin/bin/env"
 eval "$(atuin init zsh --disable-up-arrow)"
+
+# must run auto complete commands first
+eval "$(zoxide init zsh)"

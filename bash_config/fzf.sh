@@ -3,7 +3,7 @@ fz_file_preview() {
   fzf --preview "batcat --style=numbers --color=always {}"
 }
 
-alias f='fz_minimal_ui'
+alias ffu='fz_minimal_ui'
 
 fz_minimal_ui() {
   fzf --preview "batcat --style=numbers --color=always {}" \
