@@ -10,7 +10,7 @@
 
 ## small
 
-- [ ] Habit -> 🏃 favor `CTRL+z` and `fg` over new tabs
+- [x] Habit -> 🏃 favor `CTRL+z` and `fg` over new tabs
 - [ ] Habit -> 🏃 use `ga` + letter for case conversion
 - [ ] Habit -> 🏃 `!!` instead of `:r !COMMAND` PAUSED BECUASE OF BLINK use `ALT+e` instead
 - [ ] Habit -> 🏃 use `r` instead of `insert` + `ESC` Sequences

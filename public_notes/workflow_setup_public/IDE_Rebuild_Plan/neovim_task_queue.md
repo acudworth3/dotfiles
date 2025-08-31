@@ -15,6 +15,7 @@
 - [ ] Task -> 🗒️ set editor in git config
 - [ ] Task -> 🗒️ figure out how to copy from command history
 - [ ] Task -> 🗒️ yazi previews images but nvim yazi does not
+- [ ] Task -> 🗒️ Consider bringing make command into work flow
 
 - [ ] Task -> 🗒️ How to install a specific version of nvim (hard)
 
@@ -65,7 +66,7 @@
 
 - [ ] Read -> 📖 https://github.com/stevearc/quicker.nvim
 - [ ] Read -> 📖 https://github.com/mistweaverco/kulala.nvim?tab=readme-ov-file
-- [ ] ~https://github.com/maskudo/devdocs.nvim~
+- [ ] Read -> 📖 https://github.com/Piotr1215/beam.nvim --> consider if `ctrl+o` achieves mostly the same thing
 
 ### Telescope
 
