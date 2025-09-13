@@ -12,6 +12,22 @@ General Pattern to apply a command linewise via normal
 
 ## Normal Command -- Examples
 
+### Append Text to all lines
+
+> [!IMPORTANT]
+> This is a quick way to add bullet points to a selection
+
+> visually selection `vip`
+> type `:` then do `:<,> norm A TEXT` Add TEXT to end of line
+> type `:` or `:<,> norm I TEXT` Add TEXT to start of line
+> type `:` or `:<,> norm 5x` Delete up to a specfic character count
+
+This is sample text to work with
+Aliquam nec justo varius,
+sollicitudin nisi nec, eleifend lorem.
+In hac habitasse platea dictumst.
+Nulla sit amet scelerisque felis.
+
 ### Keep Cursor Position - nvim-ref
 
 > After executing a command return the cursor to where it originally was
