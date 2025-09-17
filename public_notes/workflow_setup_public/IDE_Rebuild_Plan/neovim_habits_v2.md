@@ -10,12 +10,13 @@
 
 ## small
 
-- [x] Habit -> 🏃 favor `CTRL+z` and `fg` over new tabs
-- [ ] Habit -> 🏃 use `ga` + letter for case conversion
-- [ ] Habit -> 🏃 `!!` instead of `:r !COMMAND` PAUSED BECUASE OF BLINK use `ALT+e` instead
-- [ ] Habit -> 🏃 use `r` instead of `insert` + `ESC` Sequences
 - [ ] Habit -> 🏃 use `CTLR+h` instead of `backspace` insert mode --> (Also works in standard bash shell)
-- [ ] Habit -> 🏃 use `o` to move to front and back of visual selection
+- [ ] Habit -> 🏃 use `ga` + letter for case conversion
+- [ ] Habit -> 🏃 use `o` to move to front and back of visual selection. Use this when you've typed `vip` but didn't end up exactly selecting what you need.
+
+- [x] Habit -> 🏃 `!!` instead of `:r !COMMAND` PAUSED BECAUSE OF BLINK use `ALT+e` instead
+- [x] Habit -> 🏃 favor `CTRL+z` and `fg` over new tabs
+- [x] Habit -> 🏃 use `r` instead of `insert` + `ESC` Sequences
 
 - [ ] Habit -> 🏃 develop default folding actions
   - [ ] Task -> 🗒️ Sane Defaults by file type
@@ -24,8 +25,11 @@
 
 ## medium
 
-- [ ] Task -> 🗒️ figure out how to paste above and below a line
+- [ ] Habit -> 🏃 in command mode `:` hit `ctrl+f` to write commands in a buffer. `<Enter>` to run them. Combine with `!!` for fast shell commands
+
+- [ ] Task -> 🗒️ figure out how to paste above and below a line - depends on `\n` character in copied value
 - [ ] Habit -> 🏃 adopt change then repeat via `.` Pattern
+- [ ] Habit -> 🏃 Use `//<ENTER>` to resume last search. Combine with `*` first.
 
 - [ ] Habit -> 🏃 Tree based navigating in editor `leader + f + s` works pretty well
 - [ ] Task -> 🗒️ cyclical review of fundamentals
@@ -57,7 +61,7 @@
 
 - [ ] learn -> ❔ ctrl keys for insert mode
 - [ ] learn -> ❔ register use cases - MACROs and scripting
-  - [ ] Task -> 🗒️ use `norm@ALPHA` on a visual selection to run a single line macro on each
+  - [ ] Task -> 🗒️ ~use `norm@ALPHA` on a visual selection to run a single line macro on each~
 - [ ] learn -> ❔ edit via find using :g/<pattern>/ norm gets most complicated editing tasks done
 
 - [ ] learn -> ❔ review discoverability by types (telescope + ctrl+d etc)
