@@ -6,16 +6,17 @@
 
 ## Misc
 
+- [ ] Task -> 🗒️ remap `CTRL+N` to support mutli cursor on MAC
 - [ ] Task -> 🗒️ do json editing fundamentals
 - [ ] Task -> 🗒️ do some fundamentals combining `ctrl+z`, zoxide nav, `rg` search
 
+- [ ] Task -> 🗒️ Consider bringing make command into work flow
 - [ ] Task -> 🗒️ ftplugin approach in nvim POC
+- [ ] Task -> 🗒️ set editor in git config
+- [ ] Task -> 🗒️ yazi previews images but nvim yazi does not
+- [x] Task -> 🗒️ figure out how to copy from command history (`:ctrl+f`)
 - [x] Task -> 🗒️ map EDITOR be neovim
 - [x] Task -> 🗒️ map the system pager to be neovim
-- [ ] Task -> 🗒️ set editor in git config
-- [ ] Task -> 🗒️ figure out how to copy from command history
-- [ ] Task -> 🗒️ yazi previews images but nvim yazi does not
-- [ ] Task -> 🗒️ Consider bringing make command into work flow
 
 - [ ] Task -> 🗒️ How to install a specific version of nvim (hard)
 
@@ -50,11 +51,22 @@
 - [ ] Task -> 🗒️ ~Text-case behavior on quickfix~
 - [ ] Task -> 🗒️ Create a menu for computer diagnostics --> btop, netscanner, gdu, others
 
+## Scratch Pad
+
+var foo = 1
+var bar = 'a'
+var foobar = foo + bar
+
 ## Habit Building
 
 > add to [habtis doc](./neovim_habits_v2.md)
 
 ## Plugins
+
+### Reduction Plan
+
+- [ ] Task -> 🗒️ list all installed plugins
+- [ ] Task -> 🗒️ remove unused
 
 ### Plugin Removal/Rewrite Candidates
 

@@ -1,3 +1,4 @@
+-- FIXME: Review if this works
 return {
   "iamcco/markdown-preview.nvim",
   -- run these to use

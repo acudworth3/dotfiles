@@ -148,6 +148,7 @@ cat /etc/passwd | cut -d ":" -f 1,6
 > `ls *.txt | xargs wc -l` count words in a file
 > `cat file6.txt | xargs -n 1 mkdir` create dirs from list
 > `cat file6.txt | xargs -n 1 rmdir` remove dirs from list
+> `ls -1 | xargs nvim` opens the rsults of `ls`
 
 #### Samples - Shell Execution
 

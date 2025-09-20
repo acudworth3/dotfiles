@@ -10,7 +10,8 @@ fz_minimal_ui() {
     --bind "ctrl-v:change-preview-window(hidden|)" \
     --bind "ctrl-/:change-preview-window(right,70%|down,50%,border-horizontal|hidden|right)" \
     --header="ctr-v:preview | ctr-/:cycle view" \
-    --header-first
+    --header-first \
+    --multi
 
   # --header-lines=5
 
@@ -41,9 +42,27 @@ fz_cd() {
 # }
 
 # NOTE: If you reset shell atuin will be disabled
-# NOTE: this inteferese with zsh comppatability. I"m not sure if I canre though
+# NOTE: this inteferese with zsh comppatability. I"m not sure if I care though
 #
 # FZF_CTRL_R_COMMAND=eval "$(fzf --bash)"
+# FIXME: This is a work in progress
+# content_search() (
+#   RELOAD='reload:rg -l --column --color=always --smart-case {q} || :'
+#   # rg -l TEST
+#   OPENER='if [[ $FZF_SELECT_COUNT -eq 0 ]]; then
+#             nvim {1} +{2}     # No selection. Open the current line in nvim.
+#           else
+#             nvim {+f}  # Build quickfix list for the selected items.
+#           fi'
+#   fzf --disabled --ansi --multi \
+#     --bind "start:$RELOAD" --bind "change:$RELOAD" \
+#     --bind "enter:become:$OPENER" \
+#     --bind "ctrl-o:execute:$OPENER" \
+#     --bind 'alt-a:select-all,alt-d:deselect-all,ctrl-/:toggle-preview' \
+#     --delimiter : \
+#     --preview "batcat --style=numbers --color=always {}" \
+#     --query "$*"
+# )
 
 code_search() (
   RELOAD='reload:rg --column --color=always --smart-case {q} || :'
@@ -58,7 +77,7 @@ code_search() (
     --bind "ctrl-o:execute:$OPENER" \
     --bind 'alt-a:select-all,alt-d:deselect-all,ctrl-/:toggle-preview' \
     --delimiter : \
-    --preview 'bat --style=full --color=always --highlight-line {2} {1}' \
+    --preview 'batcat --style=full --color=always --highlight-line {2} {1}' \
     --preview-window '~4,+{2}+4/3,<80(up)' \
     --query "$*"
 )

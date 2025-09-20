@@ -10,9 +10,9 @@
 
 ## small
 
+- [ ] Habit -> 🏃 use `o` to move to front and back of visual selection. Use this when you've typed `vip` but didn't end up exactly selecting what you need.
 - [ ] Habit -> 🏃 use `CTLR+h` instead of `backspace` insert mode --> (Also works in standard bash shell)
 - [ ] Habit -> 🏃 use `ga` + letter for case conversion
-- [ ] Habit -> 🏃 use `o` to move to front and back of visual selection. Use this when you've typed `vip` but didn't end up exactly selecting what you need.
 
 - [x] Habit -> 🏃 `!!` instead of `:r !COMMAND` PAUSED BECAUSE OF BLINK use `ALT+e` instead
 - [x] Habit -> 🏃 favor `CTRL+z` and `fg` over new tabs
@@ -32,7 +32,7 @@
 - [ ] Habit -> 🏃 Use `//<ENTER>` to resume last search. Combine with `*` first.
 
 - [ ] Habit -> 🏃 Tree based navigating in editor `leader + f + s` works pretty well
-- [ ] Task -> 🗒️ cyclical review of fundamentals
+- [ ] Task -> 🗒️ cyclical review of fundamentals (reread Practical VIM By Drew Niel)
 - [ ] Habit -> 🏃 Begin using grep-able tags example `nvim-ref` and build a system around this
 - [ ] Task -> 🗒️ use `mm` regularly (inside a file) and `learder + M + mark` to return
 
@@ -44,6 +44,12 @@
   - [x] Task -> 🗒️ setup starship to display vim mode
 
 ## Hard
+
+### Norm Command
+
+> Build habits and knowlege around the `vip:norm TEXT` pattern
+
+- [ ] Learn -> ❔ learn to use `<esc>` and other non alpha characters when doing a norm command
 
 ## Lua Development
 
