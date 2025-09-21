@@ -14,15 +14,6 @@
 - [ ] Habit -> 🏃 use `CTLR+h` instead of `backspace` insert mode --> (Also works in standard bash shell)
 - [ ] Habit -> 🏃 use `ga` + letter for case conversion
 
-- [x] Habit -> 🏃 `!!` instead of `:r !COMMAND` PAUSED BECAUSE OF BLINK use `ALT+e` instead
-- [x] Habit -> 🏃 favor `CTRL+z` and `fg` over new tabs
-- [x] Habit -> 🏃 use `r` instead of `insert` + `ESC` Sequences
-
-- [ ] Habit -> 🏃 develop default folding actions
-  - [ ] Task -> 🗒️ Sane Defaults by file type
-  - [ ] Task -> 🗒️ visual selection + `zf`
-  - [ ] Task -> 🗒️ `za` as needed
-
 ## medium
 
 - [ ] Habit -> 🏃 in command mode `:` hit `ctrl+f` to write commands in a buffer. `<Enter>` to run them. Combine with `!!` for fast shell commands
@@ -37,17 +28,21 @@
 - [ ] Task -> 🗒️ use `mm` regularly (inside a file) and `learder + M + mark` to return
 
 - [ ] Habit -> 🏃 multi-cursor based find and replace
-- [x] Habit -> 🏃 use vi keys on CLI
-  - [x] Task -> 🗒️ add `set -o vi` in shell setup
-  - [x] Task -> 🗒️ set editor to vim
-  - [x] Task -> 🗒️ set pager to vim
-  - [x] Task -> 🗒️ setup starship to display vim mode
 
 ## Hard
 
+### Advanced Navigation
+
+- [ ] Habit -> 🏃 `gv` last visual selection
+- [ ] Learn -> ❔ learn to navigate the change list `g;` and `g,`
+
+### Registers + Macros
+
+- [ ] Task -> 🗒️ do a fundamentals practice of recorind a macro then editing it
+
 ### Norm Command
 
-> Build habits and knowlege around the `vip:norm TEXT` pattern
+> Build habits and knowledge around the `vip:norm TEXT` pattern
 
 - [ ] Learn -> ❔ learn to use `<esc>` and other non alpha characters when doing a norm command
 
@@ -77,6 +72,14 @@
 
 ## Completed
 
+- [x] Habit -> 🏃 `!!` instead of `:r !COMMAND` PAUSED BECAUSE OF BLINK use `ALT+e` instead
+- [x] Habit -> 🏃 favor `CTRL+z` and `fg` over new tabs
+- [x] Habit -> 🏃 use `r` instead of `insert` + `ESC` Sequences
+- [x] Habit -> 🏃 use vi keys on CLI
+  - [x] Task -> 🗒️ add `set -o vi` in shell setup
+  - [x] Task -> 🗒️ set editor to vim
+  - [x] Task -> 🗒️ set pager to vim
+  - [x] Task -> 🗒️ setup starship to display vim mode
 - [x] Habit -> 🏃 ~access previous commands with `:Telescope command_history` - how to copy this~
 - [x] ~Fuzzy Refine in telescope `CTRL+SPACE`~ doesn't work in lazy
 - [x] Habit -> 🏃 `CTRL+W` to delete word in EX or INSERT mode (Also works in standard bash shell)

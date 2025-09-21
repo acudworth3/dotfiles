@@ -4,11 +4,20 @@
 > neovim only; no LSP setup
 > Generally avoid "learn this" types of tasks
 
+## Reread Practical Vim
+
+- [ ] Parse -> 📚 parse screenshot notes
+- [ ] Task -> 🗒️ reread book
+- [ ] Task -> 🗒️ reread Notes
+
+- [ ] Task -> 🗒️ ideate patterns for `:g/pattern/normal @a` This removes the necessity for macros to be applied to sequential lines
+
 ## Misc
 
 - [ ] Task -> 🗒️ remap `CTRL+N` to support mutli cursor on MAC
 - [ ] Task -> 🗒️ do json editing fundamentals
 - [ ] Task -> 🗒️ do some fundamentals combining `ctrl+z`, zoxide nav, `rg` search
+- [x] Task -> 🗒️ Make `LEADER jj` repeatable
 
 - [ ] Task -> 🗒️ Consider bringing make command into work flow
 - [ ] Task -> 🗒️ ftplugin approach in nvim POC
@@ -77,6 +86,7 @@ var foobar = foo + bar
 > Potential Plugins
 
 - [ ] Read -> 📖 https://github.com/stevearc/quicker.nvim
+- [ ] Read -> 📖 https://github.com/kana/vim-textobj-entire
 - [ ] Read -> 📖 https://github.com/mistweaverco/kulala.nvim?tab=readme-ov-file
 - [ ] Read -> 📖 https://github.com/Piotr1215/beam.nvim --> consider if `ctrl+o` achieves mostly the same thing
 
@@ -97,8 +107,7 @@ https://github.com/johmsalas/text-case.nvim?tab=readme-ov-file
 ### VIM visual Multi
 
 > Hey awesome video. Love the channel. Do you know if there is a way to apply EX commands to each cursor? for example I want to run :r !uuidgen and put a uuid at each cursor
-
-- see nvim_ref_plugin_MultiCursor.md
+> Answer "record a macro to run `:r !uuidgen` then run `:g/pattern/normal @i` " utilize search not mutli
 
 ### nvim-cmp
 
