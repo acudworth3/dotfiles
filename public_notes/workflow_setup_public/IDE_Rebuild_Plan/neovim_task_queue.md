@@ -6,26 +6,26 @@
 
 ## Reread Practical Vim
 
-- [ ] Parse -> 📚 parse screenshot notes
-- [ ] Task -> 🗒️ reread book
-- [ ] Task -> 🗒️ reread Notes
+- [x] Task -> 🗒️ reread book
 
+- [ ] Parse -> 📚 parse screenshot notes
+- [ ] Task -> 🗒️ reread Notes
 - [ ] Task -> 🗒️ ideate patterns for `:g/pattern/normal @a` This removes the necessity for macros to be applied to sequential lines
 
 ## Misc
 
-- [ ] Task -> 🗒️ remap `CTRL+N` to support mutli cursor on MAC
+- [ ] Task -> 🗒️ Consider bringing make command into work flow
 - [ ] Task -> 🗒️ do json editing fundamentals
 - [ ] Task -> 🗒️ do some fundamentals combining `ctrl+z`, zoxide nav, `rg` search
-- [x] Task -> 🗒️ Make `LEADER jj` repeatable
-
-- [ ] Task -> 🗒️ Consider bringing make command into work flow
 - [ ] Task -> 🗒️ ftplugin approach in nvim POC
 - [ ] Task -> 🗒️ set editor in git config
 - [ ] Task -> 🗒️ yazi previews images but nvim yazi does not
+
+- [x] Task -> 🗒️ Make `LEADER jj` repeatable
 - [x] Task -> 🗒️ figure out how to copy from command history (`:ctrl+f`)
 - [x] Task -> 🗒️ map EDITOR be neovim
 - [x] Task -> 🗒️ map the system pager to be neovim
+- [x] Task -> 🗒️ remap `CTRL+N` to support mutli cursor on MAC
 
 - [ ] Task -> 🗒️ How to install a specific version of nvim (hard)
 

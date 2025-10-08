@@ -33,6 +33,10 @@ sort a b | uniq -d > c   # c is a intersect b
 sort a b b | uniq -u > c   # c is set difference a - b
 ```
 
+### lsof
+
+`lsof -i :PORTNUMBER |  xargs kill` is a better way to kill dev servers
+
 ### pgrep
 
 `pgrep` or `ps -aux | grep "value"`
@@ -139,7 +143,7 @@ cat /etc/passwd | cut -d ":" -f 1,6
 
 ## xargs
 
-- [ ] Task -> 🗒️ test this `pgrep nvim | xargs kill`
+- [x] Task -> 🗒️ test this `pgrep nvim | xargs kill`
 
 ### Samples
 
@@ -148,7 +152,8 @@ cat /etc/passwd | cut -d ":" -f 1,6
 > `ls *.txt | xargs wc -l` count words in a file
 > `cat file6.txt | xargs -n 1 mkdir` create dirs from list
 > `cat file6.txt | xargs -n 1 rmdir` remove dirs from list
-> `ls -1 | xargs nvim` opens the rsults of `ls`
+> `ls -1 | xargs nvim` opens the results of `ls`
+> `ls -1 | xargs vim` opens the results of `ls`
 
 #### Samples - Shell Execution
 

@@ -1,5 +1,7 @@
 # Search
 
+> if you want to seach a regular expression us `/v` if you want to use verbatim use `/V` else escape Characters
+
 ## Search - Meta characters - nvim-ref regex
 
 - good reference https://dahu.github.io/vim_waz_ere/1_editor_fundamentals.html#_table_of_search_pattern_metacharacters

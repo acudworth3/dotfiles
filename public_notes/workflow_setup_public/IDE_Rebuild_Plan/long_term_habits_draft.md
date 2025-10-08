@@ -5,7 +5,7 @@
 - [x] learn -> ❔ implement vim motions in vscode
 - [x] learn -> ❔ implement vim motions in visual studio
 
-- [ ] task -> 🗒️ synchronize `ctlr i/o` or `alt+<left>/<right>` across ides
+- [x] task -> 🗒️ ~synchronize `ctlr i/o` or `alt+<left>/<right>` across ides~
 
 ## Activity
 
@@ -29,9 +29,13 @@
 
 ### Activity Markdown: Neovim (default) VsCode if tables+preview needed
 
-### Activity Webdev: Neovim (default) VsCode: rarely
+### Activity Manual Code Editing: Neovim (default) VsCode: rarely
 
-### Activity API Testing: Posting; .http files
+### Activity AI Code Editing: VsCode
+
+- [ ] Task -> 🗒️ explore copilot cli
+
+### Activity API Testing: Postman
 
 ## Activity - UNDER REVIEW
 
@@ -67,18 +71,13 @@
 
 - Database Activity: dbeaver (Defautl) Azure Data Studio (Backup)
   - [ ] Task -> 🗒️ review other db clients
+  - [ ] Task -> 🗒️ look for vim keybindings
 
-### API Testing: Posting
-
-1. Posting
-
-- [ ] Read -> 📖 https://posting.sh/guide/
-
-2. .http files + IDE
-
-- [ ] Task -> 🗒️ look for tools to convert openApi to .http
+### API Testing: Postman
 
 ## Visual Studio
+
+> Avoid this
 
 - [ ] Task -> 🗒️ find an easy motion plugin (Easy Peasy)
 - [x] Task -> 🗒️ Implement on work computer

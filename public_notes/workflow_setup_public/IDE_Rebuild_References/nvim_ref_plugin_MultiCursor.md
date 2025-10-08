@@ -29,7 +29,6 @@
 - Improved: - VISUAL : make visual selection, then `\\c`: from visual mode you created a column of cursors.
 
 - Select and unselect combine `n` `N` `q` and `Q` to make precise sets of cursors after entering VM
-
   - depends on pattern shown in status bar
 
 - Advanced trick is to create cursors via regex `\\/` example: searchtext[1-9]
@@ -209,9 +208,7 @@ SAMPLE
 ```
 
 - Switching modes `TAB`
-
   - ex mode - (default here for a natural feeling) more like multi cursor
-
     - [ ] Task -> 🗒️ attempt to apply global type commands for this test
 
   - cursor mode - effectively visual mode test

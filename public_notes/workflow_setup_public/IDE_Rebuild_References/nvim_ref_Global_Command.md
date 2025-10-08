@@ -32,7 +32,7 @@ The `[cmd]` could be any EX command except for another `:global` command.
 
 ---
 
-> invert the global command
+> INVERT the global command
 
 This time we'll switch things around. The `:vglobal` command, or `:v` for short,
 does the opposite of the `:g` command. That is, it executes a command on each

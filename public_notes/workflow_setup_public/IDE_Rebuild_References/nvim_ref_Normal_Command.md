@@ -22,6 +22,8 @@ General Pattern to apply a command linewise via normal
 > type `:` or `:<,> norm I TEXT` Add TEXT to start of line
 > type `:` or `:<,> norm 5x` Delete up to a specfic character count
 
+> alternately, record a macro to `p` and run `:<,> norm @p`
+
 This is sample text to work with
 Aliquam nec justo varius,
 sollicitudin nisi nec, eleifend lorem.

@@ -13,12 +13,14 @@
 - [ ] Habit -> 🏃 use `o` to move to front and back of visual selection. Use this when you've typed `vip` but didn't end up exactly selecting what you need.
 - [ ] Habit -> 🏃 use `CTLR+h` instead of `backspace` insert mode --> (Also works in standard bash shell)
 - [ ] Habit -> 🏃 use `ga` + letter for case conversion
+- [ ] Habit -> 🏃 practice `P` which is left left vs `p` which is right paste when pasting
+- [ ] Habit -> 🏃 use `leader + fr + :` for last ex command --> populate something and reuse it here
 
 ## medium
 
 - [ ] Habit -> 🏃 in command mode `:` hit `ctrl+f` to write commands in a buffer. `<Enter>` to run them. Combine with `!!` for fast shell commands
 
-- [ ] Task -> 🗒️ figure out how to paste above and below a line - depends on `\n` character in copied value
+- [ ] Task -> 🗒️ figure out how to paste above and below a line - depends on `\n` character in copied value --> See linewise vs characterwise note
 - [ ] Habit -> 🏃 adopt change then repeat via `.` Pattern
 - [ ] Habit -> 🏃 Use `//<ENTER>` to resume last search. Combine with `*` first.
 
@@ -30,6 +32,10 @@
 - [ ] Habit -> 🏃 multi-cursor based find and replace
 
 ## Hard
+
+### Add to Hard Time Plugin
+
+- [ ] Task -> 🗒️ disable `w` or `b` >=5
 
 ### Advanced Navigation
 
