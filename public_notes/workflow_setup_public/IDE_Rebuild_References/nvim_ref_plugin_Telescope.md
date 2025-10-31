@@ -1,5 +1,8 @@
 # Telescope nvim-ref
 
+> [!IMPORTANT]
+> You have replaced telescope with snacks
+
 > Access via `leader + F`
 
 > Note that you generally have access to registers like cword and last yank via `CTRL+R`
@@ -38,7 +41,6 @@ Important flags
 - view commits (switch to them)
 - view file commits (switch to them)
 - Branch Management - View More
-
   - [ ] ~Task -> 🗒️ Investigate Branch Management Here~
 
 - <ESC> puts you in normal mode ? shows available options

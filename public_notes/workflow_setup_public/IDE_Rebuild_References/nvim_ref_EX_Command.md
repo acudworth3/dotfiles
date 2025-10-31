@@ -20,6 +20,7 @@
 > `r` command reads to something combine with `!` to call commands
 
 - `:r !ls`
+- `!!` + unix command in EX line is easier
 
 ### run command (!) - nvim-ref
 
@@ -36,7 +37,7 @@
 - `:r !python3 hello.py` Reads output into file
 
 - [ ] Task -> 🗒️ figure out how to load your bash profile
-- [ ] Task -> 🗒️ see if you can pipe outputs into telescope
+- [ ] Task -> 🗒️ see if you can pipe outputs into telescope --> no but you can build a quickfix list
 - [ ] Parse -> 📚 https://vimhelp.org/index.txt.html#ex-cmd-index
 
 ## Commands (EX) -- Pattern Matching

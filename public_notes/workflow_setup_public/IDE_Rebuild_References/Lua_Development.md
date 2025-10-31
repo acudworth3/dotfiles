@@ -11,7 +11,7 @@
 - [ ] Task -> 🗒️ refactor documentation including core_skills
 - [ ] Read -> 📖 Consider long read on api and vimpscript docs
 
-> Probably switch gears for a bit at this point then come back and attempt plug development.
+> Probably switch gears for a bit at this point then come back and attempt plugin development.
 
 ## General
 

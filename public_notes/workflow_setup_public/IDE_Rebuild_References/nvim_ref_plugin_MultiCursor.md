@@ -1,6 +1,7 @@
 # Multi Cursor
 
 > You have to find a way
+> noting that `:<,> norm I TEXT` gets pretty close
 
 ## Reading
 
@@ -10,7 +11,7 @@
 - [ ] Task -> 🗒️ practice replace with `R`
 - [ ] Learn -> ❔ understand copy and paste
 - [ ] Task -> 🗒️ POC align and markdown tables
-- [ ] Task -> 🗒️ bring these into the habit folder
+- [x] Task -> 🗒️ bring these into the habit folder
 
 ### Tutorial Notes - nvim-ref multicursors-ref multi-ref
 
@@ -49,9 +50,9 @@
 
 #### Duplicate
 
-- make a region selection
 - `\\d` not complicated but simpler than copy and pasting
 - this lets you keep your system clipboard available
+- make a region selection
 
 #### Alignment
 
@@ -139,6 +140,8 @@ Nullam et orci fermentum, suscipit nulla eu
 
 #### Text Case work
 
+> Plugin works better on a selection
+
 `CTRL+nwww\\CS`
 
 1. Select
@@ -177,7 +180,7 @@ S SNAKE_UPPERCASE - dash-case
 - After creating multicursors use the `s` operator (not `v`) with vim builtins ex `s$` to select to end of line
 - `r` operates like a replace action on every character in the selection
 
-- [ ] Task -> 🗒️ review ways to quickly create selection (`Ctrl-N`)
+- [x] Task -> 🗒️ review ways to quickly create selection (`Ctrl-N`)
 
 ## ARCHIVE Multi Cursor -- Plugin -- ARCHIVE
 

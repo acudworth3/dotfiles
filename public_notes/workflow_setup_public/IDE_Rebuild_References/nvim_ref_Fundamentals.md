@@ -6,12 +6,12 @@
 
 > Motion action repeat mindset. 1 Keystroke puts cursor where it needs to be. 1 Keystroke applies the change/action. Bonus if it is repeatable
 
-- in neo tree `.` will set the working directory of your session
+- ~in neo tree `.` will set the working directory of your session~ this is no longer used
+  - `cd` from EX mode is beter
 - `^` will take you to the first non white space character in the line
-
   - "repeating the f+ command, but there's a better way. The `;` command will repeat the last search that the `f` command performed. So instead of typing f+ four times, we can use that command once and then follow up by using the `;` command three times."
 
-- [ ] Task -> 🗒️ use `*` key to move between words (basically searches for word under cursor)
+- [x] Task -> 🗒️ use `*` key to move between words (basically searches for word under cursor)
 - [ ] Task -> 🗒️ Use INSERT to toggle between insert and replace mode
   - Combine with `;` and `,` for or `n` for nav
   - Combine with `.` command to repeat actions

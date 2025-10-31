@@ -61,7 +61,7 @@ AB12ab%
 
 # Substitute (Find and Replace) - nvim-ref
 
-- [ ] Task -> 🗒️ Practice Usage
+- [x] Task -> 🗒️ Practice Usage
 
 ## Substitute - References - Examples
 

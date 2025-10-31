@@ -1,15 +1,16 @@
 # Global Command
 
 - [ ] Task -> 🗒️ Combine with fold command for useful things
-- [ ] Task -> ��️ Think of more examples for the vglobal command
+- [ ] Task -> 🗒️ Think of more examples for the vglobal command
 - [ ] Task -> 🗒️ Maybe map `CTRL+SHIFT+l` to `:g/selection/` and put the cursor in ex to mimic multi-cursor
 
 ## Global Command -- References - nvim-ref
 
-- [ ] Task -> 🗒️ refacto this into its own file
+- [ ] Task -> 🗒️ refactor this into its own file
 
 - Treat this as meaning "apply the command linewise to each match"
 - The default range for the :global command is the entire file (%).
+  - for `norm` and `/s` and `delete` the default range is a line
 - All available EX commands https://vimhelp.org/index.txt.html#ex-cmd-index
 - redirect results to separate files https://vim.fandom.com/wiki/Save_each_line_in_separate_numbered_files
 

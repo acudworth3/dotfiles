@@ -46,12 +46,6 @@
 
 - [ ] Task -> 🗒️ do a fundamentals practice of recorind a macro then editing it
 
-### Norm Command
-
-> Build habits and knowledge around the `vip:norm TEXT` pattern
-
-- [ ] Learn -> ❔ learn to use `<esc>` and other non alpha characters when doing a norm command
-
 ## Lua Development
 
 > Add this to the toolkit

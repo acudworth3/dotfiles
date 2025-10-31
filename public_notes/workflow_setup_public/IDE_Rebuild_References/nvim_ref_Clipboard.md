@@ -40,3 +40,8 @@
 - propose to map change and delete actions into this register
 
 `%` holds current file name (interesting detail)
+
+> A linewise yank or delete `dd yy dap` creates a linewise register. When pasted a \n is included
+
+- run `yy` the paste registers `"` and `0` will include the `\n` character. Single words do not have this
+- [ ] Task -> 🗒️ could append a `\n` to copied content if you really wanted to
