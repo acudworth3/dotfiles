@@ -2,11 +2,11 @@
 
 - [ ] Task -> 🗒️ How to do text transform on all matches (currently would need multicursor)
 - [ ] Task -> 🗒️ consider shortening `z=1` you use this a lot
-- [ ] Task -> 🗒️ setup the sidekick plugin
 - [ ] Task -> 🗒️ survey current menu choices
 - [ ] Task -> 🗒️ validate this "if you want to seach a regular expression us `/\v` if you want to use verbatim use `/\V` else escape Characters"
 - [ ] Task -> 🗒️ ~do basic `leader + g` commands~
-- [ ] Task -> 🗒️ disable `leader+R`
+- [ ] Read -> 📖 https://docs.astronvim.com/mapping
+- [x] Task -> 🗒️ setup the sidekick plugin
 - [x] Task -> 🗒️ find the equivalent of `ctrl+f` on EX commands for search command --> it is `ctrl+f`
 
 ## Read
@@ -25,6 +25,29 @@
 
 ## Menu Review
 
+- [ ] Task -> 🗒️ how to change the order for which key
+- [ ] remove/Replace `leader + g` ?
+- [ ] remove/Replace `leader + p` ?
+- [x] Replace `leader + P`
+- [x] remove `leader + R`
+- [x] remove/Replace `leader + S`
+- [x] Task -> 🗒️ remove copilot plugins
+- [x] remove/Replace `leader + t + y` ?
+
+- [ ] Habit -> 🏃 use `leader + b + s` occasionally
+
+### 2 stroke Keymaps
+
+~25 to display
+~22 used
+
+lower
+ikmrvwxz
+
+Upper
+
+AIKMRVWXZ
+
 ## Completion
 
 - [ ] Habit -> 🏃 In EX mode use `ctrl+y` to accept first suggestion
@@ -34,9 +57,9 @@
 
 - [ ] Task -> 🗒️ prepopualte a literal (verbatim) search `/\V`
 - [ ] Task -> 🗒️ replace over selection `'<,'>s/Task/abc/g`
-- [ ] Task -> 🗒️ prepopualte a regex search `/\v` with some examples `/\vRead|Task`
-  - [ ] Task -> 🗒️ Multiple Patterns `/\vRead|Task`
-  - [ ] Task -> 🗒️ Case Insensitive
+- [x] Task -> 🗒️ prepopualte a regex search `/\v` with some examples `/\vRead|Task`
+  - [x] Task -> 🗒️ Multiple Patterns `/\vRead|Task`
+  - [x] Task -> 🗒️ Case Insensitive
 
 ### Copy Search Results (Under Review)
 

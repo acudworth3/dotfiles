@@ -19,15 +19,6 @@ return {
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.typescript" },
-  { import = "astrocommunity.editing-support.copilotchat-nvim" },
-  -- { import = "astrocommunity.pack.cs-omnisharp" },
-  -- { import = "astrocommunity.pack.markdown" },
-  -- { import = "astrocommunity.pack.html-css" },
-  -- Consider direct managment
-  -- configure WSL for these languages first
-  -- { import = "astrocommunity.pack.python" },
-  -- { import = "astrocommunity.pack.cs" },
-
   -- Lua Development
 
   -- { import = "astrocommunity.neovim-lua-development.lua-console-nvim" },
