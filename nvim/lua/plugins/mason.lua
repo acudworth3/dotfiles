@@ -8,7 +8,7 @@ return {
       -- Make sure to use the names found in `:Mason`
       ensure_installed = {
         -- install language servers
-
+        "copilot-language-server",
         "bash-language-server",
         "dockerfile-language-server",
         "lua-language-server",

@@ -1,11 +1,13 @@
 # Keep Note Parsing
 
-- [ ] Task -> 🗒️ validate this "if you want to seach a regular expression us `/\v` if you want to use verbatim use `/\V` else escape Characters"
-- [x] Task -> 🗒️ find the equivalent of `ctrl+f` on EX commands for search command --> it is `ctrl+f`
-- [ ] Task -> 🗒️ consider shortening `z=1` you use this a lot
-- [ ] Task -> 🗒️ ~do basic `leader + g` commands~
-- [ ] Task -> 🗒️ setup the sidekick plugin
 - [ ] Task -> 🗒️ How to do text transform on all matches (currently would need multicursor)
+- [ ] Task -> 🗒️ consider shortening `z=1` you use this a lot
+- [ ] Task -> 🗒️ setup the sidekick plugin
+- [ ] Task -> 🗒️ survey current menu choices
+- [ ] Task -> 🗒️ validate this "if you want to seach a regular expression us `/\v` if you want to use verbatim use `/\V` else escape Characters"
+- [ ] Task -> 🗒️ ~do basic `leader + g` commands~
+- [ ] Task -> 🗒️ disable `leader+R`
+- [x] Task -> 🗒️ find the equivalent of `ctrl+f` on EX commands for search command --> it is `ctrl+f`
 
 ## Read
 
@@ -21,6 +23,8 @@
 - [x] nvim_ref_Visual_Mode.md
 - [x] nvim_ref_plugin_MultiCursor.md
 
+## Menu Review
+
 ## Completion
 
 - [ ] Habit -> 🏃 In EX mode use `ctrl+y` to accept first suggestion
@@ -29,12 +33,26 @@
 ## Substitute Commands
 
 - [ ] Task -> 🗒️ prepopualte a literal (verbatim) search `/\V`
-- [ ] Task -> 🗒️ replace over selection
+- [ ] Task -> 🗒️ replace over selection `'<,'>s/Task/abc/g`
 - [ ] Task -> 🗒️ prepopualte a regex search `/\v` with some examples `/\vRead|Task`
-  - [ ] Task -> 🗒️ Multiple Patterns
+  - [ ] Task -> 🗒️ Multiple Patterns `/\vRead|Task`
   - [ ] Task -> 🗒️ Case Insensitive
 
+### Copy Search Results (Under Review)
+
+> You have to figure out how to clear the register or it will always append
+
 - [ ] Task -> 🗒️ map a copy results command. Use the defualt yank register https://keep.google.com/u/0/#NOTE/1C_d8ux-dxf39sklvu-Nge2fvwgeo09iL2VuZBiwPpIMpkhK3hzVIdqNuEnHrCrROA8t6JhJh
+- [ ] Task -> 🗒️ Copy all lines that match a pattern `:g/Task/yank P` paste with `"p`
+
+### Regexes
+
+`/[0-9]%` - any number followed by %
+`/[a-z]%` - any lowercase letter followed by %
+`/[A-Z]%` - any uppercase letter followed by %
+`/\v[A-Z]{2}` - any 2 uppercase letters
+`/\v[A-Z]{2}\%` - any 2 uppercase letters followed by a %
+`[abc]` represents 'any of' a b or c
 
 ## Global Commands
 
@@ -43,8 +61,8 @@
 - [ ] Task -> 🗒️ maybe build a menu out of these
 
 - [ ] Task -> 🗒️ inverted match "delete lines not matching" `:v/href/d`
-- [ ] Task -> 🗒️ Copy all lines that match a pattern
 - [ ] Task -> 🗒️ Append to lines matching a pattern "maybe put in search"
+- [ ] Task -> 🗒️ Write Matches to a new file `:g/Task/ . write >> full_path.md`
 - [ ] Task -> 🗒️ Write Matches to a new buffer
 
 ## Dot Operator
