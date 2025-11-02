@@ -24,9 +24,9 @@ return {
           ["<Leader>sr"] = { ":s//ABC/g<left><left><left><left><left><left>", desc = "Replace Over Selection" },
 
           ["<Leader>sR"] = { desc = "Regex Examples" },
-          ["<Leader>sRp"] = { ":s/\\vRead|Task//g<left><left>", desc = "Read|Task Multiple Patterns" },
-          ["<Leader>sRa"] = { ":s/\\v[abc]//g<left><left>", desc = "[abc] a b or c" },
-          ["<Leader>sRA"] = { ":s/\\v[a-zA-Z0-9]{5}//g<left><left>", desc = "[a-zA-Z0-9]{5} Count of Alpha Numeric" },
+          ["<Leader>sRp"] = { ":s/Read|Task//g<left><left>", desc = "Read|Task Multiple Patterns" },
+          ["<Leader>sRa"] = { ":s/[abc]//g<left><left>", desc = "[abc] a b or c" },
+          ["<Leader>sRA"] = { ":s/[a-zA-Z0-9]{5}//g<left><left>", desc = "[a-zA-Z0-9]{5} Count of Alpha Numeric" },
           ["<Leader>sRs"] = { ":s/^//g<left><left>", desc = "Start of Line" },
           ["<Leader>sRe"] = { ":s/$//g<left><left>", desc = "End of Line" },
           ["<Leader>sRm"] = { ":s/$/&/g<left><left>", desc = "Append to Match" },
