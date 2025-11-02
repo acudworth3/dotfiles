@@ -2,14 +2,14 @@
 
 > October 2025 review state of rebuild and habits
 
-- [ ] Read -> 📖 reread practical vim by drew niel
-- [ ] Read -> 📖 notes
-- [ ] Read -> 📖 references
+- [x] Read -> 📖 reread practical vim by drew niel
+- [x] Read -> 📖 notes
+- [x] Read -> 📖 references
 
-- [ ] Task -> 🗒️ parse keep notes
-- [ ] Task -> 🗒️ plan habit acquisition
+- [x] Task -> 🗒️ parse keep notes
+- [x] Task -> 🗒️ plan habit acquisition
 - [ ] Task -> 🗒️ review new plugins
-- [ ] Parse -> 📚 keybindings menu
+- [x] Parse -> 📚 keybindings menu
 
 - [ ] Task -> 🗒️ consider keybidngs for qf editing
 

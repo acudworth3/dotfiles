@@ -20,7 +20,16 @@ return {
           ["c"] = { '"_c', desc = "Change to blkhole register" },
 
           ["<Leader>yy"] = { "<cmd>YankBank<CR>", desc = "Open Yank History" },
+          ["<Leader>sn"] = { ":norm I", desc = "Norm Edit" },
+          ["<Leader>sr"] = { ":s//ABC/g<left><left><left><left><left><left>", desc = "Replace Over Selection" },
 
+          ["<Leader>sR"] = { desc = "Regex Examples" },
+          ["<Leader>sRp"] = { ":s/\\vRead|Task//g<left><left>", desc = "Read|Task Multiple Patterns" },
+          ["<Leader>sRa"] = { ":s/\\v[abc]//g<left><left>", desc = "[abc] a b or c" },
+          ["<Leader>sRA"] = { ":s/\\v[a-zA-Z0-9]{5}//g<left><left>", desc = "[a-zA-Z0-9]{5} Count of Alpha Numeric" },
+          ["<Leader>sRs"] = { ":s/^//g<left><left>", desc = "Start of Line" },
+          ["<Leader>sRe"] = { ":s/$//g<left><left>", desc = "End of Line" },
+          ["<Leader>sRm"] = { ":s/$/&/g<left><left>", desc = "Append to Match" },
           -- Only works for 2 lines
           ["<A-j>"] = { ":m '>+1<CR>gv=gv", desc = "Move Selection Down (ALT+j)" },
           ["<A-k>"] = { ":m '<-2<CR>gv=gv", desc = "Move Selection Up (ALT+k)" },
@@ -76,6 +85,7 @@ return {
           ["<Leader>j~"] = { "i~<Esc>A~<Esc><CR>", desc = "Strikethrough End of Line" },
           ["<Leader>jm"] = { ":g/\v[x]/m$<CR>", desc = "Move Tasks to EOF" },
           ["<Leader>jd"] = { ":%d<CR>", desc = "Delete File Contents" },
+          ["<Leader>ja"] = { ":%norm I", desc = "Edit All Lines" },
 
           -- WORK IN PROGRESS
           -- local pos = vim.api.nvim_win_get_cursor(0) -- Save cursor position
@@ -145,7 +155,7 @@ return {
           ["<Leader>a"] = { desc = "Sidekick" },
           ["<Leader>y"] = { desc = "Yank" },
           ["<Leader>j"] = { desc = "File Edit Actions" },
-          ["<Leader>s"] = { desc = "Search + Substitute" },
+          ["<Leader>s"] = { desc = "vim core" },
           ["<Leader>D"] = { desc = "Ducks" },
           ["<Leader>q"] = { "<Nop>", desc = "quickfix" },
           ["<Leader>C"] = false,
@@ -163,14 +173,18 @@ return {
           -- & references matched word
           -- <C-r><C-w> pulls word under cursor
           -- TODO: Replace with user functions
-          ["<Leader>sf"] = { ":%s/<C-r><C-w>//g<left><left>", desc = "Replace Word Under Cursor" },
+          ["<Leader>sr"] = { ":%s/<C-r><C-w>//g<left><left>", desc = "Replace Word Under Cursor" },
           ["<Leader>sa"] = { ":%s/<C-r><C-w>/& /g<left><left>", desc = "Append to Word Under Cursor" },
           ["<Leader>sq"] = { ":cdo %s/<C-r><C-w>/& /g<left><left>", desc = "Amend Word Across qf_list" },
           ["<Leader>sc"] = { "/<C-r><C-w>", desc = "Search Word Under Cursor (OR *)" },
+          ["<Leader>sd"] = { ":v/<C-r><C-w>/d<left><left>", desc = "Delete All but Matches" },
           ["<Leader>sR"] = { desc = "Regex Examples" },
           ["<Leader>sRp"] = { ":%s/\\vRead|Task//g<left><left>", desc = "Read|Task Multiple Patterns" },
           ["<Leader>sRa"] = { ":%s/\\v[abc]//g<left><left>", desc = "[abc] a b or c" },
           ["<Leader>sRA"] = { ":%s/\\v[a-zA-Z0-9]{5}//g<left><left>", desc = "[a-zA-Z0-9]{5} Count of Alpha Numeric" },
+          ["<Leader>sRs"] = { ":%s/^//g<left><left>", desc = "Start of Line" },
+          ["<Leader>sRe"] = { ":%s/$//g<left><left>", desc = "End of Line" },
+          ["<Leader>sRm"] = { ":%s/$/&/g<left><left>", desc = "Append to Match" },
           -- ["<Leader>sRp"] = { "/\\vRead|Task", desc = "Multiple Patterns" },
           -- ["<Leader>sRa"] = { "/\\v[abc]", desc = "[abc] a b or c" },
           -- ["<Leader>sRA"] = { "/\\v[a-zA-Z0-9]{5}", desc = "[a-zA-Z0-9]{5} Count of Alph Numeric" },

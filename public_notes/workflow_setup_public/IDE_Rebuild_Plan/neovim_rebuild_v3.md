@@ -2,8 +2,8 @@
 
 - [ ] Task -> 🗒️ How to do text transform on all matches (currently would need multicursor)
 - [ ] Task -> 🗒️ consider shortening `z=1` you use this a lot
-- [ ] Task -> 🗒️ survey current menu choices
-- [ ] Task -> 🗒️ validate this "if you want to seach a regular expression us `/\v` if you want to use verbatim use `/\V` else escape Characters"
+- [x] Task -> 🗒️ survey current menu choices
+- [ ] Task -> 🗒️ validate this "if you want to search a regular expression use `/\v` if you want to use verbatim use `/\V` else escape Characters"
 - [ ] Task -> 🗒️ ~do basic `leader + g` commands~
 - [ ] Read -> 📖 https://docs.astronvim.com/mapping
 - [x] Task -> 🗒️ setup the sidekick plugin
@@ -56,7 +56,7 @@ AIKMRVWXZ
 ## Substitute Commands
 
 - [ ] Task -> 🗒️ prepopualte a literal (verbatim) search `/\V`
-- [ ] Task -> 🗒️ replace over selection `'<,'>s/Task/abc/g`
+- [x] Habit -> 🏃 replace over selection `'<,'>s/Task/abc/g`
 - [x] Task -> 🗒️ prepopualte a regex search `/\v` with some examples `/\vRead|Task`
   - [x] Task -> 🗒️ Multiple Patterns `/\vRead|Task`
   - [x] Task -> 🗒️ Case Insensitive
@@ -65,7 +65,7 @@ AIKMRVWXZ
 
 > You have to figure out how to clear the register or it will always append
 
-- [ ] Task -> 🗒️ map a copy results command. Use the defualt yank register https://keep.google.com/u/0/#NOTE/1C_d8ux-dxf39sklvu-Nge2fvwgeo09iL2VuZBiwPpIMpkhK3hzVIdqNuEnHrCrROA8t6JhJh
+- [ ] Task -> 🗒️ map a copy results command. Use the default yank register https://keep.google.com/u/0/#NOTE/1C_d8ux-dxf39sklvu-Nge2fvwgeo09iL2VuZBiwPpIMpkhK3hzVIdqNuEnHrCrROA8t6JhJh
 - [ ] Task -> 🗒️ Copy all lines that match a pattern `:g/Task/yank P` paste with `"p`
 
 ### Regexes
@@ -81,12 +81,12 @@ AIKMRVWXZ
 
 > see `nvim_ref_Global_Command`
 
-- [ ] Task -> 🗒️ maybe build a menu out of these
+- [x] Task -> 🗒️ maybe build a menu out of these
 
-- [ ] Task -> 🗒️ inverted match "delete lines not matching" `:v/href/d`
-- [ ] Task -> 🗒️ Append to lines matching a pattern "maybe put in search"
-- [ ] Task -> 🗒️ Write Matches to a new file `:g/Task/ . write >> full_path.md`
-- [ ] Task -> 🗒️ Write Matches to a new buffer
+- [x] Task -> 🗒️ inverted match "delete lines not matching" `:v/href/d`
+- [x] Task -> 🗒️ ~Append to lines matching a pattern "maybe put in search"~
+- [x] Task -> 🗒️ ~Write Matches to a new file `:g/Task/ . write >> full_path.md`~
+- [x] Task -> 🗒️ ~Write Matches to a new buffer~
 
 ## Dot Operator
 
