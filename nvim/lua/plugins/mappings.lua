@@ -82,6 +82,7 @@ return {
 
           -- j menu (edit)
           -- strike through
+          ["*"] = { "*N", desc = "Search without Move" },
           ["<Leader>j~"] = { "i~<Esc>A~<Esc><CR>", desc = "Strikethrough End of Line" },
           ["<Leader>jm"] = { ":g/\v[x]/m$<CR>", desc = "Move Tasks to EOF" },
           ["<Leader>jd"] = { ":%d<CR>", desc = "Delete File Contents" },

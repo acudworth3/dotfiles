@@ -44,6 +44,7 @@ brew install starship
 cargo install exa
 cargo install trippy --locked
 cargo install tokei
+cargo install somo
 
 # npm install -g tldr
 npm install -g lorem-ipsum-cli

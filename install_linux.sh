@@ -29,5 +29,6 @@ sudo apt install cargo
 cargo install exa
 cargo install systemctl-tui --locked
 cargo install trippy --locked
+cargo install somo
 cargo install tokei
 ## Bash Settings to apply
