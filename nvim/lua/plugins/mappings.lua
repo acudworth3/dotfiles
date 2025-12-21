@@ -19,7 +19,8 @@ return {
           ["C"] = { '"_C', desc = "Change to blkhole register" },
           ["c"] = { '"_c', desc = "Change to blkhole register" },
 
-          ["<Leader>jn"] = { ":'<,'>!nl -n ln -w 1 -s '. '<CR><CR>", desc = "Open Yank History" },
+          ["<Leader>jn"] = { ":'<,'>!nl -n ln -w 1 -s '. '<CR><CR>", desc = "Number Selection" },
+          ["<Leader>jc"] = { ":'<,'>!column -t -s ' '<left><left>", desc = "column -t -s" },
 
           ["<Leader>yy"] = { "<cmd>YankBank<CR>", desc = "Open Yank History" },
           ["<Leader>sn"] = { ":norm I", desc = "Norm Edit" },
