@@ -19,6 +19,8 @@ return {
           ["C"] = { '"_C', desc = "Change to blkhole register" },
           ["c"] = { '"_c', desc = "Change to blkhole register" },
 
+          ["<Leader>jn"] = { ":'<,'>!nl -n ln -w 1 -s '. '<CR><CR>", desc = "Open Yank History" },
+
           ["<Leader>yy"] = { "<cmd>YankBank<CR>", desc = "Open Yank History" },
           ["<Leader>sn"] = { ":norm I", desc = "Norm Edit" },
           ["<Leader>sr"] = { ":s//ABC/g<left><left><left><left><left><left>", desc = "Replace Over Selection" },
