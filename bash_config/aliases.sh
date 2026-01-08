@@ -18,6 +18,7 @@ alias hh='cd ~'
 alias vv='nv-ast ~/.bashrc'
 alias cowflood='ls /usr/share/cowsay/cows | xargs -I {} cowsay -f {} its a cow flood'
 alias randcow='cowsay -f $(ls /usr/share/cowsay/cows | shuf -n1)'
+alias mkdir='mkdir -pv'
 
 # misc
 # alias zython='python3'

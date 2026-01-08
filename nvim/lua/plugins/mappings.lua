@@ -20,7 +20,9 @@ return {
           ["c"] = { '"_c', desc = "Change to blkhole register" },
 
           ["<Leader>jn"] = { ":'<,'>!nl -n ln -w 1 -s '. '<CR><CR>", desc = "Number Selection" },
-          ["<Leader>jc"] = { ":'<,'>!column -t -s ' '<left><left>", desc = "column -t -s" },
+          ["<Leader>jc"] = { ":!column -t -s ' '<left><left>", desc = "column -t -s" },
+          ["<Leader>jr"] = { ":!cut -c 5-", desc = "cut right cut -c 5-" },
+          ["<Leader>jl"] = { ":!cut -c -5", desc = "cut left cut -c -5" },
 
           ["<Leader>yy"] = { "<cmd>YankBank<CR>", desc = "Open Yank History" },
           ["<Leader>sn"] = { ":norm I", desc = "Norm Edit" },
