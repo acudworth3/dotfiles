@@ -27,25 +27,6 @@ return {
     "eandrju/cellular-automaton.nvim",
   },
 
-  {
-    "mg979/vim-visual-multi",
-    event = "VeryLazy",
-    config = function()
-      -- Customize highlight groups for Visual Multi
-      vim.g.VM_theme = "ocean"
-      -- vim.cmd [[
-      -- " highlight VM_Extend ctermfg=white ctermbg=blue guifg=#ffffff guibg=#005f87
-      -- " highlight VM_Cursor ctermfg=black ctermbg=yellow guifg=#000000 guibg=#ffaf00
-      -- " highlight VM_Mono ctermfg=red ctermbg=black guifg=#ff0000 guibg=#1c1c1c ]]
-    end,
-    -- FIXME: this is overwriting in place
-    vim.keymap.set(
-      "n",
-      "\\p",
-      'i<CR><C-r>"<Esc>',
-      { noremap = true, silent = true, desc = "Paste vim-visual-multi Yank" }
-    ),
-  },
   -- Logging
 
   {

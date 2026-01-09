@@ -225,7 +225,7 @@ return {
 
           -- Yank commands
           -- Yank Bank
-          ["<Leader>yy"] = { "<cmd>YankBank<CR>", desc = "Open Yank History" },
+          -- ["<Leader>yy"] = { "<cmd>YankBank<CR>", desc = "Open Yank History" },
           ["<Leader>yF"] = { ":%y<CR>", desc = "Copy Current File Contents" },
 
           -- copy file dir

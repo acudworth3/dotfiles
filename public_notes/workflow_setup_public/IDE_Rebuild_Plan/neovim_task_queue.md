@@ -6,10 +6,6 @@
 
 ## Reread Practical Vim
 
-- [x] Task -> 🗒️ reread book
-
-- [ ] Parse -> 📚 parse screenshot notes
-- [ ] Task -> 🗒️ reread Notes
 - [ ] Task -> 🗒️ ideate patterns for `:g/pattern/normal @a` This removes the necessity for macros to be applied to sequential lines
 
 ## Misc
@@ -21,20 +17,24 @@
 - [ ] Task -> 🗒️ set editor in git config
 - [ ] Task -> 🗒️ yazi previews images but nvim yazi does not
 
-- [x] Task -> 🗒️ Make `LEADER jj` repeatable
-- [x] Task -> 🗒️ figure out how to copy from command history (`:ctrl+f`)
-- [x] Task -> 🗒️ map EDITOR be neovim
-- [x] Task -> 🗒️ map the system pager to be neovim
-- [x] Task -> 🗒️ remap `CTRL+N` to support mutli cursor on MAC
-
 - [ ] Task -> 🗒️ How to install a specific version of nvim (hard)
 
-- [ ] Read -> 📖 https://www.lazyvim.org/
 - [ ] Read -> 📖 `:h motions`
 
-### Docs Refactoring
+### Visual Selection Editing
 
-- [x] Task -> 🗒️ move Lua Development into their own files
+- [ ] Task -> 🗒️ keymap for `'<,'>!shuf`
+- [ ] Parse -> 📚 parse `tr` keep notes
+
+### Random Data
+
+- [ ] Task -> 🗒️ build a random data generator menu
+- [ ] Task -> 🗒️ random number generator over range
+- [ ] Task -> 🗒️ random number generator with fixed digits
+- [ ] Task -> 🗒️ move lorem here
+- [ ] Task -> 🗒️ random letter grid (for fun)
+
+### Docs Refactoring
 
 ### Misc - Lua Adoption
 
@@ -47,11 +47,7 @@
 - [ ] Task -> 🗒️ Extend 'move to eof' to keep cursor position See `toggle-checkbox.lua`
 - [ ] Task -> 🗒️ review mappings that need keep cursor position
 - [ ] Task -> 🗒️ Resolve conflict `tab` is overloaded for completion and snippet tab stop
-- [ ] Task -> 🗒️ Multi cursor pasting (currently it over writes)
 - [ ] Task -> 🗒️ update search key maps to user functions
-
-- [x] Task -> 🗒️ normal movde duplicate line (like `alt+shift+j` in vscode)
-- [x] Task -> 🗒️ duplicate selection (like `alt+shift+j` in vscode)
 
 ### Key Maps Ideas
 
@@ -129,6 +125,20 @@ https://github.com/johmsalas/text-case.nvim?tab=readme-ov-file
 
 ## Completed Tasks
 
+- [x] Task -> 🗒️ reread book
+- [x] Parse -> 📚 parse screenshot notes
+- [x] Task -> 🗒️ reread Notes
+- [x] Task -> 🗒️ Make `LEADER jj` repeatable
+- [x] Task -> 🗒️ figure out how to copy from command history (`:ctrl+f`)
+- [x] Task -> 🗒️ map EDITOR be neovim
+- [x] Task -> 🗒️ map the system pager to be neovim
+- [x] Task -> 🗒️ remap `CTRL+N` to support mutli cursor on MAC
+- [x] Read -> 📖 ~https://www.lazyvim.org/~
+- [x] Task -> 🗒️ move Lua Development into their own files
+- [x] Task -> 🗒️ ~Multi cursor pasting (currently it over writes)~
+- [x] Task -> 🗒️ normal movde duplicate line (like `alt+shift+j` in vscode)
+- [x] Task -> 🗒️ duplicate selection (like `alt+shift+j` in vscode)
+- [x] Task -> 🗒️ remove this
 - [x] Task -> 🗒️ adjust search to include .github by default
 - [x] Task -> 🗒️ upgrade neovim
 - [x] Task -> 🗒️ upgrade astronvim

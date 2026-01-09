@@ -8,9 +8,7 @@
 
 ## zsh
 
-- [ ] Task -> 🗒️ switch wsl to `zsh` eventually
-
-
+- [x] Task -> 🗒️ switch wsl to `zsh` eventually
 
 ## Terminal Emulator
 
@@ -19,7 +17,7 @@
 
 ### Wezterm
 
-- [ ] Task -> 🗒️ figure out undercurl issue in WSL
+- [ ] Task -> 🗒️ figure out undercurl issue in WSL (FAILED)
 
 ### Kitty
 

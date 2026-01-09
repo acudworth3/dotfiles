@@ -26,11 +26,13 @@ echo command | clip
 
 - `uniq -d` display only duplicate lines
 - `uniq -u` display only unique lines
+- `uniq -c` include counts
 
 ```bash
 sort a b | uniq > c   # c is a union b
 sort a b | uniq -d > c   # c is a intersect b
 sort a b b | uniq -u > c   # c is set difference a - b
+sort -nr # orders by numbers correctly 1 2 10 11 vs 1 10 11 2
 ```
 
 ### lsof
@@ -48,6 +50,30 @@ sort a b b | uniq -u > c   # c is set difference a - b
 ### gdu
 
 > ignore `/mnt/c` -> `sudo gdu --ignore-dirs /mnt/c /`
+
+### seq + shuff
+
+> Lots of ways to create random data
+
+### Samples
+
+```sh
+# Create 1000 text files
+seq 1000 | xargs -I {} touch {}.txt
+
+# 1 random number between 1-10
+seq 10 | shuf -n 1
+
+# 20 random numbers between 1-10 (inclusive)
+shuf -n 20 -i 1-10 --repeat
+
+```
+
+### Flags
+
+#### `INPUT | shuf -n 1`
+
+> selects 1 randomly from input
 
 ### basename + dirname
 
@@ -126,8 +152,27 @@ cat /etc/passwd | cut -d ":" -f 1,6
 
 #### `-d -f1`
 
-> `-d` means delimeter. `-fN` is which "field" meaning effectivvely the column if `-d` where the delimeter
+> `-d` means delimeter. `-fN` is which "field" meaning effectively the column if `-d` where the delimeter
 > all falgs support ranges like `-f 1,2,11` or `-f 1-11`
+
+#### `-c -f -XX` or `-c -f XX-`
+
+> cut left or or right from character XX
+
+```json
+{
+  { "%:!cut -c 5-", desc = "cut right cut -c 5-" },
+  { "%:!cut -c -5", desc = "cut left cut -c -5" },
+}
+```
+
+## sed
+
+> note that `sed` is effectively the vim substitute command with minor differences around flags and regex
+
+```bash
+cat FILE | sed 's/PATTERN/REPLACE/g'
+```
 
 ## grep
 

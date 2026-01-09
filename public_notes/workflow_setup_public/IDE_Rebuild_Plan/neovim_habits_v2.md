@@ -18,20 +18,24 @@
 
 ## medium
 
-- [ ] Habit -> 🏃 in command mode `:` hit `ctrl+f` to write commands in a buffer. `<Enter>` to run them. Combine with `!!` for fast shell commands
+- [x] Habit -> 🏃 in command mode `:` hit `ctrl+f` to write commands in a buffer. `<Enter>` to run them. Combine with `!!` for fast shell commands
 
 - [ ] Task -> 🗒️ figure out how to paste above and below a line - depends on `\n` character in copied value --> See linewise vs characterwise note
-- [ ] Habit -> 🏃 adopt change then repeat via `.` Pattern
+- [ ] Habit -> 🏃 adopt change then repeat via `.` Pattern (Getting there)
 - [ ] Habit -> 🏃 Use `//<ENTER>` to resume last search. Combine with `*` first.
 
-- [ ] Habit -> 🏃 Tree based navigating in editor `leader + f + s` works pretty well
+- [x] Habit -> 🏃 Tree based navigating in editor `leader + f + s` works pretty well
 - [ ] Task -> 🗒️ cyclical review of fundamentals (reread Practical VIM By Drew Niel)
-- [ ] Habit -> 🏃 Begin using grep-able tags example `nvim-ref` and build a system around this
+- [ ] Habit -> 🏃 ~Begin using grep-able tags example `nvim-ref` and build a system around this~
 - [ ] Task -> 🗒️ use `mm` regularly (inside a file) and `learder + M + mark` to return
 
-- [ ] Habit -> 🏃 multi-cursor based find and replace
+- [x] Habit -> 🏃 ~multi-cursor based find and replace~
 
 ## Hard
+
+### Focus on Shell Integration
+
+> this is a small project on its own
 
 ### Add to Hard Time Plugin
 
@@ -44,7 +48,7 @@
 
 ### Registers + Macros
 
-- [ ] Task -> 🗒️ do a fundamentals practice of recorind a macro then editing it
+- [ ] Task -> 🗒️ do a fundamentals practice of recording a macro then editing it
 
 ## Lua Development
 
