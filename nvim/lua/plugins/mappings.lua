@@ -21,12 +21,23 @@ return {
 
           ["<Leader>jn"] = { ":'<,'>!nl -n ln -w 1 -s '. '<CR><CR>", desc = "Number Selection" },
           ["<Leader>jc"] = { ":!column -t -s ' '<left><left>", desc = "column -t -s" },
+          ["<Leader>ja"] = { ":!awk -F ' ' '{print$6}'<left><left>", desc = "awk Slice Col" },
           ["<Leader>jr"] = { ":!cut -c 5-", desc = "cut right cut -c 5-" },
           ["<Leader>jl"] = { ":!cut -c -5", desc = "cut left cut -c -5" },
+          ["<Leader>jw"] = { ":!tr -cd 'A-Za-z0-9\\n'", desc = "Remove White Space" },
+          ["<Leader>jd"] = { ":!tr -cd 'abc\\n'", desc = "Delete Non Matching Chars" },
+
+          -- -- random data
+          -- ["<Leader>js"] = {
+          --   ":!xargs -I{} sh -c 'echo '{}' | grep -o . | shuf ",
+          --   desc = "scramble",
+          -- },
 
           ["<Leader>yy"] = { "<cmd>YankBank<CR>", desc = "Open Yank History" },
           ["<Leader>sn"] = { ":norm I", desc = "Norm Edit" },
           ["<Leader>sr"] = { ":s//ABC/g<left><left><left><left><left><left>", desc = "Replace Over Selection" },
+          ["<Leader>sm"] = { ":!tr ae zy", desc = "Map Over Selection" },
+          ["<Leader>sb"] = { ":!tr '[]' '()' ", desc = "Replace Spc Chars" },
 
           ["<Leader>sR"] = { desc = "Regex Examples" },
           ["<Leader>sRp"] = { ":s/Read|Task//g<left><left>", desc = "Read|Task Multiple Patterns" },
@@ -38,6 +49,8 @@ return {
           -- Only works for 2 lines
           ["<A-j>"] = { ":m '>+1<CR>gv=gv", desc = "Move Selection Down (ALT+j)" },
           ["<A-k>"] = { ":m '<-2<CR>gv=gv", desc = "Move Selection Up (ALT+k)" },
+          ["<M-j>"] = { ":m '>+1<CR>gv=gv", desc = "Move Selection Down (ALT+j)" },
+          ["<M-k>"] = { ":m '<-2<CR>gv=gv", desc = "Move Selection Up (ALT+k)" },
 
           -- Duplicate Selection
           ["<A-J>"] = { "y`>p", desc = "Duplicate Selection (ALT+SHIFT+j)" },
@@ -142,6 +155,31 @@ return {
           ["<Leader>qf"] = { "<cmd>Telescope quickfix<CR>", desc = "Search Quick Fix" },
           ["<Leader>qo"] = { "<cmd>CQShowInPanel<CR>", desc = "Open Quick Fix" },
 
+          -- random data
+          ["<Leader>jrr"] = {
+            ":r !LC_ALL=C tr -dc 'A-Za-z0-9' < /dev/urandom | fold -w 40 | head -n 10",
+            desc = "Random [A-Za-z0-9] Grid",
+          },
+
+          ["<Leader>jrd"] = {
+            ":r !LC_ALL=C tr -dc '0-9' < /dev/urandom | fold -w 40 | head -n 10",
+            desc = "Random [0-9] Grid",
+          },
+
+          ["<Leader>jrl"] = {
+            ":r !lorem --sentence --count 15",
+            desc = "Lorem (sentence)",
+          },
+
+          ["<Leader>jrw"] = {
+            ":r !lorem --paragraph --count 4 | fmt -w 80 ",
+            desc = "Lorem (paragraph)",
+          },
+
+          ["<Leader>jrm"] = {
+            ":r !lorem --sentence --count 15 | fmt -w 40 | head -n 10",
+            desc = "Lorem grid",
+          },
           -- indents
 
           -- CTRL key
@@ -164,6 +202,7 @@ return {
           ["<Leader>s"] = { desc = "vim core" },
           ["<Leader>D"] = { desc = "Ducks" },
           ["<Leader>q"] = { "<Nop>", desc = "quickfix" },
+          ["<Leader>jr"] = { desc = "Random Data" },
           ["<Leader>C"] = false,
           ["<Leader>Q"] = false,
           ["<Leader>R"] = false,
@@ -184,6 +223,7 @@ return {
           ["<Leader>sq"] = { ":cdo %s/<C-r><C-w>/& /g<left><left>", desc = "Amend Word Across qf_list" },
           ["<Leader>sc"] = { "/<C-r><C-w>", desc = "Search Word Under Cursor (OR *)" },
           ["<Leader>sd"] = { ":v/<C-r><C-w>/d<left><left>", desc = "Delete All but Matches" },
+
           ["<Leader>sR"] = { desc = "Regex Examples" },
           ["<Leader>sRp"] = { ":%s/\\vRead|Task//g<left><left>", desc = "Read|Task Multiple Patterns" },
           ["<Leader>sRa"] = { ":%s/\\v[abc]//g<left><left>", desc = "[abc] a b or c" },
@@ -262,10 +302,7 @@ return {
           -- Save All Buffers
           ["<Leader>w"] = { ":wall<CR>", desc = "Save All Buffers (Normal Mode)" },
 
-          ["<Leader>tcd"] = {
-            function() require("user_functions.generic_functions").set_tab_cdir_to_buffer_dir() end,
-            desc = "Set Tab Dir",
-          },
+          ["<Leader>tm"] = { ":vsp term://python", desc = "manual term" },
           -- navigate buffer tabs
           ["]b"] = { function() require("astrocore.buffer").nav(vim.v.count1) end, desc = "Next buffer" },
           ["[b"] = { function() require("astrocore.buffer").nav(-vim.v.count1) end, desc = "Previous buffer" },
