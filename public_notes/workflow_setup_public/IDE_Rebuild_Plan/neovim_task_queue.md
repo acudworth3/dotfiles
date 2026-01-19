@@ -10,12 +10,14 @@
 
 ## Misc
 
-- [ ] Task -> 🗒️ Consider bringing make command into work flow
+- [ ] Task -> 🗒️ ~Consider bringing make command into work flow~
 - [ ] Task -> 🗒️ do json editing fundamentals
-- [ ] Task -> 🗒️ do some fundamentals combining `ctrl+z`, zoxide nav, `rg` search
+- [x] Task -> 🗒️ do some fundamentals combining `ctrl+z`, zoxide nav, `rg` search
 - [ ] Task -> 🗒️ ftplugin approach in nvim POC
 - [ ] Task -> 🗒️ set editor in git config
 - [ ] Task -> 🗒️ yazi previews images but nvim yazi does not
+- [ ] Task -> 🗒️ move selection to specific line `:'<,'>mLINE_NUMBER` make a keymap "t means transfer"
+- [ ] Task -> 🗒️ duplicate selection down `:'<,'>t????`
 
 - [ ] Task -> 🗒️ How to install a specific version of nvim (hard)
 
@@ -23,16 +25,16 @@
 
 ### Visual Selection Editing
 
-- [ ] Task -> 🗒️ keymap for `'<,'>!shuf`
-- [ ] Parse -> 📚 parse `tr` keep notes
+- [x] Task -> 🗒️ ~keymap for `'<,'>!shuf`~
+- [x] Parse -> 📚 parse `tr` keep notes
 
 ### Random Data
 
-- [ ] Task -> 🗒️ build a random data generator menu
-- [ ] Task -> 🗒️ random number generator over range
-- [ ] Task -> 🗒️ random number generator with fixed digits
-- [ ] Task -> 🗒️ move lorem here
-- [ ] Task -> 🗒️ random letter grid (for fun)
+- [x] Task -> 🗒️ build a random data generator menu
+- [x] Task -> 🗒️ random number generator over range
+- [x] Task -> 🗒️ random number generator with fixed digits
+- [x] Task -> 🗒️ move lorem here
+- [x] Task -> 🗒️ random letter grid (for fun)
 
 ### Docs Refactoring
 
@@ -116,7 +118,7 @@ https://github.com/johmsalas/text-case.nvim?tab=readme-ov-file
 
 ### Octo
 
-- [ ] Task -> 🗒️ Review PR workflows
+- [x] Task -> 🗒️ Review PR workflows
 - [ ] Task -> 🗒️ breing astrocommunity.git.octo-nvim into local config
 - [ ] Task -> 🗒️ setup fzf action in a sub list ???
 - [ ] Task -> 🗒️ improve UI of editing - relative line numbers
