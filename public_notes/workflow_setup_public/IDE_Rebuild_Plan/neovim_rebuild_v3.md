@@ -8,6 +8,7 @@
 
 - [x] Habit -> 🏃 ~delete rather than append if change is small and you want `.` repetition (high mental overhead)~
 - [x] Habit -> 🏃 need to internalize range selection `%` full file and `'<,>'` visual selection (getting pretty good at this)
+- [ ] Habit -> 🏃 type ` to learn marks
 - [ ] Habit -> 🏃 `:'<,>'norm @q` run macro on each line selected
 - [ ] Habit -> 🏃 `:'<,>'norm f=PATTERNd` delete after pattern on each line edit
 - [ ] Habit -> 🏃 use `g;` and `g,` to navigate the change list vs `CTRL+o` and `CTRL+i` for the jump list

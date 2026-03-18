@@ -5,6 +5,7 @@
 ## Habit Queue
 
 - [ ] Habit -> 🏃 use `shuf` and `seq` more
+- [ ] Habit -> 🏃 in yazi use `;` to run shell commands (like `mkdir Folder_{01..05}`)
 
 ## Bash vs PATH
 
