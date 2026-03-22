@@ -8,6 +8,10 @@ brew install rustup
 # Python
 brew install python@3.13
 
+# Television
+## Brew might be an option
+curl -fsSL https://alexpasmantier.github.io/television/install.sh | bash
+
 # Node
 ## nvm
 brew install nvm
@@ -25,9 +29,8 @@ brew install yazi --HEAD
 ## from source
 # cargo install --locked --git https://github.com/sxyazi/yazi.git yazi-fm yazi-cli
 
-
 ## Programs to install - cli
-brew install bat btop cmatrix stow tree gh pv 
+brew install bat btop cmatrix stow tree gh pv
 
 # TODO: validate brew version works
 brew install tlrc

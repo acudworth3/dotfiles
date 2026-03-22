@@ -10,6 +10,9 @@ npm install -g tldr lorem-ipsum-cli
 # git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 # ~/.fzf/install
 
+# Television
+curl -fsSL https://alexpasmantier.github.io/television/install.sh | bash
+
 # Starship
 curl -sS https://starship.rs/install.sh | sh
 
@@ -32,3 +35,7 @@ cargo install trippy --locked
 cargo install somo
 cargo install tokei
 ## Bash Settings to apply
+
+## fix fd issue
+# export PATH="$PATH:$HOME/.local/bin"
+# ln -s $(which fdfind) ~/.local/bin/fd

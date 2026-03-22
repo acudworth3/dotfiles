@@ -1,0 +1,19 @@
+[metadata]
+name = "tldr"
+description = "Browse and preview TLDR help pages"
+requirements = ["tldr"]
+
+[source]
+command = "tldr --list"
+ansi = true
+
+[preview]
+command = "tldr '{}'"
+
+[keybindings]
+ctrl-e = "actions:open"
+
+[actions.open]
+description = "Open TLDR page in pager"
+command = "tldr '{}' | nvim"
+mode = "fork"

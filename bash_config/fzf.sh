@@ -1,4 +1,5 @@
 #!/bin/bash
+# FIXME: can television replace this?
 fz_file_preview() {
   fzf --preview "batcat --style=numbers --color=always {}"
 }

@@ -7,6 +7,55 @@
 - [ ] Habit -> 🏃 use `shuf` and `seq` more
 - [ ] Habit -> 🏃 in yazi use `;` to run shell commands (like `mkdir Folder_{01..05}`)
 
+## Readme Rebuild
+
+## Television (EXPLORATION)
+
+- [x] Read -> 📖 read docs
+- [x] Task -> 🗒️ fix `bat` issue
+- [x] Task -> 🗒️ ? fix text issue?
+
+- [ ] Task -> 🗒️ Put Atuin back
+- [ ] Task -> 🗒️ POC https://alexpasmantier.github.io/television/getting-started/quickstart#ad-hoc-channels
+- [x] Task -> 🗒️ update theme
+
+- [x] Parse -> 📚 https://alexpasmantier.github.io/television/community/channels-unix#npm-packages
+- [x] Parse -> 📚 https://alexpasmantier.github.io/television/community/channels-unix#path
+- [x] Parse -> 📚 https://alexpasmantier.github.io/television/community/channels-unix#ports
+- [x] Parse -> 📚 https://alexpasmantier.github.io/television/community/channels-unix#python-venvs
+- [x] Parse -> 📚 https://alexpasmantier.github.io/television/community/channels-unix#ssh-hosts
+
+- [ ] Habit -> 🏃 nvim + `ctrl+z` to `tv` to `fg` flow
+
+### Telvision Projects
+
+- [x] Task -> 🗒️ update less to be NVIM in the `config.toml` file
+- [ ] Task -> 🗒️ figure out preview coloring (via bat) see `/home/wsl_1/.config/television/cable/text.toml`
+- [ ] Task -> 🗒️ demo `--preview-word-wrap` pane
+- [ ] Task -> 🗒️ fix the alias command
+- [ ] Task -> 🗒️ write at least one update action
+- [ ] Task -> 🗒️ POC the source toggle feature
+
+### Television Install
+
+- [x] Task -> 🗒️ rerun `tv update-channels` after fixing bat
+- [x] Task -> 🗒️ build from source
+
+- [ ] Task -> 🗒️ add to dotfiles fd setup (if ubunutu) see `TELEVISION_CONFIG`
+- [ ] Task -> 🗒️ move channels into dotfiles and run sym link commands
+
+### Telvision Misc Notes
+
+- reinstall `curl -fsSL https://alexpasmantier.github.io/television/install.sh | bash`
+- replaced tldear with `pipx` version
+
+- fixup fd install
+
+```sh
+export PATH="$PATH:$HOME/.local/bin"
+ln -s $(which fdfind) ~/.local/bin/fd
+```
+
 ## Bash vs PATH
 
 > Currently you source all config from you `.zshrc` with the following
