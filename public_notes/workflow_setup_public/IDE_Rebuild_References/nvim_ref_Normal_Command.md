@@ -2,6 +2,21 @@
 
 - [ ] Read -> 📖 `:help normal`
 
+## Norm Trainer
+
+- [x] Task -> 🗒️ complete https://github.com/scinac/vim-norm-trainer.nvim/blob/main/lua/norm_trainer/init.lua
+
+curr: level 22/22
+
+### Notes
+
+- Note plugins like `ysw"` work becaus it runs as if you're typing in normal mode
+- type `ctrl+v esc` to use the `<esc>`
+- combine with global command for more power `g/TODO/norm I//`
+- remember that you can use paste via `p` in normal mode (you usually use `SHIFT+Insert` but this doesn't work as an EX command) - handy if you want to copy something on each line
+- you can run substitute commands but must enter `ex` mode via `:` examples `norm :s/pattern/replace`
+  - include an enter via `ctrl-v + Enter` if you wish to continue the normal mode
+
 ## Normal Command -- References
 
 > `":%normal A;`

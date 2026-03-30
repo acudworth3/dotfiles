@@ -6,8 +6,6 @@
 
 ## Habit Queue
 
-- [x] Habit -> 🏃 ~delete rather than append if change is small and you want `.` repetition (high mental overhead)~
-- [x] Habit -> 🏃 need to internalize range selection `%` full file and `'<,>'` visual selection (getting pretty good at this)
 - [ ] Habit -> 🏃 type ` to learn marks
 - [ ] Habit -> 🏃 `:'<,>'norm @q` run macro on each line selected
 - [ ] Habit -> 🏃 `:'<,>'norm f=PATTERNd` delete after pattern on each line edit
@@ -24,7 +22,6 @@
 ### Snacks
 
 - [ ] Habit -> 🏃 `Alt + m` when picking with snacks to maximize
-- [x] Habit -> 🏃 ~`Alt + h` + `Alt + i` to toggle hidden and ignored files ( `leader f + F` and `leader w + W` accomplish this )~
 
 ### Completion
 
@@ -49,17 +46,6 @@
 - [ ] Task -> 🗒️ map a copy results command. Use the default yank register https://keep.google.com/u/0/#NOTE/1C_d8ux-dxf39sklvu-Nge2fvwgeo09iL2VuZBiwPpIMpkhK3hzVIdqNuEnHrCrROA8t6JhJh
 - [ ] Task -> 🗒️ Copy all lines that match a pattern `:g/Task/yank P` paste with `"p`
 
-### Regexes
-
-> A good pattern is to write key maps that populate a command in a way that you learn the pattern
-
-`/[0-9]%` - any number followed by %
-`/[a-z]%` - any lowercase letter followed by %
-`/[A-Z]%` - any uppercase letter followed by %
-`/\v[A-Z]{2}` - any 2 uppercase letters
-`/\v[A-Z]{2}\%` - any 2 uppercase letters followed by a %
-`[abc]` represents 'any of' a b or c
-
 ## Global Commands
 
 > see `nvim_ref_Global_Command`
@@ -71,8 +57,6 @@
 ## Normal Command
 
 > combine with range more often
-
-- [x] Habit -> 🏃 use VISUAL SELECTION operations followed by `:'<,'>norm ACTION` favor `.` or `@macro` for the Action (major benefit; it will train `.` operations)
 
 - [ ] Task -> 🗒️ test some combine normal command with the `.` operator test patterns out
 - [ ] Task -> 🗒️ test some combine normal command with the `.` operator + visual Selection patterns out
@@ -88,8 +72,11 @@
 
 ## Completed Tasks
 
-~- [x] Habit -> 🏃 use `\\A` more often~
-
+- [x] Habit -> 🏃 ~delete rather than append if change is small and you want `.` repetition (high mental overhead)~
+- [x] Habit -> 🏃 need to internalize range selection `%` full file and `'<,>'` visual selection (getting pretty good at this)
+- [x] Habit -> 🏃 ~`Alt + h` + `Alt + i` to toggle hidden and ignored files ( `leader f + F` and `leader w + W` accomplish this )~
+- [x] Habit -> 🏃 use VISUAL SELECTION operations followed by `:'<,'>norm ACTION` favor `.` or `@macro` for the Action (major benefit; it will train `.` operations)
+      ~- [x] Habit -> 🏃 use `\\A` more often~
 - [x] Task -> 🗒️ Case Insensitive
 - [x] Task -> 🗒️ Multiple Patterns `/\vRead|Task`
 - [x] Habit -> 🏃 - Improved: - VISUAL : make visual selection, then `\\c`: from visual mode you created a column of cursors.

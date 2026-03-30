@@ -18,3 +18,12 @@
 > shorthand for commands
 
 `alias | cat`
+
+## fd on Ubunutu
+
+> run the following to enable it
+
+```sh
+export PATH="$PATH:$HOME/.local/bin"
+ln -s $(which fdfind) ~/.local/bin/fd
+```

@@ -6,7 +6,7 @@ alias ..='cd ..'
 # alias nv="NVIM_APPNAME=nvim nvim"
 # alias EDITOR="nvim"
 
-# alias nvim="NVIM_APPNAME=nvim-astro nvim"
+alias nvim="bob run v0.11.7"
 
 # CLI Short Cuts
 # alias sbb='source ~/.bashrc'

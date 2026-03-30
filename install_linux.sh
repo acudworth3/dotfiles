@@ -27,13 +27,19 @@ apt install ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick
 cargo install --locked --git https://github.com/sxyazi/yazi.git yazi-fm yazi-cli
 
 # Cargo
+
 sudo snap install jqp
 sudo apt install cargo
 cargo install exa
-cargo install systemctl-tui --locked
 cargo install trippy --locked
-cargo install somo
 cargo install tokei
+cargo install bob
+
+## Install Nvim
+bob use latest
+
+# cargo install systemctl-tui --locked -- replaced with Television
+# cargo install somo -- replaced with Television
 ## Bash Settings to apply
 
 ## fix fd issue

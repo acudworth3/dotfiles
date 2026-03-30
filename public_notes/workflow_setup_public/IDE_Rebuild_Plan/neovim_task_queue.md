@@ -4,39 +4,26 @@
 > neovim only; no LSP setup
 > Generally avoid "learn this" types of tasks
 
-## Reread Practical Vim
-
-- [ ] Task -> 🗒️ ideate patterns for `:g/pattern/normal @a` This removes the necessity for macros to be applied to sequential lines
-
 ## Misc
 
+- [ ] Task -> 🗒️ ideate patterns for `:g/pattern/normal @a` This removes the necessity for macros to be applied to sequential lines
 - [ ] Task -> 🗒️ ~Consider bringing make command into work flow~
 - [ ] Task -> 🗒️ do json editing fundamentals
-- [x] Task -> 🗒️ do some fundamentals combining `ctrl+z`, zoxide nav, `rg` search
 - [ ] Task -> 🗒️ ftplugin approach in nvim POC
 - [ ] Task -> 🗒️ set editor in git config
 - [ ] Task -> 🗒️ yazi previews images but nvim yazi does not
 - [ ] Task -> 🗒️ move selection to specific line `:'<,'>mLINE_NUMBER` make a keymap "t means transfer"
 - [ ] Task -> 🗒️ duplicate selection down `:'<,'>t????`
 
-- [ ] Task -> 🗒️ How to install a specific version of nvim (hard)
-
 - [ ] Read -> 📖 `:h motions`
 
-### Visual Selection Editing
+### Nvim Version Management
 
-- [x] Task -> 🗒️ ~keymap for `'<,'>!shuf`~
-- [x] Parse -> 📚 parse `tr` keep notes
+- [x] Task -> 🗒️ How to install a specific version of nvim (hard)
+- [x] Task -> 🗒️ read + use https://github.com/MordechaiHadad/bob
+- [x] Task -> 🗒️ Upgrade to 0.12.0
 
-### Random Data
-
-- [x] Task -> 🗒️ build a random data generator menu
-- [x] Task -> 🗒️ random number generator over range
-- [x] Task -> 🗒️ random number generator with fixed digits
-- [x] Task -> 🗒️ move lorem here
-- [x] Task -> 🗒️ random letter grid (for fun)
-
-### Docs Refactoring
+- [x] Task -> 🗒️ move bob from dot files
 
 ### Misc - Lua Adoption
 
@@ -54,9 +41,6 @@
 ### Key Maps Ideas
 
 > These are maybes
-
-- [ ] Task -> 🗒️ ~Text-case behavior on quickfix~
-- [ ] Task -> 🗒️ Create a menu for computer diagnostics --> btop, netscanner, gdu, others
 
 ## Scratch Pad
 
@@ -76,8 +60,6 @@ var foobar = foo + bar
 - [ ] Task -> 🗒️ remove unused
 
 ### Plugin Removal/Rewrite Candidates
-
-- [ ] auto-restore-sessions.lua
 
 ### Plugin Queue
 
@@ -102,15 +84,6 @@ https://github.com/johmsalas/text-case.nvim?tab=readme-ov-file
 - [ ] Task -> 🗒️ Apply to a search result (maybe; seems like visual multi can handle this)
 - [ ] Task -> 🗒️ Apply to a search result across files
 
-### VIM visual Multi
-
-> Hey awesome video. Love the channel. Do you know if there is a way to apply EX commands to each cursor? for example I want to run :r !uuidgen and put a uuid at each cursor
-> Answer "record a macro to run `:r !uuidgen` then run `:g/pattern/normal @i` " utilize search not mutli
-
-### nvim-cmp
-
-> removed in astronvimv5
-
 ### Oil.nvim
 
 - [ ] Read -> 📖 https://github.com/stevearc/oil.nvim
@@ -118,7 +91,6 @@ https://github.com/johmsalas/text-case.nvim?tab=readme-ov-file
 
 ### Octo
 
-- [x] Task -> 🗒️ Review PR workflows
 - [ ] Task -> 🗒️ breing astrocommunity.git.octo-nvim into local config
 - [ ] Task -> 🗒️ setup fzf action in a sub list ???
 - [ ] Task -> 🗒️ improve UI of editing - relative line numbers
@@ -127,6 +99,19 @@ https://github.com/johmsalas/text-case.nvim?tab=readme-ov-file
 
 ## Completed Tasks
 
+- [x] Task -> 🗒️ Install and test https://github.com/scinac/vim-norm-trainer.nvim
+- [x] auto-restore-sessions.lua
+- [x] Task -> 🗒️ ~Text-case behavior on quickfix~
+- [x] Task -> 🗒️ ~Create a menu for computer diagnostics --> btop, netscanner, gdu, others~
+- [x] Task -> 🗒️ do some fundamentals combining `ctrl+z`, zoxide nav, `rg` search
+- [x] Task -> 🗒️ ~keymap for `'<,'>!shuf`~
+- [x] Parse -> 📚 parse `tr` keep notes
+- [x] Task -> 🗒️ build a random data generator menu
+- [x] Task -> 🗒️ random number generator over range
+- [x] Task -> 🗒️ random number generator with fixed digits
+- [x] Task -> 🗒️ move lorem here
+- [x] Task -> 🗒️ random letter grid (for fun)
+- [x] Task -> 🗒️ Review PR workflows
 - [x] Task -> 🗒️ reread book
 - [x] Parse -> 📚 parse screenshot notes
 - [x] Task -> 🗒️ reread Notes

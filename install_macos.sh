@@ -45,10 +45,15 @@ brew install tlrc
 brew install starship
 
 cargo install exa
-cargo install trippy --locked
 cargo install tokei
-cargo install somo
+cargo install bob
 
+# cargo install systemctl-tui --locked -- replaced with Television
+# cargo install somo -- replaced with Television
+
+## Installs Nvim
+bob use latest
+#
 # npm install -g tldr
 npm install -g lorem-ipsum-cli
 

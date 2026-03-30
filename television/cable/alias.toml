@@ -1,14 +1,21 @@
 [metadata]
 name = "alias"
-description = "A channel to select from shell aliases"
+description = "Fast shell alias search"
+requirements = ["bat"]
 
 [source]
-# you may need to adjust the command depending on your shell
+# Run this once to get the list
 command = "$SHELL -ic 'alias'"
 output = "{split:=:0}"
 
 [preview]
-command = "$SHELL -ic 'alias' | grep -E '^(alias )?{split:=:0}='"
+# Use 'typeset' or 'alias' directly without the -ic overhead if possible
+# TODO: consider adjusting this
+command = "echo {} | bat -l bash --color=always --style=plain" 
+
+[ui]
+layout = "portrait"
 
 [ui.preview_panel]
-size = 30
+header = "-"
+size = 40

@@ -18,18 +18,10 @@
 
 ## medium
 
-- [x] Habit -> 🏃 in command mode `:` hit `ctrl+f` to write commands in a buffer. `<Enter>` to run them. Combine with `!!` for fast shell commands
-
-- [ ] Task -> 🗒️ figure out how to paste above and below a line - depends on `\n` character in copied value --> See linewise vs characterwise note
-- [ ] Habit -> 🏃 adopt change then repeat via `.` Pattern (Getting there)
 - [ ] Habit -> 🏃 Use `//<ENTER>` to resume last search. Combine with `*` first.
 
-- [x] Habit -> 🏃 Tree based navigating in editor `leader + f + s` works pretty well
 - [ ] Task -> 🗒️ cyclical review of fundamentals (reread Practical VIM By Drew Niel)
-- [ ] Habit -> 🏃 ~Begin using grep-able tags example `nvim-ref` and build a system around this~
 - [ ] Task -> 🗒️ use `mm` regularly (inside a file) and `learder + M + mark` to return
-
-- [x] Habit -> 🏃 ~multi-cursor based find and replace~
 
 ## Hard
 
@@ -53,10 +45,7 @@
 ## Lua Development
 
 > Add this to the toolkit
-
-- [ ] Task -> 🗒️ write some telescope actions/pickers
-- [ ] Task -> 🗒️ lua development environment
-- [ ] learn -> ❔ learn basics of the lua nvim api
+> moved to [Lua_Development](../IDE_Rebuild_References/Lua_Development.md)
 
 ## LSP Review
 
@@ -64,7 +53,6 @@
 
 ## build_strategy v2
 
-- [ ] learn -> ❔ ctrl keys for insert mode
 - [ ] learn -> ❔ register use cases - MACROs and scripting
   - [ ] Task -> 🗒️ ~use `norm@ALPHA` on a visual selection to run a single line macro on each~
 - [ ] learn -> ❔ edit via find using :g/<pattern>/ norm gets most complicated editing tasks done
@@ -76,6 +64,13 @@
 
 ## Completed
 
+- [x] Habit -> 🏃 in command mode `:` hit `ctrl+f` to write commands in a buffer. `<Enter>` to run them. Combine with `!!` for fast shell commands
+- [x] Task -> 🗒️ figure out how to paste above and below a line - depends on `\n` character in copied value --> See linewise vs characterwise note
+- [x] Habit -> 🏃 adopt change then repeat via `.` Pattern (Getting there) -- doing well
+- [x] Habit -> 🏃 Tree based navigating in editor `leader + f + s` works pretty well
+- [x] Habit -> 🏃 ~Begin using grep-able tags example `nvim-ref` and build a system around this~
+- [x] Habit -> 🏃 ~multi-cursor based find and replace~
+- [x] learn -> ❔ ctrl keys for insert mode (`ctrl+w` and `ctrl+u`)
 - [x] Habit -> 🏃 `!!` instead of `:r !COMMAND` PAUSED BECAUSE OF BLINK use `ALT+e` instead
 - [x] Habit -> 🏃 favor `CTRL+z` and `fg` over new tabs
 - [x] Habit -> 🏃 use `r` instead of `insert` + `ESC` Sequences
