@@ -2,52 +2,21 @@
 
 > This is a draft note; may not keep. Its a play for planning usgae of CLI tools that will be part of my workflow vs learning plan is for learning about them
 
+# Queue
+
 ## Habit Queue
 
 - [ ] Habit -> 🏃 use `shuf` and `seq` more
+- [ ] Habit -> 🏃you should adopt git work trees
 - [x] Habit -> 🏃 ~in yazi use `;` to run shell commands (like `mkdir Folder_{01..05}`)~
+- [x] Task -> 🗒️ Put Atuin back
+
+## Package Management
+
+- [ ] Learn -> ❔ come up with a Package Management strategy
+- [ ] Learn -> ❔ look into mise as a package management tool
 
 ## Readme Rebuild
-
-## Television (EXPLORATION)
-
-- [x] Read -> 📖 read docs
-- [x] Task -> 🗒️ fix `bat` issue
-- [x] Task -> 🗒️ ? fix text issue?
-
-- [ ] Task -> 🗒️ Put Atuin back
-- [ ] Task -> 🗒️ POC https://alexpasmantier.github.io/television/getting-started/quickstart#ad-hoc-channels
-
-- [x] Task -> 🗒️ update theme
-
-- [x] Parse -> 📚 https://alexpasmantier.github.io/television/community/channels-unix#npm-packages
-- [x] Parse -> 📚 https://alexpasmantier.github.io/television/community/channels-unix#path
-- [x] Parse -> 📚 https://alexpasmantier.github.io/television/community/channels-unix#ports
-- [x] Parse -> 📚 https://alexpasmantier.github.io/television/community/channels-unix#python-venvs
-- [x] Parse -> 📚 https://alexpasmantier.github.io/television/community/channels-unix#ssh-hosts
-
-- [ ] Habit -> 🏃 nvim + `ctrl+z` to `tv` to `fg` flow
-
-### Telvision Projects
-
-- [x] Task -> 🗒️ update less to be NVIM in the `config.toml` file
-- [x] Task -> 🗒️ figure out preview coloring (via bat) see `/home/wsl_1/.config/television/cable/text.toml`
-- [x] Task -> 🗒️ ~demo `--preview-word-wrap` pane~
-- [x] Task -> 🗒️ fix the alias command
-- [ ] Task -> 🗒️ write at least one update action
-- [ ] Task -> 🗒️ POC the source toggle feature --> Try to include a display indicator
-
-### Television Install
-
-- [x] Task -> 🗒️ rerun `tv update-channels` after fixing bat
-- [x] Task -> 🗒️ build from source
-- [x] Task -> 🗒️ add to dotfiles fd setup (if ubunutu) see `TELEVISION_CONFIG`
-- [x] Task -> 🗒️ move channels into dotfiles and run sym link commands
-
-### Telvision Misc Notes
-
-- reinstall `curl -fsSL https://alexpasmantier.github.io/television/install.sh | bash`
-- replaced tldear with `pipx` version
 
 - fixup fd install
 
@@ -115,7 +84,7 @@ fi
 
 ## fzf
 
-- [ ] Task -> 🗒️ explore fzf for exploring more
+- [x] Task -> 🗒️ explore fzf for exploring more --> Television accomplishes this
 
 ## zsh
 
@@ -124,7 +93,7 @@ fi
 ## Terminal Emulator
 
 > Need something I can use across MAC + WSL
-> Ideally it supports kitty graphics protocal as well
+> Ideally it supports kitty graphics protocol as well
 
 ### Wezterm
 

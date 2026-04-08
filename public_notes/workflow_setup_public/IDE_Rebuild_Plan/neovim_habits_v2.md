@@ -11,14 +11,13 @@
 ## small
 
 - [ ] Habit -> 🏃 use `o` to move to front and back of visual selection. Use this when you've typed `vip` but didn't end up exactly selecting what you need.
-- [ ] Habit -> 🏃 use `CTLR+h` instead of `backspace` insert mode --> (Also works in standard bash shell)
 - [ ] Habit -> 🏃 use `ga` + letter for case conversion
-- [ ] Habit -> 🏃 practice `P` which is left left vs `p` which is right paste when pasting
 - [ ] Habit -> 🏃 use `leader + fr + :` for last ex command --> populate something and reuse it here
 
 ## medium
 
 - [ ] Habit -> 🏃 Use `//<ENTER>` to resume last search. Combine with `*` first.
+- [ ] Habit -> 🏃 navigate change list with `<A-I>` and `<A-O>`
 
 - [ ] Task -> 🗒️ cyclical review of fundamentals (reread Practical VIM By Drew Niel)
 - [ ] Task -> 🗒️ use `mm` regularly (inside a file) and `learder + M + mark` to return
@@ -36,7 +35,7 @@
 ### Advanced Navigation
 
 - [ ] Habit -> 🏃 `gv` last visual selection
-- [ ] Learn -> ❔ learn to navigate the change list `g;` and `g,`
+- [ ] Habit -> 🏃 navigate change list with `<A-I>` and `<A-O>`
 
 ### Registers + Macros
 
@@ -54,7 +53,6 @@
 ## build_strategy v2
 
 - [ ] learn -> ❔ register use cases - MACROs and scripting
-  - [ ] Task -> 🗒️ ~use `norm@ALPHA` on a visual selection to run a single line macro on each~
 - [ ] learn -> ❔ edit via find using :g/<pattern>/ norm gets most complicated editing tasks done
 
 - [ ] learn -> ❔ review discoverability by types (telescope + ctrl+d etc)
@@ -64,6 +62,10 @@
 
 ## Completed
 
+- [x] Task -> 🗒️ ~use `norm@ALPHA` on a visual selection to run a single line macro on each~
+- [x] Learn -> ❔ learn to navigate the change list `g;` and `g,` (LEARNED)
+- [x] Habit -> 🏃 ~use `CTLR+h` instead of `backspace` insert mode --> (Also works in standard bash shell)~
+- [x] Habit -> 🏃 practice `P` which is left left vs `p` which is right paste when pasting
 - [x] Habit -> 🏃 in command mode `:` hit `ctrl+f` to write commands in a buffer. `<Enter>` to run them. Combine with `!!` for fast shell commands
 - [x] Task -> 🗒️ figure out how to paste above and below a line - depends on `\n` character in copied value --> See linewise vs characterwise note
 - [x] Habit -> 🏃 adopt change then repeat via `.` Pattern (Getting there) -- doing well

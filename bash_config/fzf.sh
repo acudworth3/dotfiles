@@ -1,27 +1,27 @@
 #!/bin/bash
 # NOTE: Television has replaced this. Only retained for experimenting
-fz_file_preview() {
-  fzf --preview "batcat --style=numbers --color=always {}"
-}
+# fz_file_preview() {
+#   fzf --preview "batcat --style=numbers --color=always {}"
+# }
+#
+# alias ffu='fz_minimal_ui'
+#
+# fz_minimal_ui() {
+#   fzf --preview "batcat --style=numbers --color=always {}" \
+#     --bind "ctrl-v:change-preview-window(hidden|)" \
+#     --bind "ctrl-/:change-preview-window(right,70%|down,50%,border-horizontal|hidden|right)" \
+#     --header="ctr-v:preview | ctr-/:cycle view" \
+#     --header-first \
+#     --multi
 
-alias ffu='fz_minimal_ui'
+# --header-lines=5
 
-fz_minimal_ui() {
-  fzf --preview "batcat --style=numbers --color=always {}" \
-    --bind "ctrl-v:change-preview-window(hidden|)" \
-    --bind "ctrl-/:change-preview-window(right,70%|down,50%,border-horizontal|hidden|right)" \
-    --header="ctr-v:preview | ctr-/:cycle view" \
-    --header-first \
-    --multi
+# Add a label
+# --header-label=AAAA \
+# --header-label-pos=top \
+# --header-border
 
-  # --header-lines=5
-
-  # Add a label
-  # --header-label=AAAA \
-  # --header-label-pos=top \
-  # --header-border
-
-}
+# }
 
 fz_cd() {
   cd "$(find . -type d -not -path '*/.*' | fzf)" && lt
@@ -65,20 +65,21 @@ fz_cd() {
 #     --query "$*"
 # )
 
-code_search() (
-  RELOAD='reload:rg --column --color=always --smart-case {q} || :'
-  OPENER='if [[ $FZF_SELECT_COUNT -eq 0 ]]; then
-            nvim {1} +{2}     # No selection. Open the current line in nvim.
-          else
-            nvim +cw -q {+f}  # Build quickfix list for the selected items.
-          fi'
-  fzf --disabled --ansi --multi \
-    --bind "start:$RELOAD" --bind "change:$RELOAD" \
-    --bind "enter:become:$OPENER" \
-    --bind "ctrl-o:execute:$OPENER" \
-    --bind 'alt-a:select-all,alt-d:deselect-all,ctrl-/:toggle-preview' \
-    --delimiter : \
-    --preview 'batcat --style=full --color=always --highlight-line {2} {1}' \
-    --preview-window '~4,+{2}+4/3,<80(up)' \
-    --query "$*"
-)
+# NOTE: Television has replaced this. Only retained for experimenting
+# code_search() (
+#   RELOAD='reload:rg --column --color=always --smart-case {q} || :'
+#   OPENER='if [[ $FZF_SELECT_COUNT -eq 0 ]]; then
+#             nvim {1} +{2}     # No selection. Open the current line in nvim.
+#           else
+#             nvim +cw -q {+f}  # Build quickfix list for the selected items.
+#           fi'
+#   fzf --disabled --ansi --multi \
+#     --bind "start:$RELOAD" --bind "change:$RELOAD" \
+#     --bind "enter:become:$OPENER" \
+#     --bind "ctrl-o:execute:$OPENER" \
+#     --bind 'alt-a:select-all,alt-d:deselect-all,ctrl-/:toggle-preview' \
+#     --delimiter : \
+#     --preview 'batcat --style=full --color=always --highlight-line {2} {1}' \
+#     --preview-window '~4,+{2}+4/3,<80(up)' \
+#     --query "$*"
+# )

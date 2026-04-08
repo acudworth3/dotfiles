@@ -1,0 +1,66 @@
+{
+  "test_1": {
+    "prefix": "tst2",
+    "description": "testing --tst",
+    "body": [
+      "This is a test snippet for lua files"
+    ]
+  },
+  "lua_test": {
+    "prefix": "tst",
+    "body": [
+      "local ${1:example}= require(\"${2:example2}\").move_left_feed_keys"
+    ],
+    "description": "lua_test"
+  },
+  "Module Template": {
+    "prefix": "modl",
+    "body": [
+      "local M = {}",
+      "",
+      "-- function M.sample1() print \"Hello from template.lua\" end",
+      "local move_left_feed_keys = require(\"user_functions.lua_utils\").move_left_feed_keys",
+      "",
+      "function M.${1:FUCNTION_NAME}()",
+      "  -- Complex Operations",
+      "  -- vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes(\":%s/<C-r><C-w>/& /g\", true, false, true), \"n\", true)",
+      "  vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes(\":echo \\\"test\\\"\", true, false, true), \"n\", true)",
+      "  move_left_feed_keys(2)",
+      "end",
+      "",
+      "vim.api.nvim_create_user_command(",
+      "  -- TODO: setup command name",
+      "  \"${2:UserCommand}\",                                     -- Command name in Neovim",
+      "  function() M.${1:FUCNTION_NAME}() end,                    -- Function to execute",
+      "  { nargs = 0, desc = \"(:XX) Command Description\" } -- Will appear on search",
+      ")",
+      "",
+      "return M",
+      ""
+    ],
+    "description": "Generic Module with function and user command"
+  },
+  "User Command Template": {
+    "prefix": "usr_cmd",
+    "body": [
+      "local move_left_feed_keys = require(\"user_functions.lua_utils\").move_left_feed_keys",
+      "",
+      "function M.${1:FUCNTION_NAME}()",
+      "  -- Complex Operations",
+      "  -- vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes(\":%s/<C-r><C-w>/& /g\", true, false, true), \"n\", true)",
+      "  vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes(\":echo \\\"test\\\"\", true, false, true), \"n\", true)",
+      "  move_left_feed_keys(2)",
+      "end",
+      "",
+      "vim.api.nvim_create_user_command(",
+      "  -- TODO: setup command name",
+      "  \"${2:UserCommand}\",                                     -- Command name in Neovim",
+      "  function() M.${1:FUCNTION_NAME}() end,                    -- Function to execute",
+      "  { nargs = 0, desc = \"(:XX) Command Description\" } -- Will appear on search",
+      ")",
+      "",
+      ""
+    ],
+    "description": "User Function and Command. Use inside an existing module"
+  }
+}

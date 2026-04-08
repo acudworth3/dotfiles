@@ -22,8 +22,29 @@
 - [x] Task -> 🗒️ How to install a specific version of nvim (hard)
 - [x] Task -> 🗒️ read + use https://github.com/MordechaiHadad/bob
 - [x] Task -> 🗒️ Upgrade to 0.12.0
-
 - [x] Task -> 🗒️ move bob from dot files
+- [ ] Task -> 🗒️ fix treesitter
+- [ ] Task -> 🗒️ Default to v12
+- [ ] Task -> 🗒️ Setup Latex treesitter
+
+#### AstroNVIM V6
+
+- [x] Task -> 🗒️ clone
+- [x] Task -> 🗒️ migrate
+- [ ] Task -> 🗒️ move and clean up
+
+- [x] Task -> 🗒️ blink isn't working
+- [x] Task -> 🗒️ review plugins to update
+- [x] Task -> 🗒️ reveiw astro.lua files
+- [ ] Task -> 🗒️ treesitter compiler issue -- note seems you can manually install parsers `:TSinstall latex`
+- [ ] Task -> 🗒️ fix/upgrad fd find
+- [ ] Task -> 🗒️ purge plugins
+- [ ] Task -> 🗒️ purge telescope
+- [ ] Task -> 🗒️ fix symlinks
+
+- [x] Read -> 📖 https://docs.astronvim.com/configuration/v6_migration/#astrocore (not used)
+- [x] Read -> 📖 https://docs.astronvim.com/configuration/v6_migration/#astrolsp (not used)
+- [x] Read -> 📖 https://docs.astronvim.com/configuration/v6_migration/#astroui ( no change)
 
 ### Misc - Lua Adoption
 
