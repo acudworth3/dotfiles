@@ -25,7 +25,7 @@
 - [x] Task -> 🗒️ move bob from dot files
 - [ ] Task -> 🗒️ fix treesitter
 - [ ] Task -> 🗒️ Default to v12
-- [ ] Task -> 🗒️ Setup Latex treesitter
+- [x] Task -> 🗒️ Setup Latex treesitter
 
 #### AstroNVIM V6
 
@@ -33,14 +33,14 @@
 - [x] Task -> 🗒️ migrate
 - [x] Task -> 🗒️ move and clean up
 
-- [x] Task -> 🗒️ blink isn't working
-- [x] Task -> 🗒️ review plugins to update
-- [x] Task -> 🗒️ reveiw astro.lua files
-- [ ] Task -> 🗒️ treesitter compiler issue -- note seems you can manually install parsers `:TSinstall latex`
 - [ ] Task -> 🗒️ fix/upgrad fd find
-- [ ] Task -> 🗒️ purge plugins
-- [ ] Task -> 🗒️ purge telescope
-- [ ] Task -> 🗒️ fix symlinks
+- [x] Task -> 🗒️ purge plugins
+- [x] Task -> 🗒️ purge telescope
+- [ ] Task -> 🗒️ treesitter compiler issue -- note seems you can manually install parsers `:TSinstall latex`
+- [x] Task -> 🗒️ blink isn't working
+- [x] Task -> 🗒️ fix symlinks
+- [x] Task -> 🗒️ reveiw astro.lua files
+- [x] Task -> 🗒️ review plugins to update
 
 - [x] Read -> 📖 https://docs.astronvim.com/configuration/v6_migration/#astrocore (not used)
 - [x] Read -> 📖 https://docs.astronvim.com/configuration/v6_migration/#astrolsp (not used)

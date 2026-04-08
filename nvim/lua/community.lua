@@ -17,7 +17,7 @@ return {
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.yaml" },
-  { import = "astrocommunity.pack.docker" },
+  -- { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.typescript" },
   -- Lua Development
 
