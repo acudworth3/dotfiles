@@ -31,7 +31,7 @@
 
 - [x] Task -> 🗒️ clone
 - [x] Task -> 🗒️ migrate
-- [ ] Task -> 🗒️ move and clean up
+- [x] Task -> 🗒️ move and clean up
 
 - [x] Task -> 🗒️ blink isn't working
 - [x] Task -> 🗒️ review plugins to update
