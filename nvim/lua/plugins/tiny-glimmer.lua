@@ -1,17 +1,44 @@
 -- TODO: replace with glimmer
-
-return {
-  "rachartier/tiny-glimmer.nvim",
-  event = "VeryLazy",
-  priority = 10, -- Low priority to catch other plugins' keybindings
-  config = function()
-    require("tiny-glimmer").setup {
-      search = {
-        enabled = false,
-        default_animation = "pulse",
-        next_mapping = "n", -- Key for next match
-        prev_mapping = "N", -- Key for previous match
-      },
-    }
-  end,
-}
+return {}
+-- return {
+--   "rachartier/tiny-glimmer.nvim",
+--   event = "VeryLazy",
+--   priority = 10, -- Low priority to catch other plugins' keybindings
+--   config = function()
+--     require("tiny-glimmer").setup {
+--       search = {
+--         enabled = true,
+--         default_animation = "left_to_right",
+--         next_mapping = "n", -- Key for next match
+--         prev_mapping = "N", -- Key for previous match
+--       },
+--       -- Undo operation animation
+--       undo = {
+--         enabled = true,
+--         default_animation = {
+--           name = "fade",
+--           settings = {
+--             from_color = "DiffDelete",
+--             max_duration = 500,
+--             min_duration = 500,
+--           },
+--         },
+--         undo_mapping = "u",
+--       },
+--
+--       -- Redo operation animation
+--       redo = {
+--         enabled = true,
+--         default_animation = {
+--           name = "fade",
+--           settings = {
+--             from_color = "DiffAdd",
+--             max_duration = 500,
+--             min_duration = 500,
+--           },
+--         },
+--         redo_mapping = "<c-r>",
+--       },
+--     }
+--   end,
+-- }

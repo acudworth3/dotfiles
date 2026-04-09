@@ -1,5 +1,5 @@
 ## Programs to install
-sudo apt install bat btop cargo cmatrix fd-find stow tree gh pv
+sudo apt install bat btop cargo cmatrix stow tree gh pv
 
 npm install -g tldr lorem-ipsum-cli
 
@@ -23,17 +23,16 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 uv tool install --python 3.12 posting
 
 # yazi
-apt install ffmpeg 7zip jq poppler-utils fd-find ripgrep fzf zoxide imagemagick
+apt install ffmpeg 7zip jq poppler-utils fzf zoxide imagemagick
 cargo install --locked --git https://github.com/sxyazi/yazi.git yazi-fm yazi-cli
 
 # Cargo
 
+# TODO: try to remove snap from you toolchain
 sudo snap install jqp
 sudo apt install cargo
-cargo install exa
-cargo install trippy --locked
-cargo install tokei
-cargo install bob
+
+cargo install exa trippy --locked bob fd-find ripgrep
 
 ## Install Nvim
 bob use latest
@@ -45,3 +44,10 @@ bob use latest
 ## fix fd issue
 # export PATH="$PATH:$HOME/.local/bin"
 # ln -s $(which fdfind) ~/.local/bin/fd
+#
+#
+
+## Update Commands
+# sudo apt upgrade
+# npm update -g                                         # will not update major versions
+# cargo install exa trippy --locked bob fd-find ripgrep #slow

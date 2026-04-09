@@ -19,32 +19,8 @@
 
 ### Nvim Version Management
 
-- [x] Task -> 🗒️ How to install a specific version of nvim (hard)
-- [x] Task -> 🗒️ read + use https://github.com/MordechaiHadad/bob
-- [x] Task -> 🗒️ Upgrade to 0.12.0
-- [x] Task -> 🗒️ move bob from dot files
-- [ ] Task -> 🗒️ fix treesitter
-- [ ] Task -> 🗒️ Default to v12
-- [x] Task -> 🗒️ Setup Latex treesitter
-
-#### AstroNVIM V6
-
-- [x] Task -> 🗒️ clone
-- [x] Task -> 🗒️ migrate
-- [x] Task -> 🗒️ move and clean up
-
-- [ ] Task -> 🗒️ fix/upgrad fd find
-- [x] Task -> 🗒️ purge plugins
-- [x] Task -> 🗒️ purge telescope
+- [ ] Task -> 🗒️ Default to v12 - I think Astronvim won't play well with this
 - [ ] Task -> 🗒️ treesitter compiler issue -- note seems you can manually install parsers `:TSinstall latex`
-- [x] Task -> 🗒️ blink isn't working
-- [x] Task -> 🗒️ fix symlinks
-- [x] Task -> 🗒️ reveiw astro.lua files
-- [x] Task -> 🗒️ review plugins to update
-
-- [x] Read -> 📖 https://docs.astronvim.com/configuration/v6_migration/#astrocore (not used)
-- [x] Read -> 📖 https://docs.astronvim.com/configuration/v6_migration/#astrolsp (not used)
-- [x] Read -> 📖 https://docs.astronvim.com/configuration/v6_migration/#astroui ( no change)
 
 ### Misc - Lua Adoption
 
@@ -120,6 +96,24 @@ https://github.com/johmsalas/text-case.nvim?tab=readme-ov-file
 
 ## Completed Tasks
 
+- [x] Task -> 🗒️ How to install a specific version of nvim (hard)
+- [x] Task -> 🗒️ Setup Latex treesitter
+- [x] Task -> 🗒️ Upgrade to 0.12.0
+- [x] Task -> 🗒️ move bob from dot files
+- [x] Task -> 🗒️ read + use https://github.com/MordechaiHadad/bob
+- [x] Task -> 🗒️ ~fix/upgrad fd find~ ~must build from source; use mise~
+- [x] Read -> 📖 https://docs.astronvim.com/configuration/v6_migration/#astrocore (not used)
+- [x] Read -> 📖 https://docs.astronvim.com/configuration/v6_migration/#astrolsp (not used)
+- [x] Read -> 📖 https://docs.astronvim.com/configuration/v6_migration/#astroui ( no change)
+- [x] Task -> 🗒️ blink isn't working
+- [x] Task -> 🗒️ clone
+- [x] Task -> 🗒️ fix symlinks
+- [x] Task -> 🗒️ migrate
+- [x] Task -> 🗒️ move and clean up
+- [x] Task -> 🗒️ purge plugins
+- [x] Task -> 🗒️ purge telescope
+- [x] Task -> 🗒️ reveiw astro.lua files
+- [x] Task -> 🗒️ review plugins to update
 - [x] Task -> 🗒️ Install and test https://github.com/scinac/vim-norm-trainer.nvim
 - [x] auto-restore-sessions.lua
 - [x] Task -> 🗒️ ~Text-case behavior on quickfix~

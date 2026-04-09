@@ -30,6 +30,8 @@
 
 ## Read
 
+- [ ] Read -> 📖 https://github.com/nvim-mini/mini.nvim good candidate for V4 habits
+
 ## Menu Review
 
 - [ ] Task -> 🗒️ how to change the order for which key

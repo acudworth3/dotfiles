@@ -1,11 +1,12 @@
 # CLI
 
-> This is a draft note; may not keep. Its a play for planning usgae of CLI tools that will be part of my workflow vs learning plan is for learning about them
+> This is a draft note; may not keep. Its a play for planning usage of CLI tools that will be part of my workflow vs learning plan is for learning about them
 
 # Queue
 
 ## Habit Queue
 
+- [ ] Habit -> 🏃 use `rg ` instead of grep; plus adopt `rg pattern` to search dir
 - [ ] Habit -> 🏃 use `shuf` and `seq` more
 - [ ] Habit -> 🏃you should adopt git work trees
 - [x] Habit -> 🏃 ~in yazi use `;` to run shell commands (like `mkdir Folder_{01..05}`)~
