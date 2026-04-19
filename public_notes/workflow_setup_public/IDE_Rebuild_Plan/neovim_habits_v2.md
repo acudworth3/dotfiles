@@ -11,15 +11,15 @@
 ## small
 
 - [ ] Habit -> 🏃 use `o` to move to front and back of visual selection. Use this when you've typed `vip` but didn't end up exactly selecting what you need.
-- [ ] Habit -> 🏃 use `ga` + letter for case conversion
+- [ ] Habit -> 🏃 use `in` and `an` with visual selection to move "in" and "out" of text objects
 - [ ] Habit -> 🏃 use `leader + fr + :` for last ex command --> populate something and reuse it here
 
 ## medium
 
 - [ ] Habit -> 🏃 Use `//<ENTER>` to resume last search. Combine with `*` first.
 - [ ] Habit -> 🏃 navigate change list with `<A-I>` and `<A-O>`
+- [ ] Habit -> 🏃 cyclical review of fundamentals (reread Practical VIM By Drew Niel)
 
-- [ ] Task -> 🗒️ cyclical review of fundamentals (reread Practical VIM By Drew Niel)
 - [ ] Task -> 🗒️ use `mm` regularly (inside a file) and `learder + M + mark` to return
 
 ## Hard
@@ -53,15 +53,15 @@
 ## build_strategy v2
 
 - [ ] learn -> ❔ register use cases - MACROs and scripting
-- [ ] learn -> ❔ edit via find using :g/<pattern>/ norm gets most complicated editing tasks done
+- [x] learn -> ❔ edit via find using :g/<pattern>/ norm gets most complicated editing tasks done
 
 - [ ] learn -> ❔ review discoverability by types (telescope + ctrl+d etc)
 - [ ] task -> 🗒️ replace vimscript in config with lua
 
-- [ ] parse -> 📚 https://github.com/charlax/professional-programming?tab=readme-ov-file#vim
-
 ## Completed
 
+- [x] Task -> 🗒️ cyclical review of fundamentals (reread Practical VIM By Drew Niel)
+- [x] Habit -> 🏃 ~use `ga` + letter for case conversion~
 - [x] Task -> 🗒️ ~use `norm@ALPHA` on a visual selection to run a single line macro on each~
 - [x] Learn -> ❔ learn to navigate the change list `g;` and `g,` (LEARNED)
 - [x] Habit -> 🏃 ~use `CTLR+h` instead of `backspace` insert mode --> (Also works in standard bash shell)~

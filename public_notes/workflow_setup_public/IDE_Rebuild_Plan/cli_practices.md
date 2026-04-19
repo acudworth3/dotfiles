@@ -28,7 +28,7 @@ ln -s $(which fdfind) ~/.local/bin/fd
 
 ## Bash vs PATH
 
-> Currently you source all config from you `.zshrc` with the following
+> Currently you source all config from you `.zshrc`
 
 - It might make sense to move away from aliases towards independent shell scripts
   - Then you would those to a dir like `.local/bin` and put that in the PATH

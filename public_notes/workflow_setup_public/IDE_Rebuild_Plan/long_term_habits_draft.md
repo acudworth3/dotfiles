@@ -1,5 +1,7 @@
 # build_strategy v3
 
+<!-- TODO: REVIEW THIS. NOT CURRENT 20260410 -->
+
 > Plan is to be intentional with which tool is used for which activity. attempt consistent keybindings across systems
 
 - [x] learn -> ❔ implement vim motions in vscode

@@ -13,7 +13,7 @@
 - [ ] Task -> 🗒️ set editor in git config
 - [ ] Task -> 🗒️ yazi previews images but nvim yazi does not
 - [ ] Task -> 🗒️ move selection to specific line `:'<,'>mLINE_NUMBER` make a keymap "t means transfer"
-- [ ] Task -> 🗒️ duplicate selection down `:'<,'>t????`
+- [ ] Task -> 🗒️ duplicate selection down `:'<,'>t????` - review mini.nvim
 
 - [ ] Read -> 📖 `:h motions`
 
@@ -34,6 +34,7 @@
 - [ ] Task -> 🗒️ review mappings that need keep cursor position
 - [ ] Task -> 🗒️ Resolve conflict `tab` is overloaded for completion and snippet tab stop
 - [ ] Task -> 🗒️ update search key maps to user functions
+- [ ] Task -> 🗒️ purge `mappings.lua`
 
 ### Key Maps Ideas
 

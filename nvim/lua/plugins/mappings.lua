@@ -158,6 +158,7 @@ return {
           ["<Leader>qs"] = { "<cmd>CQsubstitute<CR>", desc = "Substitute Quick Fix" },
           ["<Leader>qt"] = { "<cmd>CQappendQfTODO<CR>", desc = "Prepend To list Quick Fix" },
           ["<Leader>qy"] = { "<cmd>CQCopyQuickFixToCurrentBuffer<CR>", desc = "Copy Contents Quick Fix" },
+          -- TODO: swap for snacks picker
           ["<Leader>qf"] = { "<cmd>Telescope quickfix<CR>", desc = "Search Quick Fix" },
           ["<Leader>qo"] = { "<cmd>CQShowInPanel<CR>", desc = "Open Quick Fix" },
 
@@ -245,8 +246,9 @@ return {
           -- ["<Leader>sr"] = { ":GrugFar<CR>", desc = "Find + Replace Across Files" },
           -- ["<Leader>sl"] = { ":%s/<C-r><C-l>/<C-r><C-l>", desc = "Replace Line Under Cursor" },
 
-          -- Telescope
+          -- Finders
           -- f menu (find + Telescope)
+          -- TODO: replace with snacks.picker
           ["<Leader>fA"] = {
             function() require("telescope.builtin").find_files { cwd = vim.fs.joinpath(vim.fn.stdpath "data", "lazy") } end,
             desc = "Find All Config Files",
@@ -254,7 +256,6 @@ return {
 
           ["<Leader>f'"] = false,
 
-          -- ["<Leader>fu"] = { "<cmd>Telescope grep_string<CR>", desc = "Find Word (current) Across Files" },
           ["<Leader>fp"] = { "<cmd>Octo pr search<CR>", desc = "Octo pr search" },
           ["<Leader>fi"] = { "<cmd>Octo issue search<CR>", desc = "Octo issues search" },
           -- TODO: consider movingto a snacks.lua file
@@ -271,8 +272,6 @@ return {
           ["<C-s>"] = { "<Esc>:wall<CR>", desc = "Save All Buffers (Normal Mode)" },
 
           -- Yank commands
-          -- Yank Bank
-          -- ["<Leader>yy"] = { "<cmd>YankBank<CR>", desc = "Open Yank History" },
           ["<Leader>yF"] = { ":%y<CR>", desc = "Copy Current File Contents" },
 
           -- copy file dir
