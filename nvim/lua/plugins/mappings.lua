@@ -231,6 +231,12 @@ return {
           ["<Leader>sc"] = { "/<C-r><C-w>", desc = "Search Word Under Cursor (OR *)" },
           ["<Leader>sd"] = { ":v/<C-r><C-w>/d<left><left>", desc = "Delete All but Matches" },
 
+          ["<Leader>sm"] = { desc = "Markdown Headers" },
+          ["<Leader>smn"] = { ":%g/\v^#+/norm ", desc = "Header - Norm" },
+          -- [[]] can be used in lieu of "" if you have \ escape sequences. Otherwise you have to escape the escape like \\
+          ["<Leader>smr"] = { [[:%s/\v^#+ \zs.*/Replace]], desc = "Header - Replace" },
+          ["<Leader>sma"] = { [[:%s/\v^#+ \zs.*/& append]], desc = "Header - Preserve" },
+
           ["<Leader>sR"] = { desc = "Regex Examples" },
           ["<Leader>sRp"] = { ":%s/\\vRead|Task//g<left><left>", desc = "Read|Task Multiple Patterns" },
           ["<Leader>sRa"] = { ":%s/\\v[abc]//g<left><left>", desc = "[abc] a b or c" },

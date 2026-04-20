@@ -6,6 +6,7 @@
 
 ## Misc
 
+- [ ] Task -> 🗒️ fix `leader + f + A`
 - [ ] Task -> 🗒️ ideate patterns for `:g/pattern/normal @a` This removes the necessity for macros to be applied to sequential lines
 - [ ] Task -> 🗒️ ~Consider bringing make command into work flow~
 - [ ] Task -> 🗒️ do json editing fundamentals
@@ -97,6 +98,9 @@ https://github.com/johmsalas/text-case.nvim?tab=readme-ov-file
 
 ## Completed Tasks
 
+- [x] markdown key map --> norm mode on headers `%g/\v^#+/norm I#` note that `^#+` means starts with 1 or more `#`
+- [x] markdown key map --> Rewrite Headers `%s/\v^#+ \zs.*/Replace all Headers`
+- [x] markdown key map --> Rewrite Headers `%s/\v^#+ \zs.*/& append to all headers `
 - [x] Task -> 🗒️ How to install a specific version of nvim (hard)
 - [x] Task -> 🗒️ Setup Latex treesitter
 - [x] Task -> 🗒️ Upgrade to 0.12.0
