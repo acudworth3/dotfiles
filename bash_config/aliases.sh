@@ -22,9 +22,7 @@ alias mkdir='mkdir -pv'
 # alias zython='python3'
 alias python='python3'
 alias lzg='lazygit'
-alias lzpr='gh dash'
 alias lzd='lazydocker'
-alias ghe='gh copilot explain'
 
 #git Aliases
 ## removes any branches not in remote

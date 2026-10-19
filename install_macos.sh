@@ -8,10 +8,6 @@ brew install rustup
 # Python
 brew install python@3.13
 
-# Television
-## Brew might be an option
-curl -fsSL https://alexpasmantier.github.io/television/install.sh | bash
-
 # Node
 ## nvm
 brew install nvm
@@ -24,7 +20,7 @@ brew install --cask wezterm
 brew install noahgorstein/tap/jqp
 
 ### yazi
-brew install yazi ffmpeg sevenzip jq poppler fd ripgrep fzf zoxide resvg imagemagick font-symbols-only-nerd-font
+brew install yazi ffmpeg sevenzip jq popper fd ripgrep fzf zoxide resvg imagemagick font-symbols-only-nerd-font
 brew install yazi --HEAD
 ## from source
 # cargo install --locked --git https://github.com/sxyazi/yazi.git yazi-fm yazi-cli
